@@ -20,13 +20,12 @@ public:
     Matrix operator-(const Matrix& matrix2);
     Matrix operator*(const Matrix& matrix2);
     //para acceder a los valores de la matriz, por ejemplo a(i,j)
-    double& operator()(const int i, const int j)
-        const;
+    double& operator()(const int i, const int j) const; //este const se ha puesto para "proteger" y que i y j no se cambien
 
     void print();
 
 private:
-    void initMatrix();
+    void initMatrix(); //funcion miembro que solo voy a poder usar yo como programador, ahí se reservará la memoria
 
 private:
     int fil;

@@ -55,6 +55,12 @@ build CMakeFiles/C__.dir/EkF_Test.cpp.obj: CXX_COMPILER__C___unscanned_Debug C$:
   OBJECT_DIR = CMakeFiles\C__.dir
   OBJECT_FILE_DIR = CMakeFiles\C__.dir
 
+build CMakeFiles/C__.dir/INCLUDE/Matrix.cpp.obj: CXX_COMPILER__C___unscanned_Debug C$:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles\C__.dir\INCLUDE\Matrix.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C__.dir
+  OBJECT_FILE_DIR = CMakeFiles\C__.dir\INCLUDE
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target C__
@@ -63,7 +69,7 @@ build CMakeFiles/C__.dir/EkF_Test.cpp.obj: CXX_COMPILER__C___unscanned_Debug C$:
 #############################################
 # Link the executable C__.exe
 
-build C__.exe: CXX_EXECUTABLE_LINKER__C___Debug CMakeFiles/C__.dir/EkF_Test.cpp.obj
+build C__.exe: CXX_EXECUTABLE_LINKER__C___Debug CMakeFiles/C__.dir/EkF_Test.cpp.obj CMakeFiles/C__.dir/INCLUDE/Matrix.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C__.dir

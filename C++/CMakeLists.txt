@@ -4,5 +4,6 @@ project(C__)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(C__
-        EkF_Test.cpp
-        SRC/Matrix.h)
+        EKF_Test.cpp
+        INCLUDE/Matrix.h
+        SRC/Matrix.cpp)
