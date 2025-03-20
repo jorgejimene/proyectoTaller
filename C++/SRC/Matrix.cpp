@@ -5,12 +5,24 @@
 #include "../INCLUDE/Matrix.h"
 #include <iostream>
 
-Matrix::Matrix(int fil, int col): fil(fil),col(col) { //da valores a los funciones miembro, equivalente a decir this->x=x
+Matrix::Matrix(int fil, int col): fil(fil),col(col) { //fil(fil) da valores a la funcion miembro fil, equivalente a decir this->fil=fil
     initMatrix();
 }
 
 Matrix::Matrix(int fil, int col, double *v, int n): fil(fil),col(col) {
     initMatrix();
+
+    int k = 0;
+
+    for (int i=0; i<fil; i++){
+        for(int j=0;j<col;j++){
+            if(k<n){
+                matrix[i][j]=v[k++];
+            }else{
+                matrix[i][j]=0;
+            }
+        }
+    }
 }
 
 
