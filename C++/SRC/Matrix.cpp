@@ -5,7 +5,7 @@
 #include "../INCLUDE/Matrix.h"
 #include <iostream>
 
-Matrix::Matrix(int fil, int col): fil(fil),col(col) {
+Matrix::Matrix(int fil, int col): fil(fil),col(col) { //da valores a los funciones miembro, equivalente a decir this->x=x
     initMatrix();
 }
 
