@@ -7,5 +7,5 @@ add_executable(C__
         EKF_Test.cpp
         INCLUDE/Matrix.h
         SRC/Matrix.cpp
-        Tests.cpp
+        EKF_GEOBS.cpp
 )

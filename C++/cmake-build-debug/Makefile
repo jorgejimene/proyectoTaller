@@ -128,6 +128,30 @@ C__/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/build
 .PHONY : C__/fast
 
+EKF_Main.obj: EKF_Main.cpp.obj
+.PHONY : EKF_Main.obj
+
+# target to build an object file
+EKF_Main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/EKF_Main.cpp.obj
+.PHONY : EKF_Main.cpp.obj
+
+EKF_Main.i: EKF_Main.cpp.i
+.PHONY : EKF_Main.i
+
+# target to preprocess a source file
+EKF_Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/EKF_Main.cpp.i
+.PHONY : EKF_Main.cpp.i
+
+EKF_Main.s: EKF_Main.cpp.s
+.PHONY : EKF_Main.s
+
+# target to generate assembly for a file
+EKF_Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/EKF_Main.cpp.s
+.PHONY : EKF_Main.cpp.s
+
 EKF_Test.obj: EKF_Test.cpp.obj
 .PHONY : EKF_Test.obj
 
@@ -176,30 +200,6 @@ SRC/Matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Matrix.cpp.s
 .PHONY : SRC/Matrix.cpp.s
 
-Tests.obj: Tests.cpp.obj
-.PHONY : Tests.obj
-
-# target to build an object file
-Tests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/Tests.cpp.obj
-.PHONY : Tests.cpp.obj
-
-Tests.i: Tests.cpp.i
-.PHONY : Tests.i
-
-# target to preprocess a source file
-Tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/Tests.cpp.i
-.PHONY : Tests.cpp.i
-
-Tests.s: Tests.cpp.s
-.PHONY : Tests.s
-
-# target to generate assembly for a file
-Tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/Tests.cpp.s
-.PHONY : Tests.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -209,15 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C__
+	@echo ... EKF_Main.obj
+	@echo ... EKF_Main.i
+	@echo ... EKF_Main.s
 	@echo ... EKF_Test.obj
 	@echo ... EKF_Test.i
 	@echo ... EKF_Test.s
 	@echo ... SRC/Matrix.obj
 	@echo ... SRC/Matrix.i
 	@echo ... SRC/Matrix.s
-	@echo ... Tests.obj
-	@echo ... Tests.i
-	@echo ... Tests.s
 .PHONY : help
 
 

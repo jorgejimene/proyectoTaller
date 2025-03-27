@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Main.cpp">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Test.cpp">
 			<Option target="C__"/>
 		</Unit>
@@ -89,9 +92,6 @@
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp">
-			<Option target="C__"/>
-		</Unit>
-		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/Tests.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/CMakeLists.txt">
