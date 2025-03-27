@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(C__
         EKF_Test.cpp
         INCLUDE/Matrix.h
-        SRC/Matrix.cpp)
+        SRC/Matrix.cpp
+        Tests.cpp
+)
