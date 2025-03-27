@@ -1,6 +1,6 @@
 /*
  * Archivo de tests
- * 
+ *
  */
 
 #include <stdio.h>
