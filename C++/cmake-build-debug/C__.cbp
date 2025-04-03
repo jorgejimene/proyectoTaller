@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Main.cpp">
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_GEOBS.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Test.cpp">
@@ -91,7 +91,13 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Mjday.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/CMakeLists.txt">

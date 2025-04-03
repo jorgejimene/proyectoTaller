@@ -4,7 +4,11 @@
  */
 
 #include <stdio.h>
-#include "./include/Matrix.h"
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include "./INCLUDE/Matrix.h"
+#include "./INCLUDE/Mjday.h"
 
 int tests_run = 0;
 
@@ -71,7 +75,11 @@ int testProducto(){
             && m3(2,1)==m4(2,1) && m3(2,2)==m4(2,2));
     return 0;
 }
+int Mjday_01(){
 
+    _assert(fabs(Mjday(2025, 4, 3, 0, 0, 0, 0.0) - Mjday(2025, 4, 3)));
+    return 0;
+}
 
 int all_tests()
 {
@@ -80,6 +88,7 @@ int all_tests()
     _verify(testSuma);
     _verify(testResta);
     _verify(testProducto);
+    _verify(Mjday_01);
     return 0;
 }
 

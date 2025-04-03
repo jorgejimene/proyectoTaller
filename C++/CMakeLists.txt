@@ -8,4 +8,8 @@ add_executable(C__
         INCLUDE/Matrix.h
         SRC/Matrix.cpp
         EKF_GEOBS.cpp
+        INCLUDE/Mjday.h
+        INCLUDE/Mjday.h
+        SRC/Mjday.cpp
+        SRC/Mjday.cpp
 )

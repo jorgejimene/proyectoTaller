@@ -96,37 +96,53 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Matrix.cpp.s"
 	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Matrix.cpp -o CMakeFiles\C__.dir\SRC\Matrix.cpp.s
 
-CMakeFiles/C__.dir/EKF_Main.cpp.obj: CMakeFiles/C__.dir/flags.make
-CMakeFiles/C__.dir/EKF_Main.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Main.cpp
-CMakeFiles/C__.dir/EKF_Main.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/C__.dir/EKF_Main.cpp.obj"
-	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/EKF_Main.cpp.obj -MF CMakeFiles\C__.dir\EKF_Main.cpp.obj.d -o CMakeFiles\C__.dir\EKF_Main.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\EKF_Main.cpp
+CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_GEOBS.cpp
+CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj -MF CMakeFiles\C__.dir\EKF_GEOBS.cpp.obj.d -o CMakeFiles\C__.dir\EKF_GEOBS.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\EKF_GEOBS.cpp
 
-CMakeFiles/C__.dir/EKF_Main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/EKF_Main.cpp.i"
-	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\EKF_Main.cpp > CMakeFiles\C__.dir\EKF_Main.cpp.i
+CMakeFiles/C__.dir/EKF_GEOBS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/EKF_GEOBS.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\EKF_GEOBS.cpp > CMakeFiles\C__.dir\EKF_GEOBS.cpp.i
 
-CMakeFiles/C__.dir/EKF_Main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/EKF_Main.cpp.s"
-	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\EKF_Main.cpp -o CMakeFiles\C__.dir\EKF_Main.cpp.s
+CMakeFiles/C__.dir/EKF_GEOBS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/EKF_GEOBS.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\EKF_GEOBS.cpp -o CMakeFiles\C__.dir\EKF_GEOBS.cpp.s
+
+CMakeFiles/C__.dir/SRC/Mjday.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/Mjday.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday.cpp
+CMakeFiles/C__.dir/SRC/Mjday.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/C__.dir/SRC/Mjday.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/Mjday.cpp.obj -MF CMakeFiles\C__.dir\SRC\Mjday.cpp.obj.d -o CMakeFiles\C__.dir\SRC\Mjday.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Mjday.cpp
+
+CMakeFiles/C__.dir/SRC/Mjday.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/Mjday.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Mjday.cpp > CMakeFiles\C__.dir\SRC\Mjday.cpp.i
+
+CMakeFiles/C__.dir/SRC/Mjday.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Mjday.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Mjday.cpp -o CMakeFiles\C__.dir\SRC\Mjday.cpp.s
 
 # Object files for target C__
 C___OBJECTS = \
 "CMakeFiles/C__.dir/EKF_Test.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/Matrix.cpp.obj" \
-"CMakeFiles/C__.dir/EKF_Main.cpp.obj"
+"CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/Mjday.cpp.obj"
 
 # External object files for target C__
 C___EXTERNAL_OBJECTS =
 
 C__.exe: CMakeFiles/C__.dir/EKF_Test.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/Matrix.cpp.obj
-C__.exe: CMakeFiles/C__.dir/EKF_Main.cpp.obj
+C__.exe: CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/Mjday.cpp.obj
 C__.exe: CMakeFiles/C__.dir/build.make
 C__.exe: CMakeFiles/C__.dir/linkLibs.rsp
 C__.exe: CMakeFiles/C__.dir/objects1.rsp
 C__.exe: CMakeFiles/C__.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable C__.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable C__.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C__.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
