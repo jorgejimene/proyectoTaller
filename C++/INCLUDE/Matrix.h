@@ -3,7 +3,7 @@
 //
 
 /**
- * @file  Matrix.cpp
+ * @file  Matrix.h
  * @author Jorge
  * @brief Clase matriz usada en el proyecto
  * @date 26-03-2025
