@@ -224,6 +224,78 @@ SRC/Mjday.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Mjday.cpp.s
 .PHONY : SRC/Mjday.cpp.s
 
+SRC/R_x.obj: SRC/R_x.cpp.obj
+.PHONY : SRC/R_x.obj
+
+# target to build an object file
+SRC/R_x.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_x.cpp.obj
+.PHONY : SRC/R_x.cpp.obj
+
+SRC/R_x.i: SRC/R_x.cpp.i
+.PHONY : SRC/R_x.i
+
+# target to preprocess a source file
+SRC/R_x.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_x.cpp.i
+.PHONY : SRC/R_x.cpp.i
+
+SRC/R_x.s: SRC/R_x.cpp.s
+.PHONY : SRC/R_x.s
+
+# target to generate assembly for a file
+SRC/R_x.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_x.cpp.s
+.PHONY : SRC/R_x.cpp.s
+
+SRC/R_y.obj: SRC/R_y.cpp.obj
+.PHONY : SRC/R_y.obj
+
+# target to build an object file
+SRC/R_y.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_y.cpp.obj
+.PHONY : SRC/R_y.cpp.obj
+
+SRC/R_y.i: SRC/R_y.cpp.i
+.PHONY : SRC/R_y.i
+
+# target to preprocess a source file
+SRC/R_y.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_y.cpp.i
+.PHONY : SRC/R_y.cpp.i
+
+SRC/R_y.s: SRC/R_y.cpp.s
+.PHONY : SRC/R_y.s
+
+# target to generate assembly for a file
+SRC/R_y.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_y.cpp.s
+.PHONY : SRC/R_y.cpp.s
+
+SRC/R_z.obj: SRC/R_z.cpp.obj
+.PHONY : SRC/R_z.obj
+
+# target to build an object file
+SRC/R_z.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_z.cpp.obj
+.PHONY : SRC/R_z.cpp.obj
+
+SRC/R_z.i: SRC/R_z.cpp.i
+.PHONY : SRC/R_z.i
+
+# target to preprocess a source file
+SRC/R_z.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_z.cpp.i
+.PHONY : SRC/R_z.cpp.i
+
+SRC/R_z.s: SRC/R_z.cpp.s
+.PHONY : SRC/R_z.s
+
+# target to generate assembly for a file
+SRC/R_z.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/R_z.cpp.s
+.PHONY : SRC/R_z.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +317,15 @@ help:
 	@echo ... SRC/Mjday.obj
 	@echo ... SRC/Mjday.i
 	@echo ... SRC/Mjday.s
+	@echo ... SRC/R_x.obj
+	@echo ... SRC/R_x.i
+	@echo ... SRC/R_x.s
+	@echo ... SRC/R_y.obj
+	@echo ... SRC/R_y.i
+	@echo ... SRC/R_y.s
+	@echo ... SRC/R_z.obj
+	@echo ... SRC/R_z.i
+	@echo ... SRC/R_z.s
 .PHONY : help
 
 

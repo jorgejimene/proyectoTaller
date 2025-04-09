@@ -9,9 +9,13 @@
 #include <cmath>
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
-
+#include "./INCLUDE/R_x.h"
+#include "./INCLUDE/R_y.h"
+#include "./INCLUDE/R_z.h"
 int tests_run = 0;
 
+#define TOL_ 10e-14
+#define TOL2_ 10e-10 //para numeros mas pequeños
 #define FAIL() printf("\nfailure in %s() line %d\n", __func__, __LINE__)
 #define _assert(test) do { if (!(test)) { FAIL(); return 1; } } while(0)
 #define _verify(test) do { int r=test(); tests_run++; if(r) return r; } while(0)
@@ -77,10 +81,57 @@ int testProducto(){
 }
 int Mjday_01(){
 
-    _assert(fabs(Mjday(2025, 4, 3, 0, 0, 0, 0.0) - Mjday(2025, 4, 3)));
+    _assert(fabs(Mjday(2025, 4, 3, 0, 0, 0.0) - Mjday(2025, 4, 3)) < TOL_);
     return 0;
 }
+int Mjday_02(){
+    double x = Mjday(2025,4,12,1,1,1);
+    _assert(fabs(Mjday(2025,4,12,1,1,1)-60777.0423726854)<TOL2_);
+    return 0;
+}
+int R_x_01(){
+    double alpha = 1.0;
+    Matrix sol(3,3);
 
+    sol = R_x(alpha);
+
+    _assert(fabs(sol(1,1) - 1 < TOL_ &&
+    fabs(sol(1,2)) < TOL_ && fabs(sol(1,3)<TOL_)));
+    _assert(sol(2,1)<TOL_ && fabs(sol(2,2)-0.54030230586814) < TOL_ && fabs(sol(2,3)
+    -0.841470984807897) < TOL_);
+    _assert(fabs(sol(1,1))- 1 < TOL_);
+
+    return 0;
+
+}
+int R_y_01(){
+    double alpha = 1.0;
+    Matrix sol(3,3);
+
+    sol = R_y(alpha);
+
+    _assert(fabs(sol(1,1) - 0.54030230586814) < TOL2_ && fabs(sol(1,3) + 0.841470984807897) < TOL2_);
+
+    _assert(fabs(sol(2,1)-0<TOL2_) && fabs(sol(2,2)-1)<TOL2_ && fabs(sol(2,3)-0<TOL2_));
+
+    _assert(fabs(sol(3,1)-0.841470984807897)<TOL2_ && fabs(sol(3,3)-0.54030230586814)<TOL2_);
+    return 0;
+
+}
+int R_z_01(){
+    double alpha = 1.0;
+    Matrix sol(3,3);
+
+    sol = R_z(alpha);
+
+    _assert(fabs(sol(1,1) - 0.54030230586814) < TOL2_ && fabs(sol(1,2) - 0.841470984807897) < TOL2_);
+
+    _assert(fabs(sol(2,1)+0.841470984807897<TOL2_) && fabs(sol(2,2)-0.54030230586814)<TOL2_ && fabs(sol(2,3)-0<TOL2_));
+
+    _assert(fabs(sol(3,1)-0)<TOL2_ && fabs(sol(3,3)-1)<TOL2_);
+    return 0;
+
+}
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -89,6 +140,10 @@ int all_tests()
     _verify(testResta);
     _verify(testProducto);
     _verify(Mjday_01);
+    _verify(Mjday_02);
+    _verify(R_x_01);
+    _verify(R_y_01);
+    _verify(R_z_01);
     return 0;
 }
 

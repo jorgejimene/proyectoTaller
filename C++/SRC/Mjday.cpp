@@ -17,7 +17,7 @@
 %    Mjd         - Modified julian date
 %--------------------------------------------------------------------------
 */
-double Mjday(int yr, int mon, int day, int hr, int min, double sec, int i) {
+double Mjday(int yr, int mon, int day, int hr, int min, double sec) {
     double jd,Mjd;
     jd = 367.0 * yr
     - floor( (7 * (yr + floor( (mon + 9) / 12.0) ) ) * 0.25 )
