@@ -47,7 +47,7 @@ while(1)
     j = j+1;
     k = k+1;
     if (j>m)
-        break
+     break
     end
 end
 

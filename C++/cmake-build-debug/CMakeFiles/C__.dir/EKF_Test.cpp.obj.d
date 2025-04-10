@@ -129,4 +129,5 @@ CMakeFiles/C__.dir/EKF_Test.cpp.obj: \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\r_x.h \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\Matrix.h \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\r_y.h \
- c:\users\jojimene\documents\github\proyectotaller\c++\include\r_z.h
+ c:\users\jojimene\documents\github\proyectotaller\c++\include\r_z.h \
+ c:\users\jojimene\documents\github\proyectotaller\c++\include\legendre.h

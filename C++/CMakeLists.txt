@@ -19,4 +19,10 @@ add_executable(C__
         SRC/R_y.cpp
         INCLUDE/R_z.h
         SRC/R_z.cpp
+        INCLUDE/TimeUpdate.h
+        SRC/TimeUpdate.cpp
+        SRC/TimeUpdate.cpp
+        INCLUDE/Legendre.h
+        SRC/Legendre.cpp
+        SRC/Legendre.cpp
 )

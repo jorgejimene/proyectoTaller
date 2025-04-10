@@ -129,11 +129,27 @@ CMakeFiles/C__.dir/EKF_Test.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyecto
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Legendre.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Mjday.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_x.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_y.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h
+
+CMakeFiles/C__.dir/SRC/Legendre.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/math.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Legendre.h
 
 CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp \
   C:/URApps/MinGW/include/_mingw.h \
@@ -321,6 +337,9 @@ CMakeFiles/C__.dir/SRC/R_z.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoT
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h
+
+CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/TimeUpdate.h
 
 
 C:/URApps/MinGW/include/stdlib.h:
@@ -575,6 +594,8 @@ C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h:
 
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Legendre.h:
+
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Mjday.h:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_x.h:
@@ -582,6 +603,8 @@ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_x.h:
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_y.h:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp:
 
@@ -592,3 +615,7 @@ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_x.cpp:
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_y.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_z.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/TimeUpdate.h:

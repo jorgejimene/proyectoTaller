@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Test.cpp">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Legendre.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h">
 			<Option target="C__"/>
 		</Unit>
@@ -103,6 +106,12 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/TimeUpdate.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp">
 			<Option target="C__"/>
 		</Unit>
@@ -116,6 +125,9 @@
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_z.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/CMakeLists.txt">

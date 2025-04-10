@@ -166,6 +166,34 @@ CMakeFiles/C__.dir/SRC/R_z.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/R_z.cpp.s"
 	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\R_z.cpp -o CMakeFiles\C__.dir\SRC\R_z.cpp.s
 
+CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp
+CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj -MF CMakeFiles\C__.dir\SRC\TimeUpdate.cpp.obj.d -o CMakeFiles\C__.dir\SRC\TimeUpdate.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\TimeUpdate.cpp
+
+CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\TimeUpdate.cpp > CMakeFiles\C__.dir\SRC\TimeUpdate.cpp.i
+
+CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\TimeUpdate.cpp -o CMakeFiles\C__.dir\SRC\TimeUpdate.cpp.s
+
+CMakeFiles/C__.dir/SRC/Legendre.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/Legendre.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp
+CMakeFiles/C__.dir/SRC/Legendre.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/C__.dir/SRC/Legendre.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/Legendre.cpp.obj -MF CMakeFiles\C__.dir\SRC\Legendre.cpp.obj.d -o CMakeFiles\C__.dir\SRC\Legendre.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Legendre.cpp
+
+CMakeFiles/C__.dir/SRC/Legendre.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/Legendre.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Legendre.cpp > CMakeFiles\C__.dir\SRC\Legendre.cpp.i
+
+CMakeFiles/C__.dir/SRC/Legendre.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Legendre.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Legendre.cpp -o CMakeFiles\C__.dir\SRC\Legendre.cpp.s
+
 # Object files for target C__
 C___OBJECTS = \
 "CMakeFiles/C__.dir/EKF_Test.cpp.obj" \
@@ -174,7 +202,9 @@ C___OBJECTS = \
 "CMakeFiles/C__.dir/SRC/Mjday.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/R_x.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/R_y.cpp.obj" \
-"CMakeFiles/C__.dir/SRC/R_z.cpp.obj"
+"CMakeFiles/C__.dir/SRC/R_z.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/Legendre.cpp.obj"
 
 # External object files for target C__
 C___EXTERNAL_OBJECTS =
@@ -186,11 +216,13 @@ C__.exe: CMakeFiles/C__.dir/SRC/Mjday.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/R_x.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/R_y.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/R_z.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/Legendre.cpp.obj
 C__.exe: CMakeFiles/C__.dir/build.make
 C__.exe: CMakeFiles/C__.dir/linkLibs.rsp
 C__.exe: CMakeFiles/C__.dir/objects1.rsp
 C__.exe: CMakeFiles/C__.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable C__.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable C__.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C__.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

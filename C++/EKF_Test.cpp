@@ -12,6 +12,7 @@
 #include "./INCLUDE/R_x.h"
 #include "./INCLUDE/R_y.h"
 #include "./INCLUDE/R_z.h"
+#include "./INCLUDE/Legendre.h"
 int tests_run = 0;
 
 #define TOL_ 10e-14
@@ -132,6 +133,16 @@ int R_z_01(){
     return 0;
 
 }
+int Legendre_01(){
+    Matrix pnm(3,3), dpnm(3,3);
+    Legendre(2,2,1,pnm,dpnm);
+    pnm.print();
+    dpnm.print();
+    double x = pnm(3,1)-1.25691645573063;
+    _assert(fabs(pnm(1,1)-1)<TOL_ && fabs(pnm(2,1)-1.4574704987823)<TOL2_ && fabs(pnm(3,1)-1.25691645573063)<TOL2_);
+
+    return 0;
+}
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -144,6 +155,7 @@ int all_tests()
     _verify(R_x_01);
     _verify(R_y_01);
     _verify(R_z_01);
+    _verify(Legendre_01);
     return 0;
 }
 
