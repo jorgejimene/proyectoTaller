@@ -144,8 +144,13 @@ int Legendre_01(){
     Legendre(2,2,1,pnm,dpnm);
     pnm.print();
     dpnm.print();
-    double x = pnm(3,1)-1.25691645573063;
     _assert(fabs(pnm(1,1)-1)<TOL_ && fabs(pnm(2,1)-1.4574704987823)<TOL2_ && fabs(pnm(3,1)-1.25691645573063)<TOL2_);
+    _assert(fabs(pnm(1,2)-0)<TOL_ && fabs(pnm(2,2)-0.93583104521024)<TOL_ && fabs(pnm(3,2)-1.76084689542256)<TOL_);
+    _assert(fabs(pnm(1,3)-0)<TOL_ && fabs(pnm(2,3)-0)<TOL_ && fabs(pnm(3,3)-0.56531339467086)<TOL_);
+
+    _assert(fabs(dpnm(1,1)-0)<TOL_ && fabs(dpnm(2,1)-0.93583104521024)<TOL2_ && fabs(dpnm(3,1)-3.04987628722180)<TOL2_);
+    _assert(fabs(dpnm(1,2)-0)<TOL_ && fabs(dpnm(2,2)+1.45747049878230)<TOL_ && fabs(dpnm(3,2)+1.61172976752398)<TOL_);
+    _assert(fabs(dpnm(1,3)-0)<TOL_ && fabs(dpnm(2,3)-0)<TOL_ && fabs(dpnm(3,3)+1.76084689542256)<TOL_);
 
     return 0;
 }
