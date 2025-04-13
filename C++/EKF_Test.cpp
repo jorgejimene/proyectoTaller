@@ -13,6 +13,12 @@
 #include "./INCLUDE/R_y.h"
 #include "./INCLUDE/R_z.h"
 #include "./INCLUDE/Legendre.h"
+#include "./SRC/Matrix.cpp"
+#include "./SRC/Mjday.cpp"
+#include "./SRC/R_x.cpp"
+#include "./SRC/R_y.cpp"
+#include "./SRC/R_z.cpp"
+#include "./SRC/Legendre.cpp"
 int tests_run = 0;
 
 #define TOL_ 10e-14
