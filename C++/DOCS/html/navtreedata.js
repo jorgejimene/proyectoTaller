@@ -24,25 +24,29 @@
 */
 var NAVTREE =
 [
-  [ "Proyecto Taller", "index.html", [
-    [ "Clases", "annotated.html", [
-      [ "Lista de clases", "annotated.html", "annotated_dup" ],
-      [ "Índice de clases", "classes.html", null ],
-      [ "Miembros de clases", "functions.html", [
-        [ "Todos", "functions.html", null ],
-        [ "Funciones", "functions_func.html", null ]
+  [ "ProyectoTaller", "index.html", [
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
       ] ]
     ] ],
-    [ "Archivos", "files.html", [
-      [ "Lista de archivos", "files.html", "files_dup" ]
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_matrix_8h.html"
+"_legendre_8cpp_source.html"
 ];
 
-var SYNCONMSG = 'pulsar para deshabilitar sincronización';
-var SYNCOFFMSG = 'pulsar para habilitar sincronización';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';

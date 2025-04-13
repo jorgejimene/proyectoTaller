@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../class_matrix.html#ac18f44f6e2da73617432cb98c9b21fa5',1,'Matrix']]],
-  ['operator_2a_1',['operator*',['../class_matrix.html#a129e38b283c55a3f65ed9606a5d5f425',1,'Matrix']]],
-  ['operator_2b_2',['operator+',['../class_matrix.html#ae1e8a3d02bfe61fa1f49d0d208ceab62',1,'Matrix']]],
-  ['operator_2d_3',['operator-',['../class_matrix.html#aba839542259d70f36378edd31bed408d',1,'Matrix']]],
-  ['operator_3d_4',['operator=',['../class_matrix.html#a63ca8aef2b91a956af8d30c725e595eb',1,'Matrix']]]
+  ['matrix_0',['Matrix',['../class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a',1,'Matrix::Matrix(int fil, int col)'],['../class_matrix.html#a667a2068daaf0f64d7f6b88ffdbc6ff5',1,'Matrix::Matrix(int fil, int col, double v[], int n)'],['../class_matrix.html#a765f4dcb51b6829311cc3e7576388423',1,'Matrix::Matrix(const Matrix &amp;m)']]],
+  ['mjday_1',['Mjday',['../_mjday_8h.html#aca258c745c27696e023d8dd3fc362652',1,'Mjday.cpp']]]
 ];

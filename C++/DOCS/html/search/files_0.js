@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matrix_2eh_0',['Matrix.h',['../_matrix_8h.html',1,'']]]
+  ['legendre_2eh_0',['Legendre.h',['../_legendre_8h.html',1,'']]]
 ];

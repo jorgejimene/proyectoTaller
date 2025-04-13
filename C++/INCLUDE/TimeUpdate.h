@@ -5,6 +5,13 @@
 #ifndef C___TIMEUPDATE_H
 #define C___TIMEUPDATE_H
 
+/**
+ * 
+ * @param P 
+ * @param Phi 
+ * @param Qdt 
+ * @return 
+ */
 double TimeUpdate(double P, double Phi, double Qdt = 0);
 
 #endif //C___TIMEUPDATE_H
