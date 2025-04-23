@@ -25,4 +25,9 @@ add_executable(C__
         INCLUDE/Legendre.h
         SRC/Legendre.cpp
         SRC/Legendre.cpp
+        INCLUDE/NutAngles.h
+        SRC/NutAngles.cpp
+        SRC/NutAngles.cpp
+        SRC/SAT_Const.cpp
+        INCLUDE/SAT_Const.h
 )

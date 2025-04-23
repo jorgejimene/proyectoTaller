@@ -1,0 +1,3 @@
+"C:\URApps\CLion 2024.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\C__.dir/objects.a
+C:\URApps\MinGW\bin\ar.exe qc CMakeFiles\C__.dir/objects.a @CMakeFiles\C__.dir\objects1.rsp
+C:\URApps\MinGW\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\C__.dir/objects.a -Wl,--no-whole-archive -o C__.exe -Wl,--out-implib,libC__.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\C__.dir\linkLibs.rsp

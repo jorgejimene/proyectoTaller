@@ -13,7 +13,7 @@ const.Deg       = 180/pi;              % Degrees per radian
 const.Arcs      = 3600*180/pi;         % Arcseconds per radian
 
 % General
-const.MJD_J2000 = 51544.5;             % Modified Julian Date of J2000
+const.MJD_J2000 = 51544.5;            % Modified Julian Date of J2000
 const.T_B1950   = -0.500002108;        % Epoch B1950
 const.c_light   = 299792458.000000000; % Speed of light  [m/s]; DE430
 const.AU        = 149597870700.000000; % Astronomical unit [m]; DE430
