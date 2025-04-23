@@ -4,5 +4,5 @@
 
 #ifndef C___NUTANGLES_H
 #define C___NUTANGLES_H
-
+void NutAngles(double Mjd_TT, double &dpsi, double &deps);
 #endif //C___NUTANGLES_H

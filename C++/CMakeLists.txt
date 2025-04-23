@@ -11,23 +11,22 @@ add_executable(C__
         INCLUDE/Mjday.h
         SRC/Mjday.cpp
         INCLUDE/R_x.h
-        INCLUDE/R_x.h
         SRC/R_x.cpp
         INCLUDE/R_y.h
-        INCLUDE/R_y.h
-        SRC/R_y.cpp
         SRC/R_y.cpp
         INCLUDE/R_z.h
         SRC/R_z.cpp
         INCLUDE/TimeUpdate.h
         SRC/TimeUpdate.cpp
-        SRC/TimeUpdate.cpp
         INCLUDE/Legendre.h
-        SRC/Legendre.cpp
         SRC/Legendre.cpp
         INCLUDE/NutAngles.h
         SRC/NutAngles.cpp
-        SRC/NutAngles.cpp
         SRC/SAT_Const.cpp
         INCLUDE/SAT_Const.h
+        INCLUDE/Position.h
+        SRC/Position.cpp
+        SRC/Unit.cpp
+        INCLUDE/Unit.h
+        SRC/Unit.cpp
 )

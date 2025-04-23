@@ -1,3 +1,0 @@
-C:/Users/Jorge/Documents/GitHub/proyectoTaller/C++/cmake-build-default/CMakeFiles/C__.dir
-C:/Users/Jorge/Documents/GitHub/proyectoTaller/C++/cmake-build-default/CMakeFiles/edit_cache.dir
-C:/Users/Jorge/Documents/GitHub/proyectoTaller/C++/cmake-build-default/CMakeFiles/rebuild_cache.dir

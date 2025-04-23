@@ -272,6 +272,30 @@ SRC/NutAngles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/NutAngles.cpp.s
 .PHONY : SRC/NutAngles.cpp.s
 
+SRC/Position.obj: SRC/Position.cpp.obj
+.PHONY : SRC/Position.obj
+
+# target to build an object file
+SRC/Position.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Position.cpp.obj
+.PHONY : SRC/Position.cpp.obj
+
+SRC/Position.i: SRC/Position.cpp.i
+.PHONY : SRC/Position.i
+
+# target to preprocess a source file
+SRC/Position.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Position.cpp.i
+.PHONY : SRC/Position.cpp.i
+
+SRC/Position.s: SRC/Position.cpp.s
+.PHONY : SRC/Position.s
+
+# target to generate assembly for a file
+SRC/Position.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Position.cpp.s
+.PHONY : SRC/Position.cpp.s
+
 SRC/R_x.obj: SRC/R_x.cpp.obj
 .PHONY : SRC/R_x.obj
 
@@ -392,6 +416,30 @@ SRC/TimeUpdate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.s
 .PHONY : SRC/TimeUpdate.cpp.s
 
+SRC/Unit.obj: SRC/Unit.cpp.obj
+.PHONY : SRC/Unit.obj
+
+# target to build an object file
+SRC/Unit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Unit.cpp.obj
+.PHONY : SRC/Unit.cpp.obj
+
+SRC/Unit.i: SRC/Unit.cpp.i
+.PHONY : SRC/Unit.i
+
+# target to preprocess a source file
+SRC/Unit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Unit.cpp.i
+.PHONY : SRC/Unit.cpp.i
+
+SRC/Unit.s: SRC/Unit.cpp.s
+.PHONY : SRC/Unit.s
+
+# target to generate assembly for a file
+SRC/Unit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Unit.cpp.s
+.PHONY : SRC/Unit.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -419,6 +467,9 @@ help:
 	@echo ... SRC/NutAngles.obj
 	@echo ... SRC/NutAngles.i
 	@echo ... SRC/NutAngles.s
+	@echo ... SRC/Position.obj
+	@echo ... SRC/Position.i
+	@echo ... SRC/Position.s
 	@echo ... SRC/R_x.obj
 	@echo ... SRC/R_x.i
 	@echo ... SRC/R_x.s
@@ -434,6 +485,9 @@ help:
 	@echo ... SRC/TimeUpdate.obj
 	@echo ... SRC/TimeUpdate.i
 	@echo ... SRC/TimeUpdate.s
+	@echo ... SRC/Unit.obj
+	@echo ... SRC/Unit.i
+	@echo ... SRC/Unit.s
 .PHONY : help
 
 

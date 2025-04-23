@@ -13,12 +13,10 @@
 #include "./INCLUDE/R_y.h"
 #include "./INCLUDE/R_z.h"
 #include "./INCLUDE/Legendre.h"
-#include "./SRC/Matrix.cpp"
-#include "./SRC/Mjday.cpp"
-#include "./SRC/R_x.cpp"
-#include "./SRC/R_y.cpp"
-#include "./SRC/R_z.cpp"
-#include "./SRC/Legendre.cpp"
+#include "./INCLUDE/SAT_Const.h"
+#include "./INCLUDE/NutAngles.h"
+#include "./INCLUDE/Unit.h"
+
 int tests_run = 0;
 
 #define TOL_ 10e-14
@@ -154,6 +152,55 @@ int Legendre_01(){
 
     return 0;
 }
+int SAT_Const(){
+    _assert(fabs(consts.pi2 - 2 * M_PI) < TOL_);
+    _assert(fabs(consts.Rad - M_PI / 180) < TOL_);
+    _assert(fabs(consts.Deg - 180 / M_PI) < TOL_);
+    _assert(fabs(consts.Arcs - 3600 * 180 / M_PI) < TOL_);
+
+    _assert(fabs(consts.MJD_J2000 - 51544.5) < TOL_);
+    _assert(fabs(consts.T_B1950 + 0.500002108) < TOL_);
+    _assert(fabs(consts.c_light - 299792458.0) < TOL_);
+    _assert(fabs(consts.AU - 149597870700.0) < TOL_);
+
+    _assert(fabs(consts.R_Earth - 6378.1363e3) < TOL_);
+    _assert(fabs(consts.f_Earth - 1 / 298.257223563) < TOL_);
+    _assert(fabs(consts.R_Sun - 696000e3) < TOL_);
+    _assert(fabs(consts.R_Moon - 1738e3) < TOL_);
+
+    _assert(fabs(consts.omega_Earth - (15.04106717866910 / 3600 * (M_PI / 180))) < TOL_);
+
+    _assert(fabs(consts.GM_Earth - 398600.435436e9) < TOL_);
+    _assert(fabs(consts.GM_Sun - 132712440041.939400e9) < TOL_);
+    _assert(fabs(consts.GM_Moon - (398600.435436e9 / 81.30056907419062)) < TOL_);
+    _assert(fabs(consts.GM_Mercury - 22031.780000e9) < TOL_);
+    _assert(fabs(consts.GM_Venus - 324858.592000e9) < TOL_);
+    _assert(fabs(consts.GM_Mars - 42828.375214e9) < TOL_);
+    _assert(fabs(consts.GM_Jupiter - 126712764.800000e9) < TOL_);
+    _assert(fabs(consts.GM_Saturn - 37940585.200000e9) < TOL_);
+    _assert(fabs(consts.GM_Uranus - 5794548.600000e9) < TOL_);
+    _assert(fabs(consts.GM_Neptune - 6836527.100580e9) < TOL_);
+    _assert(fabs(consts.GM_Pluto - 977.0000000000009e9) < TOL_);
+
+    _assert(fabs(consts.P_Sol - 1367 / 299792458.0) < TOL_);
+
+    return 0;
+}
+int NutAngles01(){
+    double a,b;
+    NutAngles(1123.567,a,b);
+    _assert(fabs(a-7.99413796463657e-05)<TOL2_ && (fabs(b-1.42585698111339e-06)<TOL2_));
+
+    return 0;
+}
+int Unit01(){
+    double vec[] = {1,2,3};
+    double outvec[3];
+    unit(vec,outvec);
+    _assert(fabs(outvec[0]-0.267261241912424)<TOL2_ && fabs(outvec[1]-0.534522483824849)<TOL2_
+    && fabs(outvec[2]-0.801783725737273)<TOL2_);
+    return 0;
+}
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -167,6 +214,10 @@ int all_tests()
     _verify(R_y_01);
     _verify(R_z_01);
     _verify(Legendre_01);
+    _verify(SAT_Const);
+    _verify(NutAngles01);
+    _verify(Unit01);
+
     return 0;
 }
 

@@ -23,7 +23,6 @@
 
 void NutAngles (double Mjd_TT, double &dpsi, double &deps) {
 
-
     double T = (Mjd_TT - consts.MJD_J2000) / 36525;
     double T2 = T * T;
     double T3 = T2 * T;
@@ -140,12 +139,12 @@ void NutAngles (double Mjd_TT, double &dpsi, double &deps) {
             0, 0, 2, 4, 2, -10, 0, 0, 0, // 105
             0, 1, 0, 1, 0, 10, 0, 0, 0     // 106
     };
-    Matrix c= *new Matrix(106, 106,C, 953);
+    Matrix c= Matrix(106, 9,C, 953);
 
 // Mean arguments of luni-solar motion
 
 //  l   mean anomaly of the Moon
-//  l'  mean anomaly of the Sun
+//  lp  mean anomaly of the Sun
 //   F   mean argument of latitude
 //   D   mean longitude elongation of the Moon from the Sun
 //   Om  mean longitude of the ascending node
@@ -160,7 +159,9 @@ void NutAngles (double Mjd_TT, double &dpsi, double &deps) {
         - 6.891 * T2 + 0.019 * T3, rev );
     double Om = fmod(450160.280 - (5.0 * rev + 482890.539) * T
          + 7.455 * T2 + 0.008 * T3, rev );
-
+//crear función mod que funcione al estilo de matlab,
+// en c++ no funciona porque existe %, y la función fmod de cmath no funciona
+// correctamente con numeros negativos
     // Nutation in longitude andobliquity[rad]
 
     dpsi = 0;
@@ -172,7 +173,6 @@ void NutAngles (double Mjd_TT, double &dpsi, double &deps) {
         dpsi = dpsi + (c(i, 6) + c(i, 7) * T) * sin(arg);
         deps = deps + (c(i, 8) + c(i, 9) * T) * cos(arg);
     }
-
-            dpsi = 1.0e-5 * dpsi / consts.Arcs;
+    dpsi = 1.0e-5 * dpsi / consts.Arcs;
     deps = 1.0e-5 * deps / consts.Arcs;
 }
