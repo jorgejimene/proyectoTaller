@@ -7,6 +7,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+/*
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
 #include "./INCLUDE/R_x.h"
@@ -18,7 +19,20 @@
 #include "./INCLUDE/Unit.h"
 #include "./INCLUDE/AzElPa.h"
 #include "./INCLUDE/Frac.h"
-
+*/
+//Solo para ejecutar en casa
+#include "./SRC/Matrix.cpp"
+#include "./SRC/Legendre.cpp"
+#include "./SRC/SAT_Const.cpp"
+#include "./SRC/NutAngles.cpp"
+#include "./SRC/Unit.cpp"
+#include "./SRC/AzElPa.cpp"
+#include "./SRC/Frac.cpp"
+#include "./SRC/Mjday.cpp"
+#include "./SRC/R_x.cpp"
+#include "./SRC/R_y.cpp"
+#include "./SRC/R_z.cpp"
+//
 int tests_run = 0;
 
 #define TOL_ 10e-14
