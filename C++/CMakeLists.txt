@@ -29,4 +29,11 @@ add_executable(C__
         SRC/Unit.cpp
         INCLUDE/Unit.h
         SRC/Unit.cpp
+        INCLUDE/AzElPa.h
+        SRC/AzElPa.cpp
+        SRC/AzElPa.cpp
+        INCLUDE/Frac.h
+        SRC/Frac.cpp
+        SRC/Sign_.cpp
+        INCLUDE/Sign_.h
 )

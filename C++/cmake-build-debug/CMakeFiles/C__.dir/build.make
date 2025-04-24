@@ -250,6 +250,48 @@ CMakeFiles/C__.dir/SRC/Unit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Unit.cpp.s"
 	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Unit.cpp -o CMakeFiles\C__.dir\SRC\Unit.cpp.s
 
+CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/AzElPa.cpp
+CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj -MF CMakeFiles\C__.dir\SRC\AzElPa.cpp.obj.d -o CMakeFiles\C__.dir\SRC\AzElPa.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\AzElPa.cpp
+
+CMakeFiles/C__.dir/SRC/AzElPa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/AzElPa.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\AzElPa.cpp > CMakeFiles\C__.dir\SRC\AzElPa.cpp.i
+
+CMakeFiles/C__.dir/SRC/AzElPa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/AzElPa.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\AzElPa.cpp -o CMakeFiles\C__.dir\SRC\AzElPa.cpp.s
+
+CMakeFiles/C__.dir/SRC/Frac.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/Frac.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp
+CMakeFiles/C__.dir/SRC/Frac.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/C__.dir/SRC/Frac.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/Frac.cpp.obj -MF CMakeFiles\C__.dir\SRC\Frac.cpp.obj.d -o CMakeFiles\C__.dir\SRC\Frac.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Frac.cpp
+
+CMakeFiles/C__.dir/SRC/Frac.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/Frac.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Frac.cpp > CMakeFiles\C__.dir\SRC\Frac.cpp.i
+
+CMakeFiles/C__.dir/SRC/Frac.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Frac.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Frac.cpp -o CMakeFiles\C__.dir\SRC\Frac.cpp.s
+
+CMakeFiles/C__.dir/SRC/Sign.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/Sign.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Sign.cpp
+CMakeFiles/C__.dir/SRC/Sign.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/C__.dir/SRC/Sign.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/Sign.cpp.obj -MF CMakeFiles\C__.dir\SRC\Sign.cpp.obj.d -o CMakeFiles\C__.dir\SRC\Sign.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Sign.cpp
+
+CMakeFiles/C__.dir/SRC/Sign.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/Sign.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Sign.cpp > CMakeFiles\C__.dir\SRC\Sign.cpp.i
+
+CMakeFiles/C__.dir/SRC/Sign.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Sign.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Sign.cpp -o CMakeFiles\C__.dir\SRC\Sign.cpp.s
+
 # Object files for target C__
 C___OBJECTS = \
 "CMakeFiles/C__.dir/EKF_Test.cpp.obj" \
@@ -264,7 +306,10 @@ C___OBJECTS = \
 "CMakeFiles/C__.dir/SRC/NutAngles.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/SAT_Const.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/Position.cpp.obj" \
-"CMakeFiles/C__.dir/SRC/Unit.cpp.obj"
+"CMakeFiles/C__.dir/SRC/Unit.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/Frac.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/Sign.cpp.obj"
 
 # External object files for target C__
 C___EXTERNAL_OBJECTS =
@@ -282,11 +327,14 @@ C__.exe: CMakeFiles/C__.dir/SRC/NutAngles.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/SAT_Const.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/Position.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/Unit.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/Frac.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/Sign.cpp.obj
 C__.exe: CMakeFiles/C__.dir/build.make
 C__.exe: CMakeFiles/C__.dir/linkLibs.rsp
 C__.exe: CMakeFiles/C__.dir/objects1.rsp
 C__.exe: CMakeFiles/C__.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable C__.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable C__.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C__.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

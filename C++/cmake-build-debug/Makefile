@@ -176,6 +176,54 @@ EKF_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/EKF_Test.cpp.s
 .PHONY : EKF_Test.cpp.s
 
+SRC/AzElPa.obj: SRC/AzElPa.cpp.obj
+.PHONY : SRC/AzElPa.obj
+
+# target to build an object file
+SRC/AzElPa.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj
+.PHONY : SRC/AzElPa.cpp.obj
+
+SRC/AzElPa.i: SRC/AzElPa.cpp.i
+.PHONY : SRC/AzElPa.i
+
+# target to preprocess a source file
+SRC/AzElPa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/AzElPa.cpp.i
+.PHONY : SRC/AzElPa.cpp.i
+
+SRC/AzElPa.s: SRC/AzElPa.cpp.s
+.PHONY : SRC/AzElPa.s
+
+# target to generate assembly for a file
+SRC/AzElPa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/AzElPa.cpp.s
+.PHONY : SRC/AzElPa.cpp.s
+
+SRC/Frac.obj: SRC/Frac.cpp.obj
+.PHONY : SRC/Frac.obj
+
+# target to build an object file
+SRC/Frac.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Frac.cpp.obj
+.PHONY : SRC/Frac.cpp.obj
+
+SRC/Frac.i: SRC/Frac.cpp.i
+.PHONY : SRC/Frac.i
+
+# target to preprocess a source file
+SRC/Frac.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Frac.cpp.i
+.PHONY : SRC/Frac.cpp.i
+
+SRC/Frac.s: SRC/Frac.cpp.s
+.PHONY : SRC/Frac.s
+
+# target to generate assembly for a file
+SRC/Frac.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Frac.cpp.s
+.PHONY : SRC/Frac.cpp.s
+
 SRC/Legendre.obj: SRC/Legendre.cpp.obj
 .PHONY : SRC/Legendre.obj
 
@@ -392,6 +440,30 @@ SRC/SAT_Const.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/SAT_Const.cpp.s
 .PHONY : SRC/SAT_Const.cpp.s
 
+SRC/Sign.obj: SRC/Sign.cpp.obj
+.PHONY : SRC/Sign.obj
+
+# target to build an object file
+SRC/Sign.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Sign.cpp.obj
+.PHONY : SRC/Sign.cpp.obj
+
+SRC/Sign.i: SRC/Sign.cpp.i
+.PHONY : SRC/Sign.i
+
+# target to preprocess a source file
+SRC/Sign.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Sign.cpp.i
+.PHONY : SRC/Sign.cpp.i
+
+SRC/Sign.s: SRC/Sign.cpp.s
+.PHONY : SRC/Sign.s
+
+# target to generate assembly for a file
+SRC/Sign.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Sign.cpp.s
+.PHONY : SRC/Sign.cpp.s
+
 SRC/TimeUpdate.obj: SRC/TimeUpdate.cpp.obj
 .PHONY : SRC/TimeUpdate.obj
 
@@ -455,6 +527,12 @@ help:
 	@echo ... EKF_Test.obj
 	@echo ... EKF_Test.i
 	@echo ... EKF_Test.s
+	@echo ... SRC/AzElPa.obj
+	@echo ... SRC/AzElPa.i
+	@echo ... SRC/AzElPa.s
+	@echo ... SRC/Frac.obj
+	@echo ... SRC/Frac.i
+	@echo ... SRC/Frac.s
 	@echo ... SRC/Legendre.obj
 	@echo ... SRC/Legendre.i
 	@echo ... SRC/Legendre.s
@@ -482,6 +560,9 @@ help:
 	@echo ... SRC/SAT_Const.obj
 	@echo ... SRC/SAT_Const.i
 	@echo ... SRC/SAT_Const.s
+	@echo ... SRC/Sign.obj
+	@echo ... SRC/Sign.i
+	@echo ... SRC/Sign.s
 	@echo ... SRC/TimeUpdate.obj
 	@echo ... SRC/TimeUpdate.i
 	@echo ... SRC/TimeUpdate.s

@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Test.cpp">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/AzElPa.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Frac.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Legendre.h">
 			<Option target="C__"/>
 		</Unit>
@@ -115,10 +121,19 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/SAT_Const.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Sign.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/TimeUpdate.h">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Unit.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/AzElPa.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp">
@@ -146,6 +161,9 @@
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/SAT_Const.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Sign.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp">

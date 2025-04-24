@@ -133,4 +133,6 @@ CMakeFiles/C__.dir/EKF_Test.cpp.obj: \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\legendre.h \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\sat_const.h \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\nutangles.h \
- c:\users\jojimene\documents\github\proyectotaller\c++\include\unit.h
+ c:\users\jojimene\documents\github\proyectotaller\c++\include\unit.h \
+ c:\users\jojimene\documents\github\proyectotaller\c++\include\azelpa.h \
+ c:\users\jojimene\documents\github\proyectotaller\c++\include\frac.h

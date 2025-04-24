@@ -16,6 +16,8 @@
 #include "./INCLUDE/SAT_Const.h"
 #include "./INCLUDE/NutAngles.h"
 #include "./INCLUDE/Unit.h"
+#include "./INCLUDE/AzElPa.h"
+#include "./INCLUDE/Frac.h"
 
 int tests_run = 0;
 
@@ -201,6 +203,24 @@ int Unit01(){
     && fabs(outvec[2]-0.801783725737273)<TOL2_);
     return 0;
 }
+int AzElPa01(){
+    double s[] ={1,2,3};
+    double Az,El;
+    double dAds[3], dEds[3];
+    AzElPa(s,Az,El,dAds,dEds);
+    _assert(fabs(Az-0.463647609000806)<TOL_ && fabs(El-0.930274014115472)<TOL_);
+    _assert(fabs(dAds[0]-0.4)<TOL_ && fabs(dAds[1]+0.2)<TOL_ && fabs(dAds[2]-0)<TOL_);
+    _assert(fabs(dEds[0]+0.095831484749991)<TOL_ && fabs(dEds[1]+0.191662969499982)<TOL_ && fabs(dEds[2]-0.159719141249985)<TOL_);
+    return 0;
+}
+int Frac01(){
+    _assert(fabs(Frac(5.2)-0.2)<TOL_);
+    _assert(fabs(Frac(5)-0)<TOL_);
+    _assert(fabs(Frac(2.1)-0.1)<TOL_);
+    return 0;
+}
+
+
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -217,6 +237,8 @@ int all_tests()
     _verify(SAT_Const);
     _verify(NutAngles01);
     _verify(Unit01);
+    _verify(AzElPa01);
+    _verify(Frac01);
 
     return 0;
 }
