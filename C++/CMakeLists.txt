@@ -27,4 +27,10 @@ add_executable(C__
         SRC/AzElPa.cpp
         SRC/Frac.cpp
         SRC/Sign_.cpp
+        INCLUDE/AccelPointMass.h
+        SRC/AccelPointMass.cpp
+        INCLUDE/IERS.h
+        SRC/IERS.cpp
+        INCLUDE/MeanObliquity.h
+        SRC/MeanObliquity.cpp
 )

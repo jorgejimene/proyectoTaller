@@ -7,7 +7,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-/*
+
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
 #include "./INCLUDE/R_x.h"
@@ -19,8 +19,13 @@
 #include "./INCLUDE/Unit.h"
 #include "./INCLUDE/AzElPa.h"
 #include "./INCLUDE/Frac.h"
-*/
+#include "./INCLUDE/AccelPointMass.h"
+#include "./INCLUDE/IERS.h"
+#include "./INCLUDE/MeanObliquity.h"
+
+
 //Solo para ejecutar en casa
+/*
 #include "./SRC/Matrix.cpp"
 #include "./SRC/Legendre.cpp"
 #include "./SRC/SAT_Const.cpp"
@@ -32,7 +37,11 @@
 #include "./SRC/R_x.cpp"
 #include "./SRC/R_y.cpp"
 #include "./SRC/R_z.cpp"
-//
+#include "./SRC/AccelPointMass.cpp"
+#include "./SRC/IERS.cpp"
+ #include "./SRC/MeanObliquity.cpp"
+*/
+
 int tests_run = 0;
 
 #define TOL_ 10e-14
@@ -233,7 +242,62 @@ int Frac01(){
     _assert(fabs(Frac(2.1)-0.1)<TOL_);
     return 0;
 }
+int AccelPointMass01(){
+    double r[3] = {100000000, 20000000, 3000000};  // Posición del satélite (ejemplo en km)
+    double s[3] = {100000, 200000, 30000};     // Posición de la masa perturbadora
+    double GM = consts.GM_Earth;   // Constante gravitacional de la Tierra en km^3/s^2
 
+    double a[3];  // Resultado
+
+    AccelPointMass(r, s, GM, a);
+
+    _assert(fabs(a[0]+3471.08945216081)<TOL2_ && fabs(a[1]+6942.11106842201)<TOL2_ && fabs(a[2]+1041.3166602633)<TOL2_);
+
+    return 0;
+}
+int IERS01(){
+    double datos[] = {
+            2020, 8, 3, 59064, 0.232692, 0.386523, -0.2727536, -0.0007548, -0.116095, -0.010457, -0.000027, -0.000127, 37,
+            2020, 8, 4, 59065, 0.233628, 0.385040, -0.2720536, -0.0006394, -0.115992, -0.010538, -0.000022, -0.000126, 37,
+            2020, 8, 5, 59066, 0.234625, 0.383657, -0.2714800, -0.0005070, -0.116029, -0.010499, -0.000013, -0.000121, 37,
+            2020, 8, 6, 59067, 0.235508, 0.382373, -0.2710351, -0.0003863, -0.116182, -0.010362,  0.000000, -0.000116, 37,
+            2020, 8, 7, 59068, 0.236192, 0.381065, -0.2706963, -0.0002976, -0.116414, -0.010230,  0.000015, -0.000117, 37,
+            2020, 8, 8, 59069, 0.236657, 0.379783, -0.2704247, -0.0002532, -0.116640, -0.010179,  0.000029, -0.000124, 37,
+            2020, 8, 9, 59070, 0.237203, 0.378428, -0.2701724, -0.0002585, -0.116738, -0.010176,  0.000036, -0.000133, 37,
+            2020, 8,10, 59071, 0.237741, 0.377092, -0.2698912, -0.0003098, -0.116708, -0.010130,  0.000032, -0.000139, 37,
+            2020, 8,11, 59072, 0.238192, 0.375763, -0.2695406, -0.0003955, -0.116769, -0.010011,  0.000015, -0.000137, 37,
+            2020, 8,12, 59073, 0.238732, 0.374423, -0.2690937, -0.0005012, -0.117156, -0.009896, -0.000010, -0.000129, 37,
+            2020, 8,13, 59074, 0.239361, 0.373037, -0.2685380, -0.0006101, -0.117805, -0.009893, -0.000036, -0.000120, 37,
+            2020, 8,14, 59075, 0.239833, 0.371480, -0.2678796, -0.0007024, -0.118340, -0.010032, -0.000054, -0.000114, 37,
+            2020, 8,15, 59076, 0.240180, 0.369849, -0.2671457, -0.0007567, -0.118448, -0.010259, -0.000061, -0.000114, 37
+    };
+    double data[] = {
+            2400000.5, 2400001.5, 2400002.5,  // MJD
+            1.0, 1.1, 1.2, // x_pole
+            2.0, 2.1, 2.2, // y_pole
+            3.0, 3.1, 3.2, // UT1_UTC
+            4.0, 4.1, 4.2, // LOD
+            5.0, 5.1, 5.2, // dpsi
+            6.0, 6.1, 6.2, // deps
+            7.0, 7.1, 7.2, // dx_pole
+            8.0, 8.1, 8.2, // dy_pole
+            9.0, 9.1, 9.2  // TAI_UTC
+    };
+    Matrix m(13,13, data,sizeof(data));
+    m.print();
+    double x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
+
+    IERS(m, 2400001.0, x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC, 'l');
+
+    double x;
+
+    return 0;
+}
+int MeanObliquity01(){
+    double x = MeanObliquity(1234567890);
+    _assert(fabs(MeanObliquity(1234567890)-339374.3819176)<TOL2_);
+    return 0;
+}
 
 int all_tests()
 {
@@ -253,6 +317,9 @@ int all_tests()
     _verify(Unit01);
     _verify(AzElPa01);
     _verify(Frac01);
+    _verify(AccelPointMass01);
+    _verify(IERS01);
+    _verify(MeanObliquity01);
 
     return 0;
 }

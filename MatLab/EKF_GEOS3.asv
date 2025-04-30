@@ -136,6 +136,7 @@ for i=1:nobs
     % Time increment and propagation
     Mjd_UTC = obs(i,1);                       % Modified Julian Date
     t       = (Mjd_UTC-Mjd0)*86400.0;         % Time since epoch [s]
+    
     [x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC] = IERS(eopdata,Mjd_UTC,'l');
     [UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC] = timediff(UT1_UTC,TAI_UTC);
     Mjd_TT = Mjd_UTC + TT_UTC/86400;

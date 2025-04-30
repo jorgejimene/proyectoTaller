@@ -15,6 +15,8 @@
 
 class Matrix {
 public:
+    int fil;
+    int col;
     /**
      * @details Constructor básico de la clase Matriz, crea una matriz rellenada con ceros
      * @param fil Número de filas de la matriz
@@ -82,6 +84,7 @@ public:
      */
     void print();
 
+
 private:
     /**
      * @details Función de inicialización de la matriz
@@ -89,8 +92,7 @@ private:
     void initMatrix(); //funcion miembro que solo voy a poder usar yo como programador, ahí se reservará la memoria
 
 private:
-    int fil;
-    int col;
+
     double **matrix;
     void findInvMatGaussJordan(float **mat, int order);
     void printMatrixValues(float **arr, int n, int m);
