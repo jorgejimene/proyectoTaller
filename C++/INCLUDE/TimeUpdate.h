@@ -4,6 +4,7 @@
 
 #ifndef C___TIMEUPDATE_H
 #define C___TIMEUPDATE_H
+#include <Matrix.h>
 
 /**
  * 
@@ -12,6 +13,5 @@
  * @param Qdt 
  * @return 
  */
-double TimeUpdate(double P, double Phi, double Qdt = 0);
-
+void TimeUpdate(Matrix *P, Matrix *Phi, Matrix* Qdt=nullptr);
 #endif //C___TIMEUPDATE_H

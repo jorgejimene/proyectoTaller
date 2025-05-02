@@ -3,7 +3,12 @@
 //
 #include "../INCLUDE/TimeUpdate.h"
 
-double TimeUpdate(double P, double Phi, double Qdt){
-    //hay que cambiar el segundo Phi por Phi'
-    return Phi*P*Phi + Qdt;
+void TimeUpdate(Matrix *P, Matrix *Phi,Matrix* Qdt){
+    Matrix Phi_t = Phi->transpose();
+
+    *P = (*Phi) * (*P) * Phi_t;
+
+    if (Qdt!=nullptr) {
+        *P = *P + (*Qdt);
+    }
 }

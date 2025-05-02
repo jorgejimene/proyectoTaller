@@ -22,9 +22,11 @@
 #include "./INCLUDE/AccelPointMass.h"
 #include "./INCLUDE/IERS.h"
 #include "./INCLUDE/MeanObliquity.h"
+#include "./INCLUDE/TimeUpdate.h"
+#include "./INCLUDE/Mjday_TBD.h"
 
 
-//Solo para ejecutar en casa
+
 /*
 #include "./SRC/Matrix.cpp"
 #include "./SRC/Legendre.cpp"
@@ -107,6 +109,26 @@ int testProducto(){
     Matrix m4 (2,2,resultado,4);
     _assert(m3(1,1)==m4(1,1) && m3(1,2)==m4(1,2)
             && m3(2,1)==m4(2,1) && m3(2,2)==m4(2,2));
+    return 0;
+}
+int testTraspuesta() {
+    double valores[] = {
+        1, 2, 3,
+        4, 5, 6,
+    };
+    Matrix m(2,3,valores,6);
+    Matrix traspM = m.transpose();
+    traspM.print();
+
+    _assert(traspM.col == 2);
+    _assert(traspM.fil == 3);
+    _assert(traspM(1, 1) == 1);
+    _assert(traspM(2, 1) == 2);
+    _assert(traspM(3, 1) == 3);
+    _assert(traspM(1, 2) == 4);
+    _assert(traspM(2, 2) == 5);
+    _assert(traspM(3, 2) == 6);
+
     return 0;
 }
 int Mjday_01(){
@@ -294,9 +316,37 @@ int IERS01(){
     return 0;
 }
 int MeanObliquity01(){
-    double x = MeanObliquity(1234567890);
     _assert(fabs(MeanObliquity(1234567890)-339374.3819176)<TOL2_);
     return 0;
+}
+
+int TimeUpdate01() {
+    double pValores[]={1,2,3,4};
+    Matrix* P= new Matrix(2,2, pValores, 4);
+    P->print();
+
+    double phiValores[] = {5,6,7,8};
+    Matrix* Phi= new Matrix(2,2,phiValores, 4);
+    Phi->print();
+
+    TimeUpdate(P,Phi);
+
+    P->print();
+
+    _assert(fabs((*P)(1,1)-319)<TOL_);
+    _assert(fabs((*P)(1,2)-433)<TOL_);
+    _assert(fabs((*P)(2,1)-431)<TOL_);
+    _assert(fabs((*P)(2,2)-585)<TOL_);
+
+    return 0;
+
+}
+int Mjday_TBD01() {
+    double date = Mjday(2025,05,02,13,52,42);
+    double x = Mjday_TDB(date);
+    _assert(fabs(x-60797.57826390586706)<TOL2_);
+    return 0;
+
 }
 
 int all_tests()
@@ -306,6 +356,7 @@ int all_tests()
     _verify(testSuma);
     _verify(testResta);
     _verify(testProducto);
+    _verify(testTraspuesta);
     _verify(Mjday_01);
     _verify(Mjday_02);
     _verify(R_x_01);
@@ -320,7 +371,8 @@ int all_tests()
     _verify(AccelPointMass01);
     _verify(IERS01);
     _verify(MeanObliquity01);
-
+    _verify(TimeUpdate01);
+    _verify(Mjday_TBD01);
     return 0;
 }
 

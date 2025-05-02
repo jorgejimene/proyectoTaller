@@ -83,6 +83,7 @@ public:
      * @details Muestra por pantalla la matriz
      */
     void print();
+    Matrix transpose() const;
 
 
 private:
@@ -91,10 +92,10 @@ private:
      */
     void initMatrix(); //funcion miembro que solo voy a poder usar yo como programador, ahí se reservará la memoria
 
-private:
-
     double **matrix;
     void findInvMatGaussJordan(float **mat, int order);
+
+
     void printMatrixValues(float **arr, int n, int m);
     void printInverseMatrix(float ** arr, int n, int m);
 

@@ -155,3 +155,12 @@ void Matrix::findInvMatGaussJordan(float** mat, int order){
     printInverseMatrix(mat, order, 2 * order);
     return;
 }
+Matrix Matrix::transpose() const{
+    Matrix resultado(col, fil);
+    for (int i=1; i<=fil;i++) {
+        for (int j=1; j<=col;j++) {
+            resultado(j,i)=(*this)(i,j);
+        }
+    }
+    return resultado;
+}
