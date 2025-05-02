@@ -35,4 +35,6 @@ add_executable(C__
         SRC/MeanObliquity.cpp
         INCLUDE/Mjday_TBD.h
         SRC/Mjday_TBD.cpp
+        INCLUDE/MeasUpdate.h
+        SRC/MeasUpdate.cpp
 )
