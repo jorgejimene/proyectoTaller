@@ -2,6 +2,7 @@
 #include "../INCLUDE/Matrix.h"
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 
@@ -164,3 +165,70 @@ Matrix Matrix::transpose() const{
     }
     return resultado;
 }
+Matrix Matrix::identity() {
+    Matrix resultado(fil, col);
+    for (int i=1; i<=fil; i++) {
+        for (int j=1; j<=col; j++) {
+            if (i==j) {
+                resultado(i,j) = 1;
+            }
+            else {
+                resultado(i,j) = 0;
+            }
+        }
+    }
+    return resultado;
+}
+
+Matrix Matrix::inverse() const {
+    int n = fil;
+    Matrix A(fil, col);
+    // Copiar los valores de la matriz original a A usando un bucle
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            A(i, j) = (*this)(i, j);
+        }
+    }
+    Matrix I(n, n);
+    I = I.identity();
+    for (int i = 1; i <= n; i++) {
+        double maxVal = fabs(A(i, i));
+        int pivoteFila = i;
+        for (int k = i + 1; k <= n; k++) {
+            if (fabs(A(k, i)) > maxVal) {
+                maxVal = fabs(A(k, i));
+                pivoteFila = k;
+            }
+        }
+        if (pivoteFila != i) {
+            for (int j = 1; j <= n; j++) {
+                swap(A(i, j), A(pivoteFila, j));
+                swap(I(i, j), I(pivoteFila, j));
+            }
+        }
+        double diagonal = A(i, i);
+        for (int j = 1; j <= n; j++) {
+            A(i, j) = A(i, j) / diagonal;
+            I(i, j) = I(i, j) / diagonal;
+        }
+        for (int k = 1; k <= n; ++k) {
+            if (k == i) continue;
+            double factor = A(k, i);
+            for (int j = 1; j <= n; ++j) {
+                A(k, j) -= factor * A(i, j);
+                I(k, j) -= factor * I(i, j);
+            }
+        }
+    }
+    return I;
+}
+int Matrix::getFil() const {
+    return fil;
+}
+int Matrix::getCol() const {
+    return col;
+}
+
+
+
+

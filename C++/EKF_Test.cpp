@@ -24,6 +24,7 @@
 #include "./INCLUDE/MeanObliquity.h"
 #include "./INCLUDE/TimeUpdate.h"
 #include "./INCLUDE/Mjday_TBD.h"
+#include "./INCLUDE/MeasUpdate.h"
 
 
 
@@ -120,8 +121,8 @@ int testTraspuesta() {
     Matrix traspM = m.transpose();
     traspM.print();
 
-    _assert(traspM.col == 2);
-    _assert(traspM.fil == 3);
+    _assert(traspM.getCol() == 2);
+    _assert(traspM.getFil() == 3);
     _assert(traspM(1, 1) == 1);
     _assert(traspM(2, 1) == 2);
     _assert(traspM(3, 1) == 3);
@@ -348,6 +349,85 @@ int Mjday_TBD01() {
     return 0;
 
 }
+int Identity01() {
+    Matrix A(3,3);
+    Matrix I = A.identity();
+
+    for (int i=1;i<=3;i++) {
+        for (int j=1; j<=3; j++) {
+            if (i==j) {
+                _assert(fabs(I(i,i)-1) < TOL_);
+            }
+            else {
+                _assert(I(i,j)==0);
+            }
+        }
+    }
+    I.print();
+    return 0;
+}
+int Inverse01() {
+    double valores[] = {4, 7, 2, 6};
+    Matrix A(2, 2, valores, 4);
+    Matrix Ainv = A.inverse();
+
+    _assert(fabs(Ainv(1, 1) - 0.6) < TOL_);
+    _assert(fabs(Ainv(1, 2) + 0.7) < TOL_);
+    _assert(fabs(Ainv(2, 1) + 0.2) < TOL_);
+    _assert(fabs(Ainv(2, 2) - 0.4) < TOL_);
+
+    Matrix I = A * Ainv;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 2; j++) {
+            if (i == j) {
+                _assert(fabs(I(i, j) - 1) < TOL_);
+            } else {
+                _assert(fabs(I(i, j)) < TOL_);
+            }
+        }
+    }
+    return 0;
+}
+int MeasUpdate01() {
+    double valoresX[] = {1,1};
+    Matrix x{2,1, valoresX, 2};
+    cout << "Matrix x" << endl;
+    x.print();
+    double valoresZ[]{2,2};
+    Matrix z{2,1, valoresZ, 2};
+    cout << "Matrix x" << endl;
+    z.print();
+    double valoresg[] = {1,1};
+    Matrix g{2,1,valoresg,2};
+    cout << "Matrix g" << endl;
+    g.print();
+    double valoresS[] = {1,1};
+    Matrix s{2,1, valoresS, 2};
+    cout << "Matrix s" << endl;
+    s.print();
+    double valoresG[] = {1,0,0,1};
+    Matrix G{2,2,valoresG, 4};
+    cout << "Matrix G" << endl;
+    G.print();
+    double valoresP[] = {1,0,0,1};
+    Matrix P{2,2,valoresP,4};
+    cout << "Matrix P" << endl;
+    P.print();
+    Matrix K(2,2);
+
+    MeasUpdate(x,z,g,s,G,P,2,K);
+
+    _assert(fabs(x(1, 1) - 1.5) < TOL_);
+    _assert(fabs(x(2, 1) - 1.5) < TOL_);
+
+    _assert(fabs(K(1, 1) - 0.5) < TOL_);
+    _assert(fabs(K(2, 2) - 0.5) < TOL_);
+
+    _assert(fabs(P(1, 1) - 0.5) < TOL_);
+    _assert(fabs(P(2, 2) - 0.5) < TOL_);
+
+    return 0;
+}
 
 int all_tests()
 {
@@ -373,6 +453,9 @@ int all_tests()
     _verify(MeanObliquity01);
     _verify(TimeUpdate01);
     _verify(Mjday_TBD01);
+    _verify(Identity01);
+    _verify(Inverse01);
+    _verify(MeasUpdate01);
     return 0;
 }
 

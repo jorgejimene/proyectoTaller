@@ -18,6 +18,7 @@
 #include <valarray>
 #include "../INCLUDE/SAT_Const.h"
 #include "../INCLUDE/Matrix.h"
+#include "../INCLUDE/NutAngles.h"
 #include <cmath>
 
 

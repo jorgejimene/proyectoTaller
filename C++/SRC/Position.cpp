@@ -1,4 +1,5 @@
 #include "../INCLUDE/SAT_Const.h"
+#include "../INCLUDE/Position.h"
 #include <cmath>
 
 /*

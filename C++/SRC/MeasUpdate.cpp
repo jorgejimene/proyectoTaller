@@ -1,19 +1,27 @@
+#include "../INCLUDE/MeasUpdate.h"
 #include "../INCLUDE/Matrix.h"
 
-void MeasUpdate(Matrix &x, double z[], g, s, Matrix G, Matrix &P, n, Matrix K,) {
-    m = length(z);
-    Inv_W = zeros(m,m);
+void MeasUpdate(Matrix &x, Matrix z, Matrix g,Matrix s, Matrix G, Matrix &P, int n, Matrix &K) {
+    int m = z.getFil();
 
-    for i=1:m
-        Inv_W(i,i) = s(i)*s(i);    // Inverse weight (measurement covariance)
-    end
+    Matrix Inv_W(m,m);
+    Matrix A(n,n);
+
+    for (int i=1; i<=m;i++) {
+        Inv_W(i,i) = s(i,1)*s(i,1);    // Inverse weight (measurement covariance)
+    }
 
     // Kalman gain
-    K = P*G'*inv(Inv_W+G*P*G');
+    Matrix GTras = G.transpose();
+    GTras.print();
+    Matrix inversa= (Inv_W+G*P*GTras).inverse();
+
+    K = P*GTras*inversa;
 
     // State update
     x = x + K*(z-g);
 
     // Covariance update
-    P = (eye(n)-K*G)*P;
+    A = A.identity();
+    P = (A-K*G)*P;
 }

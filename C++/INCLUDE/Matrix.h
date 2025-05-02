@@ -15,8 +15,9 @@
 
 class Matrix {
 public:
-    int fil;
-    int col;
+    int getFil() const;
+    int getCol() const;
+
     /**
      * @details Constructor básico de la clase Matriz, crea una matriz rellenada con ceros
      * @param fil Número de filas de la matriz
@@ -84,9 +85,13 @@ public:
      */
     void print();
     Matrix transpose() const;
+    Matrix identity();
+    Matrix inverse() const;
 
 
 private:
+    int fil;
+    int col;
     /**
      * @details Función de inicialización de la matriz
      */
