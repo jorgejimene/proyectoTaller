@@ -414,7 +414,8 @@ int MeasUpdate01() {
     cout << "Matrix P" << endl;
     P.print();
     Matrix K(2,2);
-
+    cout << "Matrix K" << endl;
+    K.print();
     MeasUpdate(x,z,g,s,G,P,2,K);
 
     _assert(fabs(x(1, 1) - 1.5) < TOL_);
