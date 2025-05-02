@@ -37,4 +37,6 @@ add_executable(C__
         SRC/Mjday_TBD.cpp
         INCLUDE/MeasUpdate.h
         SRC/MeasUpdate.cpp
+        INCLUDE/Cheb3D.h
+        SRC/Cheb3D.cpp
 )

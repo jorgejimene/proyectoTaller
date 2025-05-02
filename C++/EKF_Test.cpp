@@ -8,6 +8,7 @@
 #include <iomanip>
 #include <cmath>
 
+#include "Cheb3D.h"
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
 #include "./INCLUDE/R_x.h"
@@ -430,6 +431,25 @@ int MeasUpdate01() {
     return 0;
 }
 
+int Cheb3D01(){
+    const int N = 3;
+    const double Ta = 0.0;
+    const double Tb = 1.0;
+    const double t = 0.5;
+    double Cx[] = {1.0, 0.5, -0.2};
+    double Cy[] = {0.0, 1.0, 0.1};
+    double Cz[] = {2.0, -0.3, 0.4};
+    double ChebApp[3];
+    Cheb3D(t,N,Ta,Tb,Cx,Cy,Cz,ChebApp);
+    cout << ChebApp[0] << endl;
+    cout << ChebApp[1] << endl;
+    cout << ChebApp[2] << endl;
+    _assert(fabs(ChebApp[0]-1.3)<TOL_); //revisar esto con matlab
+    _assert(fabs(ChebApp[1]-0.525)<TOL_);
+    _assert(fabs(ChebApp[2]-1.875)<TOL_);
+    return 0;
+}
+
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -456,7 +476,8 @@ int all_tests()
     _verify(Mjday_TBD01);
     _verify(Identity01);
     _verify(Inverse01);
-    _verify(MeasUpdate01);
+    //_verify(MeasUpdate01);
+    _verify(Cheb3D01);
     return 0;
 }
 

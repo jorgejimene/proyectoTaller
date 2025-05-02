@@ -1,9 +1,6 @@
 #include "../INCLUDE/MeasUpdate.h"
 #include "../INCLUDE/Matrix.h"
 
-#include "../INCLUDE/MeasUpdate.h"
-#include "../INCLUDE/Matrix.h"
-
 void MeasUpdate(Matrix &x, Matrix z, const Matrix &g, const Matrix &s,
                 Matrix G, Matrix &P, int n, Matrix &K) {
     int m = z.getFil();
