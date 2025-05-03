@@ -160,9 +160,7 @@ void NutAngles (double Mjd_TT, double &dpsi, double &deps) {
         - 6.891 * T2 + 0.019 * T3, rev );
     double Om = fmod(450160.280 - (5.0 * rev + 482890.539) * T
          + 7.455 * T2 + 0.008 * T3, rev );
-//crear función mod que funcione al estilo de matlab,
-// en c++ no funciona porque existe %, y la función fmod de cmath no funciona
-// correctamente con numeros negativos
+
     // Nutation in longitude andobliquity[rad]
 
     dpsi = 0;

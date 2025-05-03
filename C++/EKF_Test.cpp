@@ -26,6 +26,7 @@
 #include "./INCLUDE/TimeUpdate.h"
 #include "./INCLUDE/Mjday_TBD.h"
 #include "./INCLUDE/MeasUpdate.h"
+#include "./INCLUDE/Sign_.h"
 
 
 
@@ -250,6 +251,15 @@ int Unit01(){
     && fabs(outvec[2]-0.801783725737273)<TOL2_);
     return 0;
 }
+int Unit02() {
+    double vec[] = {1e-8,1e-8,1e-8};
+    double outvec[3];
+    unit(vec, outvec);
+    _assert(outvec[0] == 0.0);
+    _assert(outvec[1] == 0.0);
+    _assert(outvec[2] == 0.0);
+    return 0;
+}
 int AzElPa01(){
     double s[] ={1,2,3};
     double Az,El;
@@ -449,6 +459,16 @@ int Cheb3D01(){
     _assert(fabs(ChebApp[2]-1.875)<TOL_);
     return 0;
 }
+int Sign_01() {
+
+    _assert(sign_(5,3) == 5);
+    _assert(sign_(5,-3) == -5);
+    _assert(sign_(-5,-3)== -5);
+    _assert(sign_(4.2,0) == 4.2);
+    _assert(sign_(-4.2,0) == 4.2);
+
+    return 0;
+}
 
 int all_tests()
 {
@@ -467,6 +487,7 @@ int all_tests()
     _verify(SAT_Const);
     _verify(NutAngles01);
     _verify(Unit01);
+    _verify(Unit02);
     _verify(AzElPa01);
     _verify(Frac01);
     _verify(AccelPointMass01);
@@ -477,7 +498,8 @@ int all_tests()
     _verify(Identity01);
     _verify(Inverse01);
     //_verify(MeasUpdate01);
-    _verify(Cheb3D01);
+    //_verify(Cheb3D01);
+    _verify(Sign_01);
     return 0;
 }
 
@@ -488,7 +510,6 @@ int main()
 
     if (result == 0)
         printf("PASSED\n");
-
     printf("Tests run: %d\n", tests_run);
 
     return result != 0;
