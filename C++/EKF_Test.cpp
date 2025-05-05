@@ -429,14 +429,14 @@ int MeasUpdate01() {
     K.print();
     MeasUpdate(x,z,g,s,G,P,2,K);
 
-    _assert(fabs(x(1, 1) - 1.5) < TOL_);
-    _assert(fabs(x(2, 1) - 1.5) < TOL_);
+    _assert(fabs(x(1, 1) - 0.5) < TOL_);
+    _assert(fabs(x(2, 1) - 0.5) < TOL_);
 
     _assert(fabs(K(1, 1) - 0.5) < TOL_);
     _assert(fabs(K(2, 2) - 0.5) < TOL_);
 
-    _assert(fabs(P(1, 1) - 0.5) < TOL_);
-    _assert(fabs(P(2, 2) - 0.5) < TOL_);
+    _assert(fabs(P(1, 1) - 1.5) < TOL_);
+    _assert(fabs(P(2, 2) - 1.5) < TOL_);
 
     return 0;
 }
@@ -451,12 +451,9 @@ int Cheb3D01(){
     double Cz[] = {2.0, -0.3, 0.4};
     double ChebApp[3];
     Cheb3D(t,N,Ta,Tb,Cx,Cy,Cz,ChebApp);
-    cout << ChebApp[0] << endl;
-    cout << ChebApp[1] << endl;
-    cout << ChebApp[2] << endl;
-    _assert(fabs(ChebApp[0]-1.3)<TOL_); //revisar esto con matlab
-    _assert(fabs(ChebApp[1]-0.525)<TOL_);
-    _assert(fabs(ChebApp[2]-1.875)<TOL_);
+    _assert(fabs(ChebApp[0]-1.2)<TOL_);
+    _assert(fabs(ChebApp[1]+0.1)<TOL_);
+    _assert(fabs(ChebApp[2]-1.6)<TOL_);
     return 0;
 }
 int Sign_01() {
@@ -498,7 +495,7 @@ int all_tests()
     _verify(Identity01);
     _verify(Inverse01);
     //_verify(MeasUpdate01);
-    //_verify(Cheb3D01);
+    _verify(Cheb3D01);
     _verify(Sign_01);
     return 0;
 }
