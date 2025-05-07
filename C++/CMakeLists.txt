@@ -39,4 +39,18 @@ add_executable(C__
         SRC/MeasUpdate.cpp
         INCLUDE/Cheb3D.h
         SRC/Cheb3D.cpp
+        SRC/JPL_Eph_DE430.cpp
+        INCLUDE/JPL_Eph_DE430.h
+        INCLUDE/JPL_Eph_DE430.h
+        INCLUDE/NutMatrix.h
+        SRC/NutMatrix.cpp
+        SRC/NutMatrix.cpp
+        INCLUDE/PoleMatrix.h
+        SRC/PoleMatrix.cpp
+        INCLUDE/PrecMatrix.h
+        SRC/PrecMatrix.cpp
+        SRC/timediff.cpp
+        INCLUDE/timediff.h
+        INCLUDE/EccAnom.h
+        SRC/EccAnom.cpp
 )

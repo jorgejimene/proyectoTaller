@@ -27,7 +27,11 @@
 #include "./INCLUDE/Mjday_TBD.h"
 #include "./INCLUDE/MeasUpdate.h"
 #include "./INCLUDE/Sign_.h"
-
+#include "./INCLUDE/NutMatrix.h"
+#include "./INCLUDE/PoleMatrix.h"
+#include "PrecMatrix.h"
+#include "timediff.h"
+#include "EccAnom.h"
 
 
 /*
@@ -466,7 +470,66 @@ int Sign_01() {
 
     return 0;
 }
+int NutMatrix01(){
+    Matrix x = NutMatrix(12345678);
+    _assert(fabs(x(1,1)-0.999999996289796)<TOL2_ );
+    _assert(fabs(x(1,2)+6.76497562849557e-05)<TOL2_);
+    _assert(fabs(x(1,3)+5.33284056190134e-05)<TOL2_);
+    _assert(fabs(x(2,1)-6.76483187988301e-05)<TOL2_);
+    _assert(fabs(x(2,2)-0.999999997348521)<TOL2_);
+    _assert(fabs(x(2,3)+2.6956698330638e-05)<TOL2_);
+    _assert(fabs(x(3,1)-5.33302290916865e-05)<TOL2_);
+    _assert(fabs(x(3,2)-2.69530906537585e-05)<TOL2_);
+    _assert(fabs(x(3,3)-0.999999998214709)<TOL2_);
 
+    return 0;
+}
+int PoleMatrix01(){
+    Matrix x = PoleMatrix(12.4,48.2);
+    _assert(fabs(x(1,1)-0.986192302278864)<TOL2_);
+    _assert(fabs(x(1,2)-0.145751176665682)<TOL2_);
+    _assert(fabs(x(1,3)-0.078621481965705)<TOL2_);
+    _assert(x(2,1)==0);
+    _assert(fabs(x(2,2)+0.474755432662659)<TOL2_);
+    _assert(fabs(x(2,3)-0.880117764368662)<TOL2_);
+    _assert(fabs(x(3,1)-0.165604175448309)<TOL2_);
+    _assert(fabs(x(3,2)+0.867965364319257)<TOL2_);
+    _assert(fabs(x(3,3)+0.468200153156986)<TOL2_);
+
+    return 0;
+}
+
+int PrecMatrix01(){
+    Matrix x = PrecMatrix(12345678,87654321);
+    _assert(fabs(x(1,1)-0.817653102598568)<TOL2_);
+    _assert(fabs(x(1,2)-0.462267643134377)<TOL2_);
+    _assert(fabs(x(1,3)+0.343150156523239)<TOL2_);
+    _assert(fabs(x(2,1)+0.567591358508052)<TOL2_);
+    _assert(fabs(x(2,2)-0.547521381081051)<TOL2_);
+    _assert(fabs(x(2,3)+0.614866153732731)<TOL2_);
+    _assert(fabs(x(3,1)+0.0963506801113464)<TOL2_);
+    _assert(fabs(x(3,2)-0.697516281795691)<TOL2_);
+    _assert(fabs(x(3,3)-0.710061675540931)<TOL2_);
+
+    return 0;
+}
+int timediff01(){
+    double a,b,c,d,e;
+    timediff(24,24,a,b,c,d,e);
+    _assert(a==0);
+    _assert(fabs(b+5)<TOL2_);
+    _assert(fabs(c-19)<TOL2_);
+    _assert(fabs(d-56.184)<TOL2_);
+    _assert(fabs(e-5)<TOL2_);
+
+    return 0;
+}
+int EccAnom01(){
+    double x = EccAnom(135,0.9);
+    cout << x << endl;
+    _assert(fabs(x-3.09501409518025)<TOL_);
+    return 0;
+}
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -475,6 +538,8 @@ int all_tests()
     _verify(testResta);
     _verify(testProducto);
     _verify(testTraspuesta);
+    _verify(Identity01);
+    _verify(Inverse01);
     _verify(Mjday_01);
     _verify(Mjday_02);
     _verify(R_x_01);
@@ -492,11 +557,14 @@ int all_tests()
     _verify(MeanObliquity01);
     _verify(TimeUpdate01);
     _verify(Mjday_TBD01);
-    _verify(Identity01);
-    _verify(Inverse01);
     //_verify(MeasUpdate01);
     _verify(Cheb3D01);
     _verify(Sign_01);
+    _verify(NutMatrix01);
+    _verify(PoleMatrix01);
+    _verify(PrecMatrix01);
+    _verify(timediff01);
+    _verify(EccAnom01);
 
     return 0;
 }

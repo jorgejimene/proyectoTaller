@@ -398,6 +398,96 @@ CMakeFiles/C__.dir/SRC/Cheb3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/Cheb3D.cpp.s"
 	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Cheb3D.cpp -o CMakeFiles\C__.dir\SRC\Cheb3D.cpp.s
 
+CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/JPL_Eph_DE430.cpp
+CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj -MF CMakeFiles\C__.dir\SRC\JPL_Eph_DE430.cpp.obj.d -o CMakeFiles\C__.dir\SRC\JPL_Eph_DE430.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\JPL_Eph_DE430.cpp
+
+CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\JPL_Eph_DE430.cpp > CMakeFiles\C__.dir\SRC\JPL_Eph_DE430.cpp.i
+
+CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\JPL_Eph_DE430.cpp -o CMakeFiles\C__.dir\SRC\JPL_Eph_DE430.cpp.s
+
+CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutMatrix.cpp
+CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj -MF CMakeFiles\C__.dir\SRC\NutMatrix.cpp.obj.d -o CMakeFiles\C__.dir\SRC\NutMatrix.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\NutMatrix.cpp
+
+CMakeFiles/C__.dir/SRC/NutMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/NutMatrix.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\NutMatrix.cpp > CMakeFiles\C__.dir\SRC\NutMatrix.cpp.i
+
+CMakeFiles/C__.dir/SRC/NutMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/NutMatrix.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\NutMatrix.cpp -o CMakeFiles\C__.dir\SRC\NutMatrix.cpp.s
+
+CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/PoleMatrix.cpp
+CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj -MF CMakeFiles\C__.dir\SRC\PoleMatrix.cpp.obj.d -o CMakeFiles\C__.dir\SRC\PoleMatrix.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\PoleMatrix.cpp
+
+CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\PoleMatrix.cpp > CMakeFiles\C__.dir\SRC\PoleMatrix.cpp.i
+
+CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\PoleMatrix.cpp -o CMakeFiles\C__.dir\SRC\PoleMatrix.cpp.s
+
+CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/PrecMatrix.cpp
+CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj -MF CMakeFiles\C__.dir\SRC\PrecMatrix.cpp.obj.d -o CMakeFiles\C__.dir\SRC\PrecMatrix.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\PrecMatrix.cpp
+
+CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\PrecMatrix.cpp > CMakeFiles\C__.dir\SRC\PrecMatrix.cpp.i
+
+CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\PrecMatrix.cpp -o CMakeFiles\C__.dir\SRC\PrecMatrix.cpp.s
+
+CMakeFiles/C__.dir/SRC/timediff.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/timediff.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/timediff.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/timediff.cpp
+CMakeFiles/C__.dir/SRC/timediff.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/C__.dir/SRC/timediff.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/timediff.cpp.obj -MF CMakeFiles\C__.dir\SRC\timediff.cpp.obj.d -o CMakeFiles\C__.dir\SRC\timediff.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\timediff.cpp
+
+CMakeFiles/C__.dir/SRC/timediff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/timediff.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\timediff.cpp > CMakeFiles\C__.dir\SRC\timediff.cpp.i
+
+CMakeFiles/C__.dir/SRC/timediff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/timediff.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\timediff.cpp -o CMakeFiles\C__.dir\SRC\timediff.cpp.s
+
+CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EccAnom.cpp
+CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj -MF CMakeFiles\C__.dir\SRC\EccAnom.cpp.obj.d -o CMakeFiles\C__.dir\SRC\EccAnom.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\EccAnom.cpp
+
+CMakeFiles/C__.dir/SRC/EccAnom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/EccAnom.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\EccAnom.cpp > CMakeFiles\C__.dir\SRC\EccAnom.cpp.i
+
+CMakeFiles/C__.dir/SRC/EccAnom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/EccAnom.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\EccAnom.cpp -o CMakeFiles\C__.dir\SRC\EccAnom.cpp.s
+
 # Object files for target C__
 C___OBJECTS = \
 "CMakeFiles/C__.dir/EKF_Test.cpp.obj" \
@@ -421,7 +511,13 @@ C___OBJECTS = \
 "CMakeFiles/C__.dir/SRC/MeanObliquity.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/Mjday_TBD.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/MeasUpdate.cpp.obj" \
-"CMakeFiles/C__.dir/SRC/Cheb3D.cpp.obj"
+"CMakeFiles/C__.dir/SRC/Cheb3D.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/timediff.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj"
 
 # External object files for target C__
 C___EXTERNAL_OBJECTS =
@@ -448,11 +544,17 @@ C__.exe: CMakeFiles/C__.dir/SRC/MeanObliquity.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/Mjday_TBD.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/MeasUpdate.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/Cheb3D.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/timediff.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj
 C__.exe: CMakeFiles/C__.dir/build.make
 C__.exe: CMakeFiles/C__.dir/linkLibs.rsp
 C__.exe: CMakeFiles/C__.dir/objects1.rsp
 C__.exe: CMakeFiles/C__.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable C__.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable C__.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C__.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -98,7 +98,13 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Cheb3D.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EccAnom.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/IERS.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/JPL_Eph_DE430.h">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/MeanObliquity.h">
@@ -110,6 +116,18 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Mjday_TBD.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/NutMatrix.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/PoleMatrix.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/PrecMatrix.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/timediff.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/AccelPointMass.cpp">
 			<Option target="C__"/>
 		</Unit>
@@ -119,10 +137,16 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Cheb3D.cpp">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EccAnom.cpp">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/IERS.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/JPL_Eph_DE430.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp">
@@ -146,7 +170,16 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutAngles.cpp">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutMatrix.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/PoleMatrix.cpp">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Position.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/PrecMatrix.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_x.cpp">
@@ -168,6 +201,9 @@
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Unit.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/timediff.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/CMakeLists.txt">

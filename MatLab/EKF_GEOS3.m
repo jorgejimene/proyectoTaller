@@ -209,11 +209,11 @@ Y0 = DEInteg (@Accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,Y);
 Y_true = [5753.173e3, 2673.361e3, 3440.304e3, 4.324207e3, -1.924299e3, -5.728216e3]';
 
 fprintf('\nError of Position Estimation\n');
-fprintf('dX%10.1f [m]\n',Y0(1)-Y_true(1));
-fprintf('dY%10.1f [m]\n',Y0(2)-Y_true(2));
-fprintf('dZ%10.1f [m]\n',Y0(3)-Y_true(3));
+fprintf('dX%10.10f [m]\n',Y0(1)-Y_true(1));
+fprintf('dY%10.10f [m]\n',Y0(2)-Y_true(2));
+fprintf('dZ%10.10f [m]\n',Y0(3)-Y_true(3));
 fprintf('\nError of Velocity Estimation\n');
-fprintf('dVx%8.1f [m/s]\n',Y0(4)-Y_true(4));
-fprintf('dVy%8.1f [m/s]\n',Y0(5)-Y_true(5));
-fprintf('dVz%8.1f [m/s]\n',Y0(6)-Y_true(6));
+fprintf('dVx%8.10f [m/s]\n',Y0(4)-Y_true(4));
+fprintf('dVy%8.10f [m/s]\n',Y0(5)-Y_true(5));
+fprintf('dVz%8.10f [m/s]\n',Y0(6)-Y_true(6));
 
