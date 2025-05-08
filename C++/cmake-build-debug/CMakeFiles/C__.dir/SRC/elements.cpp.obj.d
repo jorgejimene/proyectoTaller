@@ -1,6 +1,6 @@
-CMakeFiles/C__.dir/SRC/AccelPointMass.cpp.obj: \
- C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\AccelPointMass.cpp \
- c:\users\jojimene\documents\github\proyectotaller\c++\include\accelpointmass.h \
+CMakeFiles/C__.dir/SRC/elements.cpp.obj: \
+ C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\elements.cpp \
+ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/SAT_Const.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \

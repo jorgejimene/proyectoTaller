@@ -776,6 +776,30 @@ SRC/Unit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/Unit.cpp.s
 .PHONY : SRC/Unit.cpp.s
 
+SRC/elements.obj: SRC/elements.cpp.obj
+.PHONY : SRC/elements.obj
+
+# target to build an object file
+SRC/elements.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/elements.cpp.obj
+.PHONY : SRC/elements.cpp.obj
+
+SRC/elements.i: SRC/elements.cpp.i
+.PHONY : SRC/elements.i
+
+# target to preprocess a source file
+SRC/elements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/elements.cpp.i
+.PHONY : SRC/elements.cpp.i
+
+SRC/elements.s: SRC/elements.cpp.s
+.PHONY : SRC/elements.s
+
+# target to generate assembly for a file
+SRC/elements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/elements.cpp.s
+.PHONY : SRC/elements.cpp.s
+
 SRC/timediff.obj: SRC/timediff.cpp.obj
 .PHONY : SRC/timediff.obj
 
@@ -799,6 +823,30 @@ SRC/timediff.s: SRC/timediff.cpp.s
 SRC/timediff.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/timediff.cpp.s
 .PHONY : SRC/timediff.cpp.s
+
+SRC/vector.obj: SRC/vector.cpp.obj
+.PHONY : SRC/vector.obj
+
+# target to build an object file
+SRC/vector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/vector.cpp.obj
+.PHONY : SRC/vector.cpp.obj
+
+SRC/vector.i: SRC/vector.cpp.i
+.PHONY : SRC/vector.i
+
+# target to preprocess a source file
+SRC/vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/vector.cpp.i
+.PHONY : SRC/vector.cpp.i
+
+SRC/vector.s: SRC/vector.cpp.s
+.PHONY : SRC/vector.s
+
+# target to generate assembly for a file
+SRC/vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__.dir\build.make CMakeFiles/C__.dir/SRC/vector.cpp.s
+.PHONY : SRC/vector.cpp.s
 
 # Help Target
 help:
@@ -890,9 +938,15 @@ help:
 	@echo ... SRC/Unit.obj
 	@echo ... SRC/Unit.i
 	@echo ... SRC/Unit.s
+	@echo ... SRC/elements.obj
+	@echo ... SRC/elements.i
+	@echo ... SRC/elements.s
 	@echo ... SRC/timediff.obj
 	@echo ... SRC/timediff.i
 	@echo ... SRC/timediff.s
+	@echo ... SRC/vector.obj
+	@echo ... SRC/vector.i
+	@echo ... SRC/vector.s
 .PHONY : help
 
 

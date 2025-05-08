@@ -32,6 +32,7 @@
 #include "PrecMatrix.h"
 #include "timediff.h"
 #include "EccAnom.h"
+#include "elements.h"
 
 
 /*
@@ -530,6 +531,29 @@ int EccAnom01(){
     _assert(fabs(x-3.09501409518025)<TOL_);
     return 0;
 }
+int elements01(){
+    double p,a,e,i,Omega,omega,M;
+    double valores[] = {7000e3, 0,0,0, 7.5e3,0};
+    elements(valores,p,a,e,i,Omega,omega,M);
+    cout << p << endl;
+    cout << a << endl;
+    cout << e << endl;
+    cout << i << endl;
+    cout << Omega << endl;
+    cout << omega << endl;
+    cout << M << endl;
+    return 0;
+    /*
+     * Valores para el test:
+     * p=6914819.34028782
+     * a=6915843.4136513
+     * e=0.0121686656731681
+     * i=0
+     * Omega=0
+     * omega=3.14159265358979
+     * M=3.14159265358979
+     */
+}
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -565,6 +589,7 @@ int all_tests()
     _verify(PrecMatrix01);
     _verify(timediff01);
     _verify(EccAnom01);
+    _verify(elements01);
 
     return 0;
 }

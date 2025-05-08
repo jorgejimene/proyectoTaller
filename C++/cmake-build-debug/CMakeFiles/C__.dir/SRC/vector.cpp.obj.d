@@ -1,6 +1,5 @@
-CMakeFiles/C__.dir/SRC/AccelPointMass.cpp.obj: \
- C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\AccelPointMass.cpp \
- c:\users\jojimene\documents\github\proyectotaller\c++\include\accelpointmass.h \
+CMakeFiles/C__.dir/SRC/vector.cpp.obj: \
+ C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\vector.cpp \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -9,5 +8,4 @@ CMakeFiles/C__.dir/SRC/AccelPointMass.cpp.obj: \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\type_traits.h \
  c:\urapps\mingw\include\math.h c:\urapps\mingw\include\_mingw.h \
  c:\urapps\mingw\include\msvcrtver.h c:\urapps\mingw\include\w32api.h \
- c:\urapps\mingw\include\sdkddkver.h \
- C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/vector.h
+ c:\urapps\mingw\include\sdkddkver.h

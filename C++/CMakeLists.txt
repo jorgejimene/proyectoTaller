@@ -53,4 +53,8 @@ add_executable(C__
         INCLUDE/timediff.h
         INCLUDE/EccAnom.h
         SRC/EccAnom.cpp
+        INCLUDE/elements.h
+        SRC/elements.cpp
+        INCLUDE/vector.h
+        SRC/vector.cpp
 )
