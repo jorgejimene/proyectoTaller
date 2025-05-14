@@ -23,7 +23,7 @@ void IERS(Matrix &eop, double Mjd_UTC,  double &x_pole, double &y_pole, double &
         int i = -1;
         int filas = eop.getFil();
         int columnas = eop.getCol();
-        for (int j = 0; j< columnas; j++){
+        for (int j = 1; j< columnas; j++){
             if(mjd == (int) eop(4,j)){
                 i = j;
                 break;
@@ -55,7 +55,7 @@ void IERS(Matrix &eop, double Mjd_UTC,  double &x_pole, double &y_pole, double &
             int i = -1;
             int filas = eop.getFil();
             int columnas = eop.getCol();
-            for (int j = 0; j< columnas; j++){
+            for (int j = 1; j< columnas; j++){
                 if(mjd == (int) eop(4,j)){
                     i = j;
                     break;

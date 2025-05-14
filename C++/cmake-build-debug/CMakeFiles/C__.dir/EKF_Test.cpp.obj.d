@@ -151,4 +151,7 @@ CMakeFiles/C__.dir/EKF_Test.cpp.obj: \
  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/timediff.h \
  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EccAnom.h \
- C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/elements.h
+ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/elements.h \
+ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EqnEquinox.h \
+ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h \
+ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gast.h

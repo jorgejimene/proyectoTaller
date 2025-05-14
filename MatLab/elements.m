@@ -36,8 +36,8 @@
  magh = norm(h);
  p = magh*magh/const.GM_Earth;
  H = norm(h);
- 
- Omega = atan2 ( h(1), -h(2) );                     % Long. ascend. node 
+ disp(H)
+ Omega = atan2 ( h(1), -h(2) );    % Long. ascend. node 
  Omega = mod(Omega,pi2);
  i     = atan2 ( sqrt(h(1)*h(1)+h(2)*h(2)), h(3) ); % Inclination        
  u     = atan2 ( r(3)*H, -r(1)*h(2)+r(2)*h(1) );    % Arg. of latitude   
@@ -56,7 +56,8 @@
  M  = mod(E-eSinE,pi2);                             % Mean anomaly
  
  nu = atan2(sqrt(1.0-e2)*eSinE, eCosE-e2);          % True anomaly
- 
+ disp(u)
+ disp(nu)
  omega = mod(u-nu,pi2);                             % Arg. of perihelion 
  
  

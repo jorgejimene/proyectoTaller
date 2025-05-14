@@ -33,6 +33,9 @@
 #include "timediff.h"
 #include "EccAnom.h"
 #include "elements.h"
+#include "EqnEquinox.h"
+#include "gmst.h"
+#include "gast.h"
 
 
 /*
@@ -56,6 +59,7 @@ int tests_run = 0;
 
 #define TOL_ 10e-14
 #define TOL2_ 10e-10 //para numeros mas pequeños
+#define TOL3_ 10e-9
 #define FAIL() printf("\nfailure in %s() line %d\n", __func__, __LINE__)
 #define _assert(test) do { if (!(test)) { FAIL(); return 1; } } while(0)
 #define _verify(test) do { int r=test(); tests_run++; if(r) return r; } while(0)
@@ -519,7 +523,6 @@ int timediff01(){
 }
 int EccAnom01(){
     double x = EccAnom(135,0.9);
-    cout << x << endl;
     _assert(fabs(x-3.09501409518025)<TOL_);
     return 0;
 }
@@ -527,13 +530,14 @@ int elements01(){
     double p,a,e,i,Omega,omega,M;
     double valores[] = {7000e3, 0,0,0, 7.5e3,0};
     elements(valores,p,a,e,i,Omega,omega,M);
-    cout << p << endl;
-    cout << a << endl;
-    cout << e << endl;
-    cout << i << endl;
-    cout << Omega << endl;
-    cout << omega << endl;
-    cout << M << endl;
+    _assert(fabs(p-6914819.34028782)<TOL2_);
+
+    _assert(fabs(a-6915843.4136513)<TOL3_);
+
+    _assert(fabs(e-0.0121686656731681)<TOL2_);
+    _assert(i==0 && Omega==0);
+    _assert(fabs(omega-3.14159265358979)<TOL2_);
+    _assert(fabs(M-3.14159265358979)<TOL2_);
     return 0;
     /*
      * Valores para el test:
@@ -545,6 +549,19 @@ int elements01(){
      * omega=3.14159265358979
      * M=3.14159265358979
      */
+}
+int EqnEquinox01(){
+    double res = EqnEquinox(1234567890);
+    _assert(fabs(res+0.00169270155393772)<TOL2_);
+    return 0;
+}
+int gmst01(){
+    _assert(fabs(gmst(1234567890)-2.51251437041138)<TOL2_);
+    return 0;
+}
+int gast01(){
+    _assert(fabs(gast(1234567890)-2.51082166885744));
+    return 0;
 }
 int all_tests()
 {
@@ -582,6 +599,9 @@ int all_tests()
     _verify(timediff01);
     _verify(EccAnom01);
     _verify(elements01);
+    _verify(EqnEquinox01);
+    _verify(gmst01);
+    _verify(gast01);
 
     return 0;
 }

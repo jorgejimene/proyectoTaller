@@ -518,6 +518,51 @@ CMakeFiles/C__.dir/SRC/vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/vector.cpp.s"
 	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\vector.cpp -o CMakeFiles\C__.dir\SRC\vector.cpp.s
 
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EqnEquinox.cpp
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj -MF CMakeFiles\C__.dir\SRC\EqnEquinox.cpp.obj.d -o CMakeFiles\C__.dir\SRC\EqnEquinox.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\EqnEquinox.cpp
+
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\EqnEquinox.cpp > CMakeFiles\C__.dir\SRC\EqnEquinox.cpp.i
+
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\EqnEquinox.cpp -o CMakeFiles\C__.dir\SRC\EqnEquinox.cpp.s
+
+CMakeFiles/C__.dir/SRC/gast.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/gast.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/gast.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gast.cpp
+CMakeFiles/C__.dir/SRC/gast.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/C__.dir/SRC/gast.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/gast.cpp.obj -MF CMakeFiles\C__.dir\SRC\gast.cpp.obj.d -o CMakeFiles\C__.dir\SRC\gast.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\gast.cpp
+
+CMakeFiles/C__.dir/SRC/gast.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/gast.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\gast.cpp > CMakeFiles\C__.dir\SRC\gast.cpp.i
+
+CMakeFiles/C__.dir/SRC/gast.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/gast.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\gast.cpp -o CMakeFiles\C__.dir\SRC\gast.cpp.s
+
+CMakeFiles/C__.dir/SRC/gmst.cpp.obj: CMakeFiles/C__.dir/flags.make
+CMakeFiles/C__.dir/SRC/gmst.cpp.obj: CMakeFiles/C__.dir/includes_CXX.rsp
+CMakeFiles/C__.dir/SRC/gmst.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gmst.cpp
+CMakeFiles/C__.dir/SRC/gmst.cpp.obj: CMakeFiles/C__.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/C__.dir/SRC/gmst.cpp.obj"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C__.dir/SRC/gmst.cpp.obj -MF CMakeFiles\C__.dir\SRC\gmst.cpp.obj.d -o CMakeFiles\C__.dir\SRC\gmst.cpp.obj -c C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\gmst.cpp
+
+CMakeFiles/C__.dir/SRC/gmst.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C__.dir/SRC/gmst.cpp.i"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\gmst.cpp > CMakeFiles\C__.dir\SRC\gmst.cpp.i
+
+CMakeFiles/C__.dir/SRC/gmst.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C__.dir/SRC/gmst.cpp.s"
+	C:\URApps\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\gmst.cpp -o CMakeFiles\C__.dir\SRC\gmst.cpp.s
+
 # Object files for target C__
 C___OBJECTS = \
 "CMakeFiles/C__.dir/EKF_Test.cpp.obj" \
@@ -549,7 +594,10 @@ C___OBJECTS = \
 "CMakeFiles/C__.dir/SRC/timediff.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj" \
 "CMakeFiles/C__.dir/SRC/elements.cpp.obj" \
-"CMakeFiles/C__.dir/SRC/vector.cpp.obj"
+"CMakeFiles/C__.dir/SRC/vector.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/gast.cpp.obj" \
+"CMakeFiles/C__.dir/SRC/gmst.cpp.obj"
 
 # External object files for target C__
 C___EXTERNAL_OBJECTS =
@@ -584,11 +632,14 @@ C__.exe: CMakeFiles/C__.dir/SRC/timediff.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/elements.cpp.obj
 C__.exe: CMakeFiles/C__.dir/SRC/vector.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/gast.cpp.obj
+C__.exe: CMakeFiles/C__.dir/SRC/gmst.cpp.obj
 C__.exe: CMakeFiles/C__.dir/build.make
 C__.exe: CMakeFiles/C__.dir/linkLibs.rsp
 C__.exe: CMakeFiles/C__.dir/objects1.rsp
 C__.exe: CMakeFiles/C__.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable C__.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable C__.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C__.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

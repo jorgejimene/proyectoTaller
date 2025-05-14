@@ -57,4 +57,10 @@ add_executable(C__
         SRC/elements.cpp
         INCLUDE/vector.h
         SRC/vector.cpp
+        SRC/EqnEquinox.cpp
+        INCLUDE/EqnEquinox.h
+        SRC/gast.cpp
+        INCLUDE/gast.h
+        SRC/gmst.cpp
+        INCLUDE/gmst.h
 )

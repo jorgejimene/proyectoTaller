@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/AzElPa.cpp" "CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/AzElPa.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Cheb3D.cpp" "CMakeFiles/C__.dir/SRC/Cheb3D.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/Cheb3D.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EccAnom.cpp" "CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj.d"
+  "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EqnEquinox.cpp" "CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp" "CMakeFiles/C__.dir/SRC/Frac.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/Frac.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/IERS.cpp" "CMakeFiles/C__.dir/SRC/IERS.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/IERS.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/JPL_Eph_DE430.cpp" "CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj.d"
@@ -36,6 +37,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp" "CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Unit.cpp" "CMakeFiles/C__.dir/SRC/Unit.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/Unit.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/elements.cpp" "CMakeFiles/C__.dir/SRC/elements.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/elements.cpp.obj.d"
+  "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gast.cpp" "CMakeFiles/C__.dir/SRC/gast.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/gast.cpp.obj.d"
+  "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gmst.cpp" "CMakeFiles/C__.dir/SRC/gmst.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/gmst.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/timediff.cpp" "CMakeFiles/C__.dir/SRC/timediff.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/timediff.cpp.obj.d"
   "C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/vector.cpp" "CMakeFiles/C__.dir/SRC/vector.cpp.obj" "gcc" "CMakeFiles/C__.dir/SRC/vector.cpp.obj.d"
   )

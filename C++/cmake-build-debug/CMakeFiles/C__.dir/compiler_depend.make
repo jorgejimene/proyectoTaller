@@ -6,9 +6,11 @@ CMakeFiles/C__.dir/EKF_GEOBS.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyect
 CMakeFiles/C__.dir/EKF_Test.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Test.cpp \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Cheb3D.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EccAnom.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EqnEquinox.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/PrecMatrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/elements.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/timediff.h \
   C:/URApps/MinGW/include/_mingw.h \
   C:/URApps/MinGW/include/ctype.h \
@@ -274,6 +276,68 @@ CMakeFiles/C__.dir/SRC/EccAnom.cpp.obj: C:/Users/jojimene/Documents/GitHub/proye
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h
+
+CMakeFiles/C__.dir/SRC/EqnEquinox.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EqnEquinox.cpp \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/MeanObliquity.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/NutAngles.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/math.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/algorithm \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/gslice.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/gslice_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/indirect_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/mask_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/slice_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_after.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_before.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/valarray \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h
 
 CMakeFiles/C__.dir/SRC/Frac.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Frac.h
@@ -668,6 +732,35 @@ CMakeFiles/C__.dir/SRC/elements.cpp.obj: C:/Users/jojimene/Documents/GitHub/proy
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h
 
+CMakeFiles/C__.dir/SRC/gast.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gast.cpp \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EqnEquinox.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/math.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h
+
+CMakeFiles/C__.dir/SRC/gmst.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gmst.cpp \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Frac.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/math.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h
+
 CMakeFiles/C__.dir/SRC/timediff.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/timediff.cpp
 
 CMakeFiles/C__.dir/SRC/vector.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/vector.cpp \
@@ -706,15 +799,23 @@ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/EKF_Test.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EccAnom.h:
 
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h:
+
+C:/URApps/MinGW/include/w32api.h:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EqnEquinox.h:
+
 C:/URApps/MinGW/include/stdint.h:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/PrecMatrix.h:
 
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets_nonio.tcc:
+
+C:/URApps/MinGW/include/math.h:
+
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/timediff.h:
-
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/sstream:
-
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h:
 
 C:/URApps/MinGW/include/_mingw.h:
 
@@ -744,10 +845,6 @@ C:/URApps/MinGW/include/io.h:
 
 C:/URApps/MinGW/include/msvcrtver.h:
 
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets_nonio.tcc:
-
-C:/URApps/MinGW/include/math.h:
-
 C:/URApps/MinGW/include/process.h:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Sign_.cpp:
@@ -763,10 +860,6 @@ C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h:
 C:/URApps/MinGW/include/sys/types.h:
 
 C:/URApps/MinGW/include/time.h:
-
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h:
-
-C:/URApps/MinGW/include/w32api.h:
 
 C:/URApps/MinGW/include/wctype.h:
 
@@ -826,13 +919,17 @@ C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/gslice.h:
 
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h:
-
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/valarray:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/sstream:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/quoted_string.h:
 
@@ -1010,27 +1107,7 @@ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Cheb3D.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EccAnom.cpp:
 
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/IERS.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/JPL_Eph_DE430.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp:
-
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.tcc:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/MeanObliquity.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/MeasUpdate.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday_TBD.cpp:
-
-C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutAngles.cpp:
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EqnEquinox.cpp:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/algorithm:
 
@@ -1052,9 +1129,31 @@ C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_after.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.h:
 
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Matrix.cpp:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.tcc:
+
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_before.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/IERS.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/JPL_Eph_DE430.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/MeanObliquity.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/MeasUpdate.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday_TBD.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutAngles.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutMatrix.cpp:
 
@@ -1075,6 +1174,10 @@ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp:
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Unit.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/elements.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gast.cpp:
+
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gmst.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/timediff.cpp:
 

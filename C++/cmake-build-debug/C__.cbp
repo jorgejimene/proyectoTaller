@@ -101,6 +101,9 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EccAnom.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/EqnEquinox.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/IERS.h">
 			<Option target="C__"/>
 		</Unit>
@@ -128,6 +131,12 @@
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/elements.h">
 			<Option target="C__"/>
 		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gast.h">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h">
+			<Option target="C__"/>
+		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/timediff.h">
 			<Option target="C__"/>
 		</Unit>
@@ -144,6 +153,9 @@
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EccAnom.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/EqnEquinox.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Frac.cpp">
@@ -210,6 +222,12 @@
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/elements.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gast.cpp">
+			<Option target="C__"/>
+		</Unit>
+		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/gmst.cpp">
 			<Option target="C__"/>
 		</Unit>
 		<Unit filename="C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/timediff.cpp">
