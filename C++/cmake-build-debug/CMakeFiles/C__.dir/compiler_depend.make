@@ -10,6 +10,7 @@ CMakeFiles/C__.dir/EKF_Test.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyecto
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/PrecMatrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/elements.h \
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gast.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/timediff.h \
   C:/URApps/MinGW/include/_mingw.h \
@@ -343,6 +344,88 @@ CMakeFiles/C__.dir/SRC/Frac.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyecto
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Frac.h
 
 CMakeFiles/C__.dir/SRC/IERS.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/IERS.cpp \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/SAT_Const.h
 
@@ -350,16 +433,89 @@ CMakeFiles/C__.dir/SRC/JPL_Eph_DE430.cpp.obj: C:/Users/jojimene/Documents/GitHub
 
 CMakeFiles/C__.dir/SRC/Legendre.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp \
   C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
   C:/URApps/MinGW/include/math.h \
   C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
   C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
   C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Legendre.h
 
@@ -400,6 +556,7 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyec
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
@@ -455,6 +612,7 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyec
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iomanip \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ios \
@@ -463,8 +621,10 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyec
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/locale \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_base.h \
@@ -496,6 +656,88 @@ CMakeFiles/C__.dir/SRC/MeanObliquity.cpp.obj: C:/Users/jojimene/Documents/GitHub
 
 CMakeFiles/C__.dir/SRC/MeasUpdate.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/MeasUpdate.cpp \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/MeasUpdate.h
 
 CMakeFiles/C__.dir/SRC/Mjday.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Mjday.cpp \
@@ -528,33 +770,60 @@ CMakeFiles/C__.dir/SRC/Mjday_TBD.cpp.obj: C:/Users/jojimene/Documents/GitHub/pro
 
 CMakeFiles/C__.dir/SRC/NutAngles.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/NutAngles.cpp \
   C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
   C:/URApps/MinGW/include/math.h \
   C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
   C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
   C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
   C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/algorithm \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/gslice.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/gslice_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/indirect_array.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/mask_array.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/slice_array.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
@@ -562,29 +831,48 @@ CMakeFiles/C__.dir/SRC/NutAngles.cpp.obj: C:/Users/jojimene/Documents/GitHub/pro
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_after.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_array.tcc \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/valarray_before.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/valarray \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/NutAngles.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/SAT_Const.h
@@ -595,12 +883,176 @@ CMakeFiles/C__.dir/SRC/NutMatrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/pro
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/NutAngles.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/NutMatrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_x.h \
-  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h
 
 CMakeFiles/C__.dir/SRC/PoleMatrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/PoleMatrix.cpp \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_x.h \
-  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_y.h
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_y.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h
 
 CMakeFiles/C__.dir/SRC/Position.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Position.cpp \
   C:/URApps/MinGW/include/_mingw.h \
@@ -621,52 +1073,353 @@ CMakeFiles/C__.dir/SRC/PrecMatrix.cpp.obj: C:/Users/jojimene/Documents/GitHub/pr
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_y.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h \
-  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/SAT_Const.h
+  C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/SAT_Const.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h
 
 CMakeFiles/C__.dir/SRC/R_x.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_x.cpp \
   C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
   C:/URApps/MinGW/include/math.h \
   C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
   C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
   C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_x.h
 
 CMakeFiles/C__.dir/SRC/R_y.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_y.cpp \
   C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
   C:/URApps/MinGW/include/math.h \
   C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
   C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
   C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_y.h
 
 CMakeFiles/C__.dir/SRC/R_z.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/R_z.cpp \
   C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
   C:/URApps/MinGW/include/math.h \
   C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
   C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
   C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/R_z.h
@@ -701,6 +1454,88 @@ CMakeFiles/C__.dir/SRC/Sign_.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyect
 
 CMakeFiles/C__.dir/SRC/TimeUpdate.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/TimeUpdate.cpp \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/Matrix.h \
+  C:/URApps/MinGW/include/_mingw.h \
+  C:/URApps/MinGW/include/ctype.h \
+  C:/URApps/MinGW/include/direct.h \
+  C:/URApps/MinGW/include/errno.h \
+  C:/URApps/MinGW/include/io.h \
+  C:/URApps/MinGW/include/locale.h \
+  C:/URApps/MinGW/include/msvcrtver.h \
+  C:/URApps/MinGW/include/process.h \
+  C:/URApps/MinGW/include/sdkddkver.h \
+  C:/URApps/MinGW/include/stdint.h \
+  C:/URApps/MinGW/include/stdio.h \
+  C:/URApps/MinGW/include/stdlib.h \
+  C:/URApps/MinGW/include/sys/stat.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/sys/types.h \
+  C:/URApps/MinGW/include/time.h \
+  C:/URApps/MinGW/include/w32api.h \
+  C:/URApps/MinGW/include/wchar.h \
+  C:/URApps/MinGW/include/wctype.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cctype \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/new \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
   C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/TimeUpdate.h
 
 CMakeFiles/C__.dir/SRC/Unit.cpp.obj: C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Unit.cpp \
@@ -809,6 +1644,8 @@ C:/URApps/MinGW/include/stdint.h:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/PrecMatrix.h:
 
+C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gast.h:
+
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/INCLUDE/gmst.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets_nonio.tcc:
@@ -885,8 +1722,6 @@ C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/codecvt.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h:
 
-C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h:
-
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h:
@@ -926,6 +1761,8 @@ C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h:
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/valarray:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/nested_exception.h:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h:
 
 C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/sstream:
 
@@ -1144,6 +1981,14 @@ C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/IERS.cpp:
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/JPL_Eph_DE430.cpp:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/Legendre.cpp:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h:
+
+C:/URApps/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h:
 
 C:/Users/jojimene/Documents/GitHub/proyectoTaller/C++/SRC/MeanObliquity.cpp:
 

@@ -1,15 +1,30 @@
 CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: \
  C:\Users\jojimene\Documents\GitHub\proyectoTaller\C++\SRC\Matrix.cpp \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\matrix.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stringfwd.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\memoryfwd.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functexcept.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_defines.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cpp_type_traits.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\type_traits.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\numeric_traits.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\concept_check.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_types.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\assertions.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ptr_traits.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\debug.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\predefined_ops.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwchar \
  c:\urapps\mingw\include\wchar.h c:\urapps\mingw\include\_mingw.h \
@@ -23,49 +38,24 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: \
  c:\urapps\mingw\include\sys/stat.h c:\urapps\mingw\include\io.h \
  c:\urapps\mingw\include\stdint.h c:\urapps\mingw\include\time.h \
  c:\urapps\mingw\include\locale.h c:\urapps\mingw\include\process.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_lockfree_defines.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_ptr.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_defines.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\concept_check.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functexcept.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cpp_type_traits.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\type_traits.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\numeric_traits.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_types.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\assertions.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ptr_traits.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\debug.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\predefined_ops.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
  c:\urapps\mingw\include\stdint.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++locale.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\clocale \
- c:\urapps\mingw\include\locale.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype \
- c:\urapps\mingw\include\ctype.h c:\urapps\mingw\include\wctype.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\atomicity.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr-default.h \
- c:\urapps\mingw\include\errno.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\atomic_word.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h \
- c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\new \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_lockfree_defines.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_ptr.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++locale.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\clocale \
+ c:\urapps\mingw\include\locale.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype \
+ c:\urapps\mingw\include\ctype.h c:\urapps\mingw\include\wctype.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream_insert.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cxxabi_forced.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_function.h \
@@ -73,6 +63,11 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\range_access.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\initializer_list \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\atomicity.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr-default.h \
+ c:\urapps\mingw\include\errno.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\atomic_word.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\alloc_traits.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\string_conversions.h \
@@ -84,6 +79,11 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.tcc \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\error_constants.h \
@@ -124,4 +124,8 @@ CMakeFiles/C__.dir/SRC/Matrix.cpp.obj: \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath \
- c:\urapps\mingw\include\math.h
+ c:\urapps\mingw\include\math.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\fstream \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\basic_file.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++io.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\fstream.tcc

@@ -12,6 +12,7 @@
 #ifndef C___MATRIX_H
 #define C___MATRIX_H
 
+#include <string>
 
 class Matrix {
 public:
@@ -87,6 +88,7 @@ public:
     Matrix transpose() const;
     Matrix identity();
     Matrix inverse() const;
+    static Matrix LoadFromFile(std::string filename);
 
 
 private:

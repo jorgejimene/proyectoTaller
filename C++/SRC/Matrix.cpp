@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <fstream>
 
 using namespace std;
 
@@ -160,6 +161,12 @@ Matrix Matrix::transpose() const{
     Matrix resultado(col, fil);
     for (int i=1; i<=fil;i++) {
         for (int j=1; j<=col;j++) {
+            if (i > fil || j > col) {
+                cerr << "Índice fuera de rango: (" << i << "," << j << ")" << endl;
+                continue;  // Saltamos esta iteración si los índices son inválidos
+            }
+            cout << "Accediendo a elemento (" << i << "," << j << ")" << endl;
+            cout << "Valor: " << (*this)(i, j) << endl;
             resultado(j,i)=(*this)(i,j);
         }
     }
@@ -227,6 +234,56 @@ int Matrix::getFil() const {
 }
 int Matrix::getCol() const {
     return col;
+}
+Matrix Matrix::LoadFromFile(string filename){
+    string path = "../DATA/" + filename;
+    ifstream file(path);
+    if(!file.is_open()){
+        throw runtime_error("No existe el archivo");
+    }
+    string s;
+    int rows = 0;
+    int cols = 0;
+
+    while (std::getline(file, s)) {
+        std::istringstream stream(s);
+        double value;
+        int currentCols = 0;
+
+        // Contamos el número de columnas en la fila
+        while (stream >> value) {
+            currentCols++;
+        }
+
+        if (cols == 0) {
+            cols = currentCols;  // Asumimos que todas las filas tienen el mismo número de columnas
+        } else if (currentCols != cols) {
+            throw std::runtime_error("Las filas tienen diferentes números de columnas.");
+        }
+
+        rows++;
+    }
+
+    file.clear();
+    file.seekg(0, std::ios::beg);
+
+    Matrix mat(rows, cols);
+
+    int i = 1;
+    while (std::getline(file, s)) {
+        std::istringstream stream(s);
+        double value;
+        int j = 1;
+
+        while (stream >> value) {
+            mat(i, j) = value;
+            j++;
+        }
+        i++;
+    }
+
+    file.close();
+    return mat;
 }
 
 

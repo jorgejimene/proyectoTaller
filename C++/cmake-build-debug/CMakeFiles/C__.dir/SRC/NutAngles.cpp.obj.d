@@ -58,4 +58,48 @@ CMakeFiles/C__.dir/SRC/NutAngles.cpp.obj: \
  c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\indirect_array.h \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\sat_const.h \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\matrix.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stringfwd.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwchar \
+ c:\urapps\mingw\include\wchar.h c:\urapps\mingw\include\wctype.h \
+ c:\urapps\mingw\include\sys\types.h c:\urapps\mingw\include\stdio.h \
+ c:\urapps\mingw\include\sys/types.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
+ c:\urapps\mingw\include\stdlib.h c:\urapps\mingw\include\direct.h \
+ c:\urapps\mingw\include\sys/stat.h c:\urapps\mingw\include\io.h \
+ c:\urapps\mingw\include\stdint.h c:\urapps\mingw\include\time.h \
+ c:\urapps\mingw\include\locale.h c:\urapps\mingw\include\process.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
+ c:\urapps\mingw\include\stdint.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++locale.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\clocale \
+ c:\urapps\mingw\include\locale.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype \
+ c:\urapps\mingw\include\ctype.h c:\urapps\mingw\include\wctype.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream_insert.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cxxabi_forced.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_function.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\binders.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\range_access.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\atomicity.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr-default.h \
+ c:\urapps\mingw\include\errno.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\atomic_word.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\string_conversions.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdio \
+ c:\urapps\mingw\include\stdio.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\cerrno \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
+ c:\urapps\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
  c:\users\jojimene\documents\github\proyectotaller\c++\include\nutangles.h
