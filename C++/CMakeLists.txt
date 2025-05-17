@@ -63,4 +63,10 @@ add_executable(C__
         INCLUDE/gast.h
         SRC/gmst.cpp
         INCLUDE/gmst.h
+        INCLUDE/AuxParam.h
+        SRC/AuxParam.cpp
+        INCLUDE/Accel.h
+        SRC/Accel.cpp
+        SRC/GHAMatrix.cpp
+        INCLUDE/GHAMatrix.h
 )

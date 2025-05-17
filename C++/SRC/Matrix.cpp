@@ -161,12 +161,6 @@ Matrix Matrix::transpose() const{
     Matrix resultado(col, fil);
     for (int i=1; i<=fil;i++) {
         for (int j=1; j<=col;j++) {
-            if (i > fil || j > col) {
-                cerr << "Índice fuera de rango: (" << i << "," << j << ")" << endl;
-                continue;  // Saltamos esta iteración si los índices son inválidos
-            }
-            cout << "Accediendo a elemento (" << i << "," << j << ")" << endl;
-            cout << "Valor: " << (*this)(i, j) << endl;
             resultado(j,i)=(*this)(i,j);
         }
     }

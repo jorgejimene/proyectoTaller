@@ -8,6 +8,7 @@
 #include <iomanip>
 #include <cmath>
 
+#include "AuxParam.h"
 #include "Cheb3D.h"
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
@@ -36,6 +37,8 @@
 #include "EqnEquinox.h"
 #include "gmst.h"
 #include "gast.h"
+#include "GHAMatrix.h"
+#include "JPL_Eph_DE430.h"
 
 
 /*
@@ -243,6 +246,16 @@ int SAT_Const(){
 
     _assert(fabs(consts.P_Sol - 1367 / 299792458.0) < TOL_);
 
+    return 0;
+}
+int AuxParam01() {
+    _assert(fabs(auxParam.Mjd_UTC-4.974611635416653e+04)<TOL2_);
+    _assert(fabs(auxParam.n-20)<TOL2_);
+    _assert(fabs(auxParam.m-20)<TOL2_);
+    _assert(fabs(auxParam.sun-1)<TOL2_);
+    _assert(fabs(auxParam.moon-1)<TOL2_);
+    _assert(fabs(auxParam.planets-1)<TOL2_);
+    _assert(fabs(auxParam.Mjd_TT-4.974611706231468e+04)<TOL2_);
     return 0;
 }
 int NutAngles01(){
@@ -565,15 +578,46 @@ int gast01(){
 }
 int readFromFile01(){
     Matrix mat = Matrix::LoadFromFile("eop19620101.txt");
-    cout << mat.getCol() << endl;
-    cout << mat.getFil() << endl;
-    cout << mat(21413,12);
+
     Matrix matTras = Matrix(mat.getCol(), mat.getFil());
     matTras = mat.transpose();
     double x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
     IERS(matTras, 37668, x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC, 'l');
-    cout << x_pole << endl;
-    cout << y_pole << endl;
+
+    _assert(fabs(x_pole+1.06654161707287e-07)<TOL_);
+    _assert(fabs(y_pole-1.04865684037674e-06)<TOL_);
+    _assert(fabs(UT1_UTC-0.0311435)<TOL_);
+    _assert(fabs(LOD-0.001496)<TOL_);
+    _assert(fabs(dpsi-3.09762005271316e-07)<TOL_);
+    _assert(fabs(deps-3.18716513961409e-08)<TOL_);
+    _assert(fabs(TAI_UTC-2)<TOL_);
+    _assert(fabs(dx_pole-0)<TOL_);
+    _assert(fabs(dy_pole-0)<TOL_);
+
+    return 0;
+}
+int GHAMatrix01() {
+    Matrix mat = GHAMatrix(1234567890);
+    _assert(fabs(mat(1,1)+0.807573046590817)<TOL2_);
+    _assert(fabs(mat(1,2)-0.589767559653823)<TOL2_);
+    _assert(fabs(mat(1,3)-0)<TOL2_);
+    _assert(fabs(mat(2,1)+0.589767559653823)<TOL2_);
+    _assert(fabs(mat(2,2)+0.807573046590817)<TOL2_);
+    _assert(fabs(mat(2,3)-0)<TOL2_);
+    _assert(fabs(mat(3,1)-0)<TOL2_);
+    _assert(fabs(mat(3,2)-0)<TOL2_);
+    _assert(fabs(mat(3,3)-1)<TOL2_);
+    return 0;
+}
+int JPL_EphDE43001() {
+    double r_Mercury[3], r_Venus[3], r_Earth[3], r_Mars[3];
+    double r_Jupiter[3], r_Saturn[3], r_Uranus[3], r_Neptune[3];
+    double r_Pluto[3], r_Moon[3], r_Sun[3];
+    JPL_Eph_DE430(1234567890,
+                      r_Mercury, r_Venus, r_Earth, r_Mars,
+                      r_Jupiter, r_Saturn, r_Uranus, r_Neptune,
+                      r_Pluto, r_Moon, r_Sun);
+    cout << r_Mercury[0] << endl;
     return 0;
 }
 int all_tests()
@@ -583,7 +627,7 @@ int all_tests()
     _verify(testSuma);
     _verify(testResta);
     _verify(testProducto);
-    //_verify(testTraspuesta);
+    _verify(testTraspuesta);
     _verify(Identity01);
     _verify(Inverse01);
     _verify(Mjday_01);
@@ -599,7 +643,7 @@ int all_tests()
     _verify(AzElPa01);
     _verify(Frac01);
     _verify(AccelPointMass01);
-    //_verify(IERS01);
+    _verify(IERS01);
     _verify(MeanObliquity01);
     _verify(TimeUpdate01);
     _verify(Mjday_TBD01);
@@ -616,6 +660,9 @@ int all_tests()
     _verify(gmst01);
     _verify(gast01);
     _verify(readFromFile01);
+    _verify(AuxParam01);
+    _verify(GHAMatrix01);
+    _verify(JPL_EphDE43001);
 
     return 0;
 }

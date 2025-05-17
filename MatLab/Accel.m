@@ -32,7 +32,7 @@ P = PrecMatrix(const.MJD_J2000,Mjd_TT);
 N = NutMatrix(Mjd_TT);
 T = N * P;
 E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
-
+disp(Mjd_TT);
 MJD_TDB = Mjday_TDB(Mjd_TT);
 [r_Mercury,r_Venus,r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus, ...
  r_Neptune,r_Pluto,r_Moon,r_Sun] = JPL_Eph_DE430(MJD_TDB);
