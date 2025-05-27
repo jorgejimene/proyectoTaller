@@ -1,25 +1,24 @@
 #include "../INCLUDE/MeasUpdate.h"
 
-void MeasUpdate(Matrix &x, Matrix z, const Matrix &g, const Matrix &s,
-                Matrix G, Matrix &P, int n, Matrix &K) {
+void MeasUpdate(Matrix &x, Matrix &z, Matrix &g, Matrix &s,
+                Matrix &G, Matrix &P, int n, Matrix &K) {
     int m = z.getFil();
 
-    // 1. Create inverse weight matrix
-    Matrix Inv_W(m,m);
-    for (int i=1; i<m; i++) {
-        Inv_W(i,i) = s(i,0)*s(i,0);  // Note: changed to 0-based indexing
+
+    Matrix Inv_W = Matrix(m,m);
+    for (int i = 1; i <= m; i++) {
+        Inv_W(i, i) = s(i, 1) * s(i, 1);
     }
 
-    // 2. Calculate Kalman gain
     Matrix GTras = G.transpose();
-    Matrix temp = G*P*GTras;
-    Matrix inversa = (Inv_W + temp).inverse();
-    K = P*GTras*inversa;
+    Matrix temp = G * P * GTras;
+    Matrix suma = Inv_W + temp;
+    Matrix inversa = suma.inverse();
+    K = P * GTras * inversa;
+    Matrix x_new = x + K*(z-g);
+    x = x_new;
 
-    // 3. State update
-    x = x + K*(z - g);
-
-    // 4. Covariance update
-    Matrix I = Matrix(n,n).identity();
-    P = (I - K*G)*P;
+    Matrix I(n, n);
+    I = I.identity();
+    P = (I - K * G) * P;
 }

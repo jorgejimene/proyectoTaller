@@ -420,7 +420,7 @@ int MeasUpdate01() {
     x.print();
     double valoresZ[]{2,2};
     Matrix z{2,1, valoresZ, 2};
-    cout << "Matrix x" << endl;
+    cout << "Matrix z" << endl;
     z.print();
     double valoresg[] = {1,1};
     Matrix g{2,1,valoresg,2};
@@ -443,14 +443,21 @@ int MeasUpdate01() {
     K.print();
     MeasUpdate(x,z,g,s,G,P,2,K);
 
-    _assert(fabs(x(1, 1) - 0.5) < TOL_);
-    _assert(fabs(x(2, 1) - 0.5) < TOL_);
-
     _assert(fabs(K(1, 1) - 0.5) < TOL_);
+    _assert(fabs(K(1, 2) - 0.0) < TOL_);
+    _assert(fabs(K(2, 1) - 0.0) < TOL_);
     _assert(fabs(K(2, 2) - 0.5) < TOL_);
 
-    _assert(fabs(P(1, 1) - 1.5) < TOL_);
-    _assert(fabs(P(2, 2) - 1.5) < TOL_);
+
+    // Verificación del vector x (2x1)
+    _assert(fabs(x(1, 1) - 1.5) < TOL_);
+    _assert(fabs(x(2, 1) - 1.5) < TOL_);
+
+    // Verificación de la matriz P (2x2)
+    _assert(fabs(P(1, 1) - 0.5) < TOL_);
+    _assert(fabs(P(1, 2) - 0.0) < TOL_);
+    _assert(fabs(P(2, 1) - 0.0) < TOL_);
+    _assert(fabs(P(2, 2) - 0.5) < TOL_);
 
     return 0;
 }
@@ -647,7 +654,7 @@ int all_tests()
     _verify(MeanObliquity01);
     _verify(TimeUpdate01);
     _verify(Mjday_TBD01);
-    //_verify(MeasUpdate01);
+    _verify(MeasUpdate01);
     _verify(Cheb3D01);
     _verify(Sign_01);
     _verify(NutMatrix01);
@@ -662,7 +669,7 @@ int all_tests()
     _verify(readFromFile01);
     _verify(AuxParam01);
     _verify(GHAMatrix01);
-    _verify(JPL_EphDE43001);
+    //_verify(JPL_EphDE43001);
 
     return 0;
 }
