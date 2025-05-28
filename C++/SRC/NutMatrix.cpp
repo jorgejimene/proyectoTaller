@@ -20,11 +20,11 @@
 %--------------------------------------------------------------------------
 */
 
-#include "NutMatrix.h"
-#include "MeanObliquity.h"
-#include "NutAngles.h"
-#include "R_x.h"
-#include "R_z.h"
+#include "../INCLUDE/NutMatrix.h"
+#include "../INCLUDE/MeanObliquity.h"
+#include "../INCLUDE/NutAngles.h"
+#include "../INCLUDE/R_x.h"
+#include "../INCLUDE/R_z.h"
 
 Matrix NutMatrix (double Mjd_TT){
     // Mean obliquity of the ecliptic

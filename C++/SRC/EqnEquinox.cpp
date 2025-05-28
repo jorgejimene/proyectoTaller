@@ -1,6 +1,6 @@
 #include <valarray>
-#include "NutAngles.h"
-#include "MeanObliquity.h"
+#include "../INCLUDE/NutAngles.h"
+#include "../INCLUDE/MeanObliquity.h"
 
 /*
 %--------------------------------------------------------------------------

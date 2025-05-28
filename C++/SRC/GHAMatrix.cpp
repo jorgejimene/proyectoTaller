@@ -1,6 +1,6 @@
-#include <R_z.h>
+#include <../INCLUDE/R_z.h>
 
-#include "gast.h"
+#include "../INCLUDE/gast.h"
 /*
 %--------------------------------------------------------------------------
 %

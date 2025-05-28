@@ -18,7 +18,7 @@
 */
 #include "../INCLUDE/AccelPointMass.h"
 #include "cmath"
-#include "vector.h"
+#include "../INCLUDE/vector.h"
 
 
 void AccelPointMass(double *r,double *s,double GM, double a[3]) {

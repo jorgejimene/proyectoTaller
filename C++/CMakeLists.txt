@@ -69,4 +69,10 @@ add_executable(C__
         SRC/Accel.cpp
         SRC/GHAMatrix.cpp
         INCLUDE/GHAMatrix.h
+        INCLUDE/AccelHarmonic.h
+        SRC/AccelHarmonic.cpp
+        INCLUDE/LTC.h
+        SRC/LTC.cpp
+        INCLUDE/VarEqn.h
+        SRC/VarEqn.cpp
 )

@@ -1,9 +1,9 @@
 //
 // Created by jojimene on 07/05/2025.
 //
-#include "SAT_Const.h"
-#include "R_z.h"
-#include "R_y.h"
+#include "../INCLUDE/SAT_Const.h"
+#include "../INCLUDE/R_z.h"
+#include "../INCLUDE/R_y.h"
 
 /*
 %--------------------------------------------------------------------------

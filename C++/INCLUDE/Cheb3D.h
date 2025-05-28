@@ -4,5 +4,7 @@
 
 #ifndef CHEB3D_H
 #define CHEB3D_H
-void Cheb3D(double t,int N,double Ta,double Tb,double Cx[],double Cy[],double Cz[], double ChebApp[3]);
+void Cheb3D(double t, int N, double Ta, double Tb,
+            const double Cx[], const double Cy[], const double Cz[],
+            double ChebApp[3]);
 #endif //CHEB3D_H

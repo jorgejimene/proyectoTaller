@@ -50,7 +50,7 @@ elseif(16<dt && dt<=32)
 end
 r_Earth = 1e3*Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+16, Cx_Earth(13*j+1:13*j+13),...
                      Cy_Earth(13*j+1:13*j+13), Cz_Earth(13*j+1:13*j+13))';
-
+disp(r_Earth)
 temp = (441:13:480);
 Cx_Moon = PCtemp(temp(1):temp(2)-1);
 Cy_Moon = PCtemp(temp(2):temp(3)-1);
@@ -91,7 +91,7 @@ elseif(28<dt && dt<=32)
 end
 r_Moon = 1e3*Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+4, Cx_Moon(13*j+1:13*j+13),...
                     Cy_Moon(13*j+1:13*j+13), Cz_Moon(13*j+1:13*j+13))';
-
+disp(r_Moon)
 temp = (753:11:786);
 Cx_Sun = PCtemp(temp(1):temp(2)-1);
 Cy_Sun = PCtemp(temp(2):temp(3)-1);
@@ -112,7 +112,7 @@ elseif(16<dt && dt<=32)
 end
 r_Sun = 1e3*Cheb3D(Mjd_TDB, 11, Mjd0, Mjd0+16, Cx_Sun(11*j+1:11*j+11),...
                    Cy_Sun(11*j+1:11*j+11), Cz_Sun(11*j+1:11*j+11))';
-
+disp(r_Sun)
 temp = (3:14:45);
 Cx_Mercury = PCtemp(temp(1):temp(2)-1);
 Cy_Mercury = PCtemp(temp(2):temp(3)-1);
@@ -141,7 +141,7 @@ elseif(24<dt && dt<=32)
 end
 r_Mercury = 1e3*Cheb3D(Mjd_TDB, 14, Mjd0, Mjd0+8, Cx_Mercury(14*j+1:14*j+14),...
                        Cy_Mercury(14*j+1:14*j+14), Cz_Mercury(14*j+1:14*j+14))';
-
+disp(r_Mercury)
 temp = (171:10:201);
 Cx_Venus = PCtemp(temp(1):temp(2)-1);
 Cy_Venus = PCtemp(temp(2):temp(3)-1);
@@ -162,7 +162,7 @@ elseif(16<dt && dt<=32)
 end
 r_Venus = 1e3*Cheb3D(Mjd_TDB, 10, Mjd0, Mjd0+16, Cx_Venus(10*j+1:10*j+10),...
                      Cy_Venus(10*j+1:10*j+10), Cz_Venus(10*j+1:10*j+10))';
-
+disp(r_Venus)
 temp = (309:11:342);
 Cx_Mars = PCtemp(temp(1):temp(2)-1);
 Cy_Mars = PCtemp(temp(2):temp(3)-1);
@@ -171,7 +171,7 @@ j=0;
 Mjd0 = t1;
 r_Mars = 1e3*Cheb3D(Mjd_TDB, 11, Mjd0, Mjd0+32, Cx_Mars(11*j+1:11*j+11),...
                     Cy_Mars(11*j+1:11*j+11), Cz_Mars(11*j+1:11*j+11))';
-
+disp(r_Mars)
 temp = (342:8:366);
 Cx_Jupiter = PCtemp(temp(1):temp(2)-1);
 Cy_Jupiter = PCtemp(temp(2):temp(3)-1);
@@ -180,7 +180,7 @@ j=0;
 Mjd0 = t1;
 r_Jupiter = 1e3*Cheb3D(Mjd_TDB, 8, Mjd0, Mjd0+32, Cx_Jupiter(8*j+1:8*j+8),...
                        Cy_Jupiter(8*j+1:8*j+8), Cz_Jupiter(8*j+1:8*j+8))';
-
+disp(r_Jupiter)
 temp = (366:7:387);
 Cx_Saturn = PCtemp(temp(1):temp(2)-1);
 Cy_Saturn = PCtemp(temp(2):temp(3)-1);
@@ -189,7 +189,7 @@ j=0;
 Mjd0 = t1;
 r_Saturn = 1e3*Cheb3D(Mjd_TDB, 7, Mjd0, Mjd0+32, Cx_Saturn(7*j+1:7*j+7),...
                       Cy_Saturn(7*j+1:7*j+7), Cz_Saturn(7*j+1:7*j+7))';
-
+disp(r_Saturn)
 temp = (387:6:405);
 Cx_Uranus = PCtemp(temp(1):temp(2)-1);
 Cy_Uranus = PCtemp(temp(2):temp(3)-1);
@@ -198,7 +198,7 @@ j=0;
 Mjd0 = t1;
 r_Uranus = 1e3*Cheb3D(Mjd_TDB, 6, Mjd0, Mjd0+32, Cx_Uranus(6*j+1:6*j+6),...
                       Cy_Uranus(6*j+1:6*j+6), Cz_Uranus(6*j+1:6*j+6))';
-
+disp(r_Uranus)
 temp = (405:6:423);
 Cx_Neptune = PCtemp(temp(1):temp(2)-1);
 Cy_Neptune = PCtemp(temp(2):temp(3)-1);
@@ -207,7 +207,7 @@ j=0;
 Mjd0 = t1;
 r_Neptune = 1e3*Cheb3D(Mjd_TDB, 6, Mjd0, Mjd0+32, Cx_Neptune(6*j+1:6*j+6),...
                        Cy_Neptune(6*j+1:6*j+6), Cz_Neptune(6*j+1:6*j+6))';
-
+disp(r_Neptune)
 temp = (423:6:441);
 Cx_Pluto = PCtemp(temp(1):temp(2)-1);
 Cy_Pluto = PCtemp(temp(2):temp(3)-1);
@@ -216,7 +216,7 @@ j=0;
 Mjd0 = t1;
 r_Pluto = 1e3*Cheb3D(Mjd_TDB, 6, Mjd0, Mjd0+32, Cx_Pluto(6*j+1:6*j+6),...
                      Cy_Pluto(6*j+1:6*j+6), Cz_Pluto(6*j+1:6*j+6))';
-
+disp(r_Pluto)
 temp = (819:10:839);
 Cx_Nutations = PCtemp(temp(1):temp(2)-1);
 Cy_Nutations = PCtemp(temp(2):temp(3)-1);
@@ -227,6 +227,7 @@ for i=1:3
     Cx_Nutations = [Cx_Nutations,Cx];
     Cy_Nutations = [Cy_Nutations,Cy];
 end
+
 if (0<=dt && dt<=8)
     j=0;
     Mjd0 = t1;
@@ -240,9 +241,10 @@ elseif(24<dt && dt<=32)
     j=3;
     Mjd0 = t1+8*j;
 end
+disp(Cx_Nutations(10*j+1:10*j+10))
 Nutations = Cheb3D(Mjd_TDB, 10, Mjd0, Mjd0+8, Cx_Nutations(10*j+1:10*j+10),...
                    Cy_Nutations(10*j+1:10*j+10),zeros(10,1))';
-
+disp(Nutations)
 temp = (899:10:929);
 Cx_Librations = PCtemp(temp(1):temp(2)-1);
 Cy_Librations = PCtemp(temp(2):temp(3)-1);
@@ -271,8 +273,13 @@ elseif(24<dt && dt<=32)
 end
 Librations = Cheb3D(Mjd_TDB, 10, Mjd0, Mjd0+8, Cx_Librations(10*j+1:10*j+10),...
                     Cy_Librations(10*j+1:10*j+10), Cz_Librations(10*j+1:10*j+10))';
+disp(Librations)
 EMRAT = 81.30056907419062; % DE430
 EMRAT1 = 1/(1+EMRAT);
+disp("moon")
+disp(EMRAT1* r_Moon)
+disp("earth")
+disp(-r_Earth)
 r_Earth = r_Earth-EMRAT1*r_Moon;
 r_Mercury = -r_Earth+r_Mercury;
 r_Venus = -r_Earth+r_Venus;
@@ -283,6 +290,6 @@ r_Uranus = -r_Earth+r_Uranus;
 r_Neptune = -r_Earth+r_Neptune;
 r_Pluto = -r_Earth+r_Pluto;
 r_Sun = -r_Earth+r_Sun;
-
+disp(PCtemp(1,819))
 end
 

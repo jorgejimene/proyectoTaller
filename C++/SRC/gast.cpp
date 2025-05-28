@@ -1,5 +1,5 @@
-#include "gmst.h"
-#include "EqnEquinox.h"
+#include "../INCLUDE/gmst.h"
+#include "../INCLUDE/EqnEquinox.h"
 #include "cmath"
 /*
 %--------------------------------------------------------------------------

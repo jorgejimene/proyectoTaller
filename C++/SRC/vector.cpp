@@ -1,7 +1,7 @@
 //
 // Created by jojimene on 08/05/2025.
 //
-#import "cmath"
+#include <cmath>
 double norm(const double v[3]) {
     return sqrt(v[0]*v[0] + v[1]*v[1] + v[2]*v[2]);
 }

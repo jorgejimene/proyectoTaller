@@ -30,15 +30,16 @@
 #include "./INCLUDE/Sign_.h"
 #include "./INCLUDE/NutMatrix.h"
 #include "./INCLUDE/PoleMatrix.h"
-#include "PrecMatrix.h"
-#include "timediff.h"
-#include "EccAnom.h"
-#include "elements.h"
-#include "EqnEquinox.h"
-#include "gmst.h"
-#include "gast.h"
-#include "GHAMatrix.h"
-#include "JPL_Eph_DE430.h"
+#include "./INCLUDE/PrecMatrix.h"
+#include "./INCLUDE/timediff.h"
+#include "./INCLUDE/EccAnom.h"
+#include "./INCLUDE/elements.h"
+#include "./INCLUDE/EqnEquinox.h"
+#include "./INCLUDE/gmst.h"
+#include "./INCLUDE/gast.h"
+#include "./INCLUDE/GHAMatrix.h"
+#include "./INCLUDE/JPL_Eph_DE430.h"
+#include "./INCLUDE/LTC.h"
 
 
 /*
@@ -617,15 +618,80 @@ int GHAMatrix01() {
     return 0;
 }
 int JPL_EphDE43001() {
-    double r_Mercury[3], r_Venus[3], r_Earth[3], r_Mars[3];
-    double r_Jupiter[3], r_Saturn[3], r_Uranus[3], r_Neptune[3];
-    double r_Pluto[3], r_Moon[3], r_Sun[3];
-    JPL_Eph_DE430(1234567890,
-                      r_Mercury, r_Venus, r_Earth, r_Mars,
-                      r_Jupiter, r_Saturn, r_Uranus, r_Neptune,
-                      r_Pluto, r_Moon, r_Sun);
-    cout << r_Mercury[0] << endl;
+    auto [r_Mercury, r_Venus, r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus,r_Neptune,r_Pluto,r_Moon,r_Sun] = JPL_Eph_DE430(58849.5);
+
+    //Mercury
+    _assert(fabs(r_Mercury(1,1)-18364570296.7767)<TOL2_);
+    _assert(fabs(r_Mercury(1,2)+194240890308.454)<TOL2_);
+    _assert(fabs(r_Mercury(1,3)+89580185100.4172)<TOL2_);
+
+    //Venus
+    _assert(fabs(r_Venus(1,1) - 134236480603.468) < TOL2_);
+    _assert(fabs(r_Venus(1,2) - -121788430081.357) < TOL2_);
+    _assert(fabs(r_Venus(1,3) - -59451902859.1386) < TOL2_);
+
+    // Earth
+    _assert(fabs(r_Earth(1,1) - -26742322957.984) < TOL2_);
+    _assert(fabs(r_Earth(1,2) - 133827327107.372) < TOL2_);
+    _assert(fabs(r_Earth(1,3) - 58018326578.9664) < TOL2_);
+
+    // Mars
+    _assert(fabs(r_Mars(1,1) - -170687646029.87) < TOL2_);
+    _assert(fabs(r_Mars(1,2) - -255905377504.909) < TOL2_);
+    _assert(fabs(r_Mars(1,3) - -108721468283.956) < TOL2_);
+
+    // Jupiter
+    _assert(fabs(r_Jupiter(1,1) - 105439249049.906) < TOL2_);
+    _assert(fabs(r_Jupiter(1,2) - -847168695382.084) < TOL2_);
+    _assert(fabs(r_Jupiter(1,3) - -365696885445.354) < TOL2_);
+
+    // Saturn
+    _assert(fabs(r_Saturn(1,1) - 594596636534.412) < TOL2_);
+    _assert(fabs(r_Saturn(1,2) - -1408094254368.45) < TOL2_);
+    _assert(fabs(r_Saturn(1,3) - -608810768966.399) < TOL2_);
+
+    // Uranus
+    _assert(fabs(r_Uranus(1,1) - 2453302678658.18) < TOL2_);
+    _assert(fabs(r_Uranus(1,2) - 1439200900737.1) < TOL2_);
+    _assert(fabs(r_Uranus(1,3) - 596605466768.131) < TOL2_);
+
+    // Neptune
+    _assert(fabs(r_Neptune(1,1) - 4400884479114.87) < TOL2_);
+    _assert(fabs(r_Neptune(1,2) - -974205297187.0) < TOL2_);
+    _assert(fabs(r_Neptune(1,3) - -510890407765.413) < TOL2_);
+
+    // Pluto
+    _assert(fabs(r_Pluto(1,1) - 1967686040254.54) < TOL2_);
+    _assert(fabs(r_Pluto(1,2) - -4414806220850.92) < TOL2_);
+    _assert(fabs(r_Pluto(1,3) - -1978780908608.13) < TOL2_);
+
+    // Moon
+    _assert(fabs(r_Moon(1,1) - 398673022.292818) < TOL2_);
+    _assert(fabs(r_Moon(1,2) - -38480993.8201334) < TOL2_);
+    _assert(fabs(r_Moon(1,3) - -55662807.01252) < TOL2_);
+
+    // Sun
+    _assert(fabs(r_Sun(1,1) - 26173432883.2097) < TOL2_);
+    _assert(fabs(r_Sun(1,2) - -132807686289.682) < TOL2_);
+    _assert(fabs(r_Sun(1,3) - -57572484281.2736) < TOL2_);
     return 0;
+}
+int LTC01() {
+    Matrix M = LTC(0.5,0.75);
+
+
+    _assert(fabs(M(1,1)+0.479425538604203)<TOL2_);
+    _assert(fabs(M(1,2)-0.877582561890373)<TOL2_);
+    _assert(fabs(M(1,3)-0.0)<TOL2_);
+    _assert(fabs(M(2,1)+0.598194289305055)<TOL2_);
+    _assert(fabs(M(2,2)+0.326795029657688)<TOL2_);
+    _assert(fabs(M(2,3)-0.731688868873821)<TOL2_);
+    _assert(fabs(M(3,1)-0.642117392052957)<TOL2_);
+    _assert(fabs(M(3,2)-0.350790330050532)<TOL2_);
+    _assert(fabs(M(3,3)-0.681638760023334)<TOL2_);
+
+    return 0;
+
 }
 int all_tests()
 {
@@ -668,8 +734,10 @@ int all_tests()
     _verify(gast01);
     _verify(readFromFile01);
     _verify(AuxParam01);
-    _verify(GHAMatrix01);
     //_verify(JPL_EphDE43001);
+    _verify(GHAMatrix01);
+    _verify(LTC01);
+
 
     return 0;
 }

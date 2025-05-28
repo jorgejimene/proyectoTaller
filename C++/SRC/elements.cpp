@@ -1,7 +1,7 @@
 //
 // Created by jojimene on 08/05/2025.
 //
-#include "SAT_Const.h"
+#include "../INCLUDE/SAT_Const.h"
 
 /*
 %--------------------------------------------------------------------------
@@ -30,8 +30,9 @@
 %
 %--------------------------------------------------------------------------
 */
-#import <cmath>
-#include "vector.h"
+#include <math.h>
+
+#include "../INCLUDE/vector.h"
 
 void elements (double y[],double &p, double &a, double &e, double &i, double &Omega, double &omega,double &M){
 
