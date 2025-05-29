@@ -50,6 +50,7 @@ elseif(16<dt && dt<=32)
 end
 r_Earth = 1e3*Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+16, Cx_Earth(13*j+1:13*j+13),...
                      Cy_Earth(13*j+1:13*j+13), Cz_Earth(13*j+1:13*j+13))';
+disp("EARTH");
 disp(r_Earth)
 temp = (441:13:480);
 Cx_Moon = PCtemp(temp(1):temp(2)-1);
@@ -278,9 +279,10 @@ EMRAT = 81.30056907419062; % DE430
 EMRAT1 = 1/(1+EMRAT);
 disp("moon")
 disp(EMRAT1* r_Moon)
+
+r_Earth = r_Earth-EMRAT1*r_Moon;
 disp("earth")
 disp(-r_Earth)
-r_Earth = r_Earth-EMRAT1*r_Moon;
 r_Mercury = -r_Earth+r_Mercury;
 r_Venus = -r_Earth+r_Venus;
 r_Mars = -r_Earth+r_Mars;
@@ -290,6 +292,6 @@ r_Uranus = -r_Earth+r_Uranus;
 r_Neptune = -r_Earth+r_Neptune;
 r_Pluto = -r_Earth+r_Pluto;
 r_Sun = -r_Earth+r_Sun;
-disp(PCtemp(1,819))
+
 end
 

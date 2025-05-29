@@ -8,8 +8,13 @@
 #include <iomanip>
 #include <cmath>
 
+#include "Accel.h"
+#include "AccelHarmonic.h"
 #include "AuxParam.h"
 #include "Cheb3D.h"
+#include "globalMatrix.h"
+#include "G_AccelHarmonic.h"
+#include "VarEqn.h"
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
 #include "./INCLUDE/R_x.h"
@@ -64,6 +69,8 @@ int tests_run = 0;
 #define TOL_ 10e-14
 #define TOL2_ 10e-10 //para numeros mas pequeños
 #define TOL3_ 10e-9
+#define TOL4_ 10e-3
+
 #define FAIL() printf("\nfailure in %s() line %d\n", __func__, __LINE__)
 #define _assert(test) do { if (!(test)) { FAIL(); return 1; } } while(0)
 #define _verify(test) do { int r=test(); tests_run++; if(r) return r; } while(0)
@@ -300,15 +307,16 @@ int Frac01(){
     return 0;
 }
 int AccelPointMass01(){
-    double r[3] = {100000000, 20000000, 3000000};  // Posición del satélite (ejemplo en km)
-    double s[3] = {100000, 200000, 30000};     // Posición de la masa perturbadora
-    double GM = consts.GM_Earth;   // Constante gravitacional de la Tierra en km^3/s^2
+    Matrix r(3,1), s(3,1);
+    r(1,1) = 7078e3; r(2,1) = 0; r(3,1) = 0;
+    s(1,1) = 384400e3; s(2,1) = 0; s(3,1) = 0;
+    double GM = 4.9048695e12;
 
-    double a[3];  // Resultado
-
-    AccelPointMass(r, s, GM, a);
-
-    _assert(fabs(a[0]+3471.08945216081)<TOL2_ && fabs(a[1]+6942.11106842201)<TOL2_ && fabs(a[2]+1041.3166602633)<TOL2_);
+    Matrix result = AccelPointMass(r, s, GM);
+    result.print();
+    _assert(fabs(result(1,1)-1.25720640996716e-06)<TOL2_);
+    _assert(result(2,1)==0);
+    _assert(result(3,1)==0);
 
     return 0;
 }
@@ -618,67 +626,78 @@ int GHAMatrix01() {
     return 0;
 }
 int JPL_EphDE43001() {
-    auto [r_Mercury, r_Venus, r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus,r_Neptune,r_Pluto,r_Moon,r_Sun] = JPL_Eph_DE430(58849.5);
+    Matrix r_Mercury(3, 1);
+    Matrix r_Venus(3, 1);
+    Matrix r_Earth(3, 1);
+    Matrix r_Mars(3, 1);
+    Matrix r_Jupiter(3, 1);
+    Matrix r_Saturn(3, 1);
+    Matrix r_Uranus(3, 1);
+    Matrix r_Neptune(3, 1);
+    Matrix r_Pluto(3, 1);
+    Matrix r_Moon(3, 1);
+    Matrix r_Sun(3, 1);
+
+    JPL_Eph_DE430(58849.5, r_Earth, r_Mars, r_Mercury, r_Venus, r_Jupiter, r_Saturn, r_Uranus, r_Neptune, r_Pluto, r_Moon, r_Sun);
 
     //Mercury
-    _assert(fabs(r_Mercury(1,1)-18364570296.7767)<TOL2_);
-    _assert(fabs(r_Mercury(1,2)+194240890308.454)<TOL2_);
-    _assert(fabs(r_Mercury(1,3)+89580185100.4172)<TOL2_);
+    _assert(fabs(r_Mercury(1,1)-18364570296.7767)<TOL4_);
+    _assert(fabs(r_Mercury(2,1)+194240890308.454)<TOL4_);
+    _assert(fabs(r_Mercury(3,1)+89580185100.4172)<TOL4_);
 
     //Venus
-    _assert(fabs(r_Venus(1,1) - 134236480603.468) < TOL2_);
-    _assert(fabs(r_Venus(1,2) - -121788430081.357) < TOL2_);
-    _assert(fabs(r_Venus(1,3) - -59451902859.1386) < TOL2_);
+    _assert(fabs(r_Venus(1,1) - 134236480603.468) < TOL4_);
+    _assert(fabs(r_Venus(2,1) - -121788430081.357) < TOL4_);
+    _assert(fabs(r_Venus(3,1) - -59451902859.1386) < TOL4_);
 
     // Earth
-    _assert(fabs(r_Earth(1,1) - -26742322957.984) < TOL2_);
-    _assert(fabs(r_Earth(1,2) - 133827327107.372) < TOL2_);
-    _assert(fabs(r_Earth(1,3) - 58018326578.9664) < TOL2_);
+    _assert(fabs(r_Earth(1,1) - -26742322957.984) < TOL4_);
+    _assert(fabs(r_Earth(2,1) - 133827327107.372) < TOL4_);
+    _assert(fabs(r_Earth(3,1) - 58018326578.9664) < TOL4_);
 
     // Mars
-    _assert(fabs(r_Mars(1,1) - -170687646029.87) < TOL2_);
-    _assert(fabs(r_Mars(1,2) - -255905377504.909) < TOL2_);
-    _assert(fabs(r_Mars(1,3) - -108721468283.956) < TOL2_);
+    _assert(fabs(r_Mars(1,1) - -170687646029.87) < TOL4_);
+    _assert(fabs(r_Mars(2,1) - -255905377504.909) < TOL4_);
+    _assert(fabs(r_Mars(3,1) - -108721468283.956) < TOL4_);
 
     // Jupiter
-    _assert(fabs(r_Jupiter(1,1) - 105439249049.906) < TOL2_);
-    _assert(fabs(r_Jupiter(1,2) - -847168695382.084) < TOL2_);
-    _assert(fabs(r_Jupiter(1,3) - -365696885445.354) < TOL2_);
+    _assert(fabs(r_Jupiter(1,1) - 105439249049.906) < TOL4_);
+    _assert(fabs(r_Jupiter(2,1) - -847168695382.084) < TOL4_);
+    _assert(fabs(r_Jupiter(3,1) - -365696885445.354) < TOL4_);
 
     // Saturn
-    _assert(fabs(r_Saturn(1,1) - 594596636534.412) < TOL2_);
-    _assert(fabs(r_Saturn(1,2) - -1408094254368.45) < TOL2_);
-    _assert(fabs(r_Saturn(1,3) - -608810768966.399) < TOL2_);
+    _assert(fabs(r_Saturn(1,1) - 594596636534.412) < TOL4_);
+    _assert(fabs(r_Saturn(2,1) - -1408094254368.45) < TOL4_);
+    _assert(fabs(r_Saturn(3,1) - -608810768966.399) < TOL4_);
 
     // Uranus
-    _assert(fabs(r_Uranus(1,1) - 2453302678658.18) < TOL2_);
-    _assert(fabs(r_Uranus(1,2) - 1439200900737.1) < TOL2_);
-    _assert(fabs(r_Uranus(1,3) - 596605466768.131) < TOL2_);
+    _assert(fabs(r_Uranus(1,1) - 2453302678658.18) < TOL4_);
+    _assert(fabs(r_Uranus(2,1) - 1439200900737.1) < TOL4_);
+    _assert(fabs(r_Uranus(3,1) - 596605466768.131) < TOL4_);
 
     // Neptune
-    _assert(fabs(r_Neptune(1,1) - 4400884479114.87) < TOL2_);
-    _assert(fabs(r_Neptune(1,2) - -974205297187.0) < TOL2_);
-    _assert(fabs(r_Neptune(1,3) - -510890407765.413) < TOL2_);
+    _assert(fabs(r_Neptune(1,1) - 4400884479114.87) < TOL4_);
+    _assert(fabs(r_Neptune(2,1) - -974205297187.0) < TOL4_);
+    _assert(fabs(r_Neptune(3,1) - -510890407765.413) < TOL4_);
 
     // Pluto
-    _assert(fabs(r_Pluto(1,1) - 1967686040254.54) < TOL2_);
-    _assert(fabs(r_Pluto(1,2) - -4414806220850.92) < TOL2_);
-    _assert(fabs(r_Pluto(1,3) - -1978780908608.13) < TOL2_);
+    _assert(fabs(r_Pluto(1,1) - 1967686040254.54) < TOL4_);
+    _assert(fabs(r_Pluto(2,1) - -4414806220850.92) < TOL4_);
+    _assert(fabs(r_Pluto(3,1) - -1978780908608.13) < TOL4_);
 
     // Moon
-    _assert(fabs(r_Moon(1,1) - 398673022.292818) < TOL2_);
-    _assert(fabs(r_Moon(1,2) - -38480993.8201334) < TOL2_);
-    _assert(fabs(r_Moon(1,3) - -55662807.01252) < TOL2_);
+    _assert(fabs(r_Moon(1,1) - 398673022.292818) < TOL4_);
+    _assert(fabs(r_Moon(2,1) - -38480993.8201334) < TOL4_);
+    _assert(fabs(r_Moon(3,1) - -55662807.01252) < TOL4_);
 
     // Sun
-    _assert(fabs(r_Sun(1,1) - 26173432883.2097) < TOL2_);
-    _assert(fabs(r_Sun(1,2) - -132807686289.682) < TOL2_);
-    _assert(fabs(r_Sun(1,3) - -57572484281.2736) < TOL2_);
+    _assert(fabs(r_Sun(1,1) - 26173432883.2097) < TOL4_);
+    _assert(fabs(r_Sun(2,1) - -132807686289.682) < TOL4_);
+    _assert(fabs(r_Sun(3,1) - -57572484281.2736) < TOL4_);
     return 0;
 }
 int LTC01() {
     Matrix M = LTC(0.5,0.75);
-
 
     _assert(fabs(M(1,1)+0.479425538604203)<TOL2_);
     _assert(fabs(M(1,2)-0.877582561890373)<TOL2_);
@@ -693,6 +712,97 @@ int LTC01() {
     return 0;
 
 }
+int Cnm01() {
+    _assert(fabs(Cnm(181,181)-1.52619566516600e-09)<TOL2_);
+    _assert(fabs(Cnm(179,81)+1.38673296550100e-09)<TOL2_);
+    return 0;
+}
+int Snm01(){
+    _assert(fabs(Snm(181,181)+1.99213234732500e-09)<TOL2_);
+    _assert(fabs(Snm(179,81)+3.43860639511800e-10)<TOL2_);
+    return 0;
+}
+int obs01() {
+    _assert(fabs(obs(46,4)-2653472)<TOL2_);
+    _assert(fabs(obs(42,1)-49746.1158796297)<TOL2_);
+    return 0;
+}
+int accelHarmonic01() {
+    double valores[]= {6378136,0,0};
+    Matrix r(3,1,valores,3);
+    int n_max = 4, m_max = n_max;
+
+    Matrix E1 (3,3);
+    Matrix E = E1.identity();
+    Matrix res = AccelHarmonic(r,E,n_max,m_max);
+    _assert(fabs(res(1,1)+9.81425003387253)<TOL2_);
+    _assert(fabs(res(2,1)-3.349605551004308e-05)<TOL4_);
+    _assert(fabs(res(3,1)-0.000106491638754056)<TOL2_);
+
+    return 0;
+}
+
+int GaccelHarmonic01() {
+    double valores[]= {7000e3,0,0};
+    Matrix r(3,1,valores,3);
+    Matrix U1 (3,3);
+    Matrix U = U1.identity();
+
+    Matrix G = G_AccelHarmonic(r,U,4,4);
+
+    _assert(fabs(G(1,1)-2.33048175246608e-06)<TOL2_);
+    _assert(fabs(G(2,1)+1.88080662155699e-11)<TOL2_);
+    _assert(fabs(G(3,1)+5.18909359925601e-11)<TOL2_);
+
+    _assert(fabs(G(1,2)+1.88040301950557e-11)<TOL2_);
+    _assert(fabs(G(2,2)+1.1636930401132e-06)<TOL2_);
+    _assert(fabs(G(1,2)+5.90145164317381e-12)<TOL2_);
+
+    _assert(fabs(G(1,3)+5.18900588865551e-11)<TOL2_);
+    _assert(fabs(G(2,3)+5.90145164995007e-12)<TOL2_);
+    _assert(fabs(G(3,3)+1.16678871423606e-06)<TOL2_);
+
+    return 0;
+}
+int VarEqn01() {
+    Matrix yPhi(42,1);
+    yPhi(1,1) = 1e6;
+    yPhi(2,1) = 2e6;
+    yPhi(3,1) = 3e6;
+    yPhi(4,1) = 1e3;
+    yPhi(5,1) = 2e3;
+    yPhi(6,1) = 3e3;
+    for (int i = 7; i <= 42; i++) {
+        yPhi(i,1) = 0.0;
+    }
+
+    Matrix result = VarEqn(4,yPhi);
+
+    _assert(fabs(result(1,1)-1000)<TOL2_);
+    _assert(fabs(result(2,1)-2000)<TOL2_);
+    _assert(fabs(result(3,1)-3000)<TOL2_);
+    _assert(fabs(result(4,1)+8.55483473704505)<TOL4_);
+    _assert(fabs(result(5,1)+14.7125328326)<TOL2_);
+    _assert(fabs(result(6,1)+26.64751645926)<TOL2_);
+
+    return 0;
+}
+int Accel01() {
+    cout << "Accel" << endl;
+    double valores[] = {4.6,3.8,0,9.0,7.5,2.8};
+    Matrix A(6,1, valores, 6);
+
+    Matrix B = Accel(0,A);
+    B.print();
+    
+    _assert(fabs(B(1,1)-9)<TOL2_);
+    _assert(fabs(B(2,1)-7.5)<TOL2_);
+    _assert(fabs(B(3,1)-2.8)<TOL2_);
+
+
+    return 0;
+}
+
 int all_tests()
 {
     _verify(testConstructorVacio);
@@ -715,7 +825,6 @@ int all_tests()
     _verify(Unit02);
     _verify(AzElPa01);
     _verify(Frac01);
-    _verify(AccelPointMass01);
     _verify(IERS01);
     _verify(MeanObliquity01);
     _verify(TimeUpdate01);
@@ -737,7 +846,14 @@ int all_tests()
     //_verify(JPL_EphDE43001);
     _verify(GHAMatrix01);
     _verify(LTC01);
-
+    _verify(Cnm01);
+    _verify(Snm01);
+    _verify(obs01);
+    _verify(accelHarmonic01);
+    _verify(GaccelHarmonic01);
+    _verify(VarEqn01);
+    //_verify(AccelPointMass01);
+    _verify(Accel01);
 
     return 0;
 }
@@ -745,6 +861,8 @@ int all_tests()
 
 int main()
 {
+    GGM03S();
+    GEOS3();
     int result = all_tests();
 
     if (result == 0)

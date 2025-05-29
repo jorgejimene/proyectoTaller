@@ -16,21 +16,29 @@
 %
 %--------------------------------------------------------------------------
 */
-#include "../INCLUDE/AccelPointMass.h"
-#include "cmath"
-#include "../INCLUDE/vector.h"
+#include "../INCLUDE/Matrix.h"
+#include <iostream>
+#include <ostream>
 
-
-void AccelPointMass(double *r,double *s,double GM, double a[3]) {
-
-    double d[3];
-    // Relative position vector of satellite w.r.t.point mass
-    for (int i = 0; i < 3; i++) {
-        d[i] = r[i] - s[i];
+Matrix AccelPointMass(Matrix &r, Matrix &s, double GM) {
+    // Relative position vector d = r - s
+    Matrix d = r - s;
+    double norm_d = d.norm();
+    double norm_s = s.norm();
+    double norm_d_cubed = norm_d * norm_d * norm_d;
+    double norm_s_cubed = norm_s * norm_s * norm_s;
+    std::cout << norm_d_cubed << std::endl;
+    std::cout << norm_s_cubed << std::endl;
+    Matrix term1(3,1), term2(3,1);
+    for (int i = 1; i <= 3; ++i) {
+        term1(i, 1) = d(i, 1) / norm_d_cubed;
+        term2(i, 1) = s(i, 1) / norm_s_cubed;
     }
 
-    //Acceleration
-    for (int i = 0; i < 3; i++) {
-        a[i] = -GM * (d[i]/ pow(norm(d),3) + s[i]/pow(norm(s),3));
+    Matrix a = term1 + term2;
+    for (int i = 1; i <= 3; ++i) {
+        a(i, 1) *= -GM;
     }
+
+    return a;
 }

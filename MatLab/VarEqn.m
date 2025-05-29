@@ -24,7 +24,8 @@ global const AuxParam eopdata
 [x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC] = IERS(eopdata,AuxParam.Mjd_UTC,'l');
 [UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC] = timediff(UT1_UTC,TAI_UTC);
 Mjd_UT1 = AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400;
-
+disp("mjd")
+disp(Mjd_UT1)
 % Transformation matrix
 P = PrecMatrix(const.MJD_J2000,AuxParam.Mjd_TT + x/86400);
 N = NutMatrix(AuxParam.Mjd_TT + x/86400);

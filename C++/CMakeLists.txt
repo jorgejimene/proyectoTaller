@@ -75,4 +75,8 @@ add_executable(C__
         SRC/LTC.cpp
         INCLUDE/VarEqn.h
         SRC/VarEqn.cpp
+        INCLUDE/G_AccelHarmonic.h
+        SRC/G_AccelHarmonic.cpp
+        INCLUDE/globalMatrix.h
+        SRC/globalMatrix.cpp
 )

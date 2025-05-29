@@ -1,14 +1,16 @@
-#include <Matrix.h>
-#include <SAT_Const.h>
-
-#include "AuxParam.h"
-#include "GHAMatrix.h"
-#include "IERS.h"
-#include "Mjday_TBD.h"
-#include "NutMatrix.h"
-#include "PoleMatrix.h"
-#include "PrecMatrix.h"
-#include "timediff.h"
+#include <iostream>
+#include <../INCLUDE/SAT_Const.h>
+#include "../INCLUDE/AccelHarmonic.h"
+#include "../INCLUDE/AccelPointMass.h"
+#include "../INCLUDE/AuxParam.h"
+#include "../INCLUDE/GHAMatrix.h"
+#include "../INCLUDE/IERS.h"
+#include "../INCLUDE/JPL_Eph_DE430.h"
+#include "../INCLUDE/Mjday_TBD.h"
+#include "../INCLUDE/NutMatrix.h"
+#include "../INCLUDE/PoleMatrix.h"
+#include "../INCLUDE/PrecMatrix.h"
+#include "../INCLUDE/timediff.h"
 /*
 %--------------------------------------------------------------------------
 %
@@ -30,52 +32,70 @@
 %
 % Last modified:   2015/08/12   M. Mahooti
 %
-%--------------------------------------------------------------------------
-
-void Accel(double x, double Y[6], double Z[6]) {
-
-
-    Matrix eopdata = Matrix::LoadFromFile("eopdata.txt");
+%---------------------------------------------------------------------------
+*/
+using namespace std;
+Matrix Accel(double x, const Matrix& Y) {
+    Matrix eopdata = Matrix::LoadFromFile("eop19620101.txt");
+    Matrix eopTrans = eopdata.transpose();
     double x_pole, y_pole,UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
-    IERS(eopdata, auxParam.Mjd_UTC + x/86400,x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole,TAI_UTC,'l');
+    IERS(eopTrans, auxParam.Mjd_UTC + x/86400,x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole,TAI_UTC,'l');
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC, GPS_UTC;
+
     timediff(UT1_UTC,TAI_UTC, UT1_TAI, UTC_GPS, UT1_GPS, TT_UTC, GPS_UTC);
     double Mjd_UT1 = auxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
     double Mjd_TT = auxParam.Mjd_UTC + x/86400 + TT_UTC/86400;
-
     Matrix P = PrecMatrix(consts.MJD_J2000,Mjd_TT);
     Matrix N = NutMatrix(Mjd_TT);
     Matrix T = N * P;
     Matrix E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
     double MJD_TDB = Mjday_TDB(Mjd_TT);
-    [r_Mercury,r_Venus,r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus, ...
-     r_Neptune,r_Pluto,r_Moon,r_Sun] = JPL_Eph_DE430(MJD_TDB);
 
-    % Acceleration due to harmonic gravity field
-    a = AccelHarmonic(Y(1:3), E, AuxParam.n, AuxParam.m);
+    Matrix r_Earth(3,1);
+    Matrix r_Mars(3,1);
+    Matrix r_Mercury(3,1);
+    Matrix r_Venus(3,1);
+    Matrix r_Jupiter(3,1);
+    Matrix r_Saturn(3,1);
+    Matrix r_Uranus(3,1);
+    Matrix r_Neptune(3,1);
+    Matrix r_Pluto(3,1);
+    Matrix r_Moon(3,1);
+    Matrix r_Sun(3,1);
 
-    % Luni-solar perturbations
-    if (AuxParam.sun)
-        a = a + AccelPointMass(Y(1:3),r_Sun,const.GM_Sun);
-    end
+    JPL_Eph_DE430(MJD_TDB, r_Earth,r_Mars,r_Mercury,r_Venus,r_Jupiter,r_Saturn,r_Uranus,r_Neptune,r_Pluto,r_Moon,r_Sun);
+    // Acceleration due to harmonic gravity field
+    Matrix r(3,1);
+    for (int i = 1; i <= 3; ++i) {
+        r(i,1) = Y(i,1);
+    }
+    r.print();
+    Matrix a = AccelHarmonic(r, E, auxParam.n, auxParam.m);
+    // Luni-solar perturbations
+    if (auxParam.sun) {
+        a = a + AccelPointMass(r, r_Sun,consts.GM_Sun);
+    }
+    if (auxParam.moon) {
+        a = a + AccelPointMass(r,r_Moon,consts.GM_Moon);
+    }
 
-    if (AuxParam.moon)
-        a = a + AccelPointMass(Y(1:3),r_Moon,const.GM_Moon);
-    end
-
-    % Planetary perturbations
-    if (AuxParam.planets)
-        a = a + AccelPointMass(Y(1:3),r_Mercury,const.GM_Mercury);
-    a = a + AccelPointMass(Y(1:3),r_Venus,const.GM_Venus);
-    a = a + AccelPointMass(Y(1:3),r_Mars,const.GM_Mars);
-    a = a + AccelPointMass(Y(1:3),r_Jupiter,const.GM_Jupiter);
-    a = a + AccelPointMass(Y(1:3),r_Saturn,const.GM_Saturn);
-    a = a + AccelPointMass(Y(1:3),r_Uranus,const.GM_Uranus);
-    a = a + AccelPointMass(Y(1:3),r_Neptune,const.GM_Neptune);
-    a = a + AccelPointMass(Y(1:3),r_Pluto,const.GM_Pluto);
-    end
-
-    dY = [Y(4:6);a];
+    // Planetary perturbations
+    if (auxParam.planets){
+        a = a + AccelPointMass(r,r_Mercury,consts.GM_Mercury);
+        a = a + AccelPointMass(r,r_Venus,consts.GM_Venus);
+        a = a + AccelPointMass(r,r_Mars,consts.GM_Mars);
+        a = a + AccelPointMass(r,r_Jupiter,consts.GM_Jupiter);
+        a = a + AccelPointMass(r,r_Saturn,consts.GM_Saturn);
+        a = a + AccelPointMass(r,r_Uranus,consts.GM_Uranus);
+        a = a + AccelPointMass(r,r_Neptune,consts.GM_Neptune);
+        a = a + AccelPointMass(r,r_Pluto,consts.GM_Pluto);
+    }
+    a.print();
+    Matrix dY(6,1);
+    for (int i=1;i<=3;++i) {
+        dY(i,1) = Y(i+3,1);
+        dY(i+3,1) = a(i,1);
+    }
+    return dY;
 }
-*/

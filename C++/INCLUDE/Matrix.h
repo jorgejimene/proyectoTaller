@@ -91,7 +91,7 @@ public:
     Matrix identity();
     Matrix inverse() const;
     static Matrix LoadFromFile(std::string filename);
-
+    double norm() const;
 
 private:
     int fil;

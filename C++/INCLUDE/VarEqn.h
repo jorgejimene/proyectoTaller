@@ -6,5 +6,5 @@
 #define VAREQN_H
 #include <Matrix.h>
 
-Matrix VarEqn(double x, Matrix yPhi);
+Matrix VarEqn(double x, const Matrix &yPhi);
 #endif //VAREQN_H

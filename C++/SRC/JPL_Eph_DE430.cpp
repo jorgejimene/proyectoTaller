@@ -1,4 +1,7 @@
 #include "../INCLUDE/JPL_Eph_DE430.h"
+
+#include <iostream>
+
 #include "../INCLUDE/Cheb3D.h"
 
 
@@ -23,7 +26,9 @@
 %
 %--------------------------------------------------------------------------
 */
-tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix> JPL_Eph_DE430(double Mjd_TDB) {
+void JPL_Eph_DE430(double Mjd_TDB, Matrix& r_Earth, Matrix& r_Mars, Matrix& r_Mercury, Matrix& r_Venus,
+                   Matrix& r_Jupiter, Matrix& r_Saturn, Matrix& r_Uranus, Matrix& r_Neptune,
+                   Matrix& r_Pluto, Matrix& r_Moon, Matrix& r_Sun) {
     Matrix PC = Matrix::LoadFromFile("PC.txt");
     double JD = Mjd_TDB + 2400000.5;
 
@@ -90,11 +95,9 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
 
     double res[3];
     Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+16,Cx_Earth2, Cy_Earth2,Cz_Earth2, res);
-    Matrix r_Earth(3,1);
     for (int c = 0; c < 3; c++) {
         r_Earth(c+1,1) = res[c]*1e3;
     }
-    r_Earth.print();
 
     //Moon
     Matrix Cx_Moon(104,1),Cy_Moon(104,1),Cz_Moon(104,1);
@@ -151,11 +154,11 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
         Cz_Moon2[c] = Cz_Moon(j*13+c+1,1);
     }
     Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+4,Cx_Moon2, Cy_Moon2,Cz_Moon2, res);
-    Matrix r_Moon(3,1);
     for (int c = 0; c < 3; c++) {
         r_Moon(c+1,1) = res[c]*1e3;
     }
-    r_Moon.print();
+
+
 
     //Sun
     Matrix Cx_Sun(22,1), Cy_Sun(22,1),Cz_Sun(22,1);
@@ -184,11 +187,10 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
         Cz_Sun2[c] = Cz_Sun(j*11+c+1,1);
     }
     Cheb3D(Mjd_TDB, 11, Mjd0, Mjd0+16,Cx_Sun2, Cy_Sun2,Cz_Sun2, res);
-    Matrix r_Sun(3,1);
     for (int c = 0; c < 3; c++) {
         r_Sun(c+1,1) = res[c]*1e3;
     }
-    r_Sun.print();
+
     //Mercury
     Matrix Cx_Mercury(56,1),Cy_Mercury(56,1),Cz_Mercury(56,1);
     for (int c = 0; c < 14; ++c) {
@@ -227,11 +229,10 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     }
 
     Cheb3D(Mjd_TDB, 14, Mjd0, Mjd0+8,Cx_Mercury2, Cy_Mercury2,Cz_Mercury2, res);
-    Matrix r_Mercury(3,1);
     for (int c = 0; c < 3; c++) {
         r_Mercury(c+1,1) = res[c]*1e3;
     }
-    r_Mercury.print();
+
 
     //Venus
     Matrix Cx_Venus(20,1),Cy_Venus(20,1),Cz_Venus(20,1);
@@ -260,11 +261,10 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
         Cz_Venus2[c] = Cz_Venus(j*10+c+1,1);
     }
     Cheb3D(Mjd_TDB, 10, Mjd0, Mjd0+16,Cx_Venus2, Cy_Venus2,Cz_Venus2, res);
-    Matrix r_Venus(3,1);
     for (int c = 0; c < 3; c++) {
         r_Venus(c+1,1) = res[c]*1e3;
     }
-    r_Venus.print();
+
 
     //Mars
 
@@ -277,11 +277,10 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     j=0;
     Mjd0 = t1;
     Cheb3D(Mjd_TDB, 11, Mjd0, Mjd0+32,Cx_Mars2, Cy_Mars2,Cz_Mars2, res);
-    Matrix r_Mars(3,1);
     for (int c = 0; c < 3; c++) {
         r_Mars(c+1,1) = res[c]*1e3;
     }
-    r_Mars.print();
+
 
     //Jupiter
     double Cx_Jupiter[8],Cy_Jupiter[8],Cz_Jupiter[8];
@@ -293,11 +292,11 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     j=0;
     Mjd0 = t1;
     Cheb3D(Mjd_TDB, 8, Mjd0, Mjd0+32,Cx_Jupiter, Cy_Jupiter,Cz_Jupiter, res);
-    Matrix r_Jupiter(3,1);
     for (int c = 0; c < 3; c++) {
         r_Jupiter(c+1,1) = res[c]*1e3;
     }
-    r_Jupiter.print();
+
+
 
     //Saturn
 
@@ -310,11 +309,10 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     j=0;
     Mjd0 = t1;
     Cheb3D(Mjd_TDB, 7, Mjd0, Mjd0+32,Cx_Saturn, Cy_Saturn,Cz_Saturn, res);
-    Matrix r_Saturn(3,1);
     for (int c = 0; c < 3; c++) {
         r_Saturn(c+1,1) = res[c]*1e3;
     }
-    r_Saturn.print();
+
 
     //Uranus
 
@@ -327,11 +325,10 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     j=0;
     Mjd0 = t1;
     Cheb3D(Mjd_TDB, 6, Mjd0, Mjd0+32,Cx_Uranus, Cy_Uranus,Cz_Uranus, res);
-    Matrix r_Uranus(3,1);
     for (int c = 0; c < 3; c++) {
         r_Uranus(c+1,1) = res[c]*1e3;
     }
-    r_Uranus.print();
+
 
     //Neptune
     double Cx_Neptune[6],Cy_Neptune[6],Cz_Neptune[6];
@@ -343,11 +340,12 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     j=0;
     Mjd0 = t1;
     Cheb3D(Mjd_TDB, 6, Mjd0, Mjd0+32,Cx_Neptune, Cy_Neptune,Cz_Neptune, res);
-    Matrix r_Neptune(3,1);
     for (int c = 0; c < 3; c++) {
         r_Neptune(c+1,1) = res[c]*1e3;
     }
-    r_Neptune.print();
+
+
+
 
     //Pluto
     double Cx_Pluto[6],Cy_Pluto[6],Cz_Pluto[6];
@@ -359,11 +357,9 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     j=0;
     Mjd0 = t1;
     Cheb3D(Mjd_TDB, 6, Mjd0, Mjd0+32,Cx_Pluto, Cy_Pluto,Cz_Pluto, res);
-    Matrix r_Pluto(3,1);
     for (int c = 0; c < 3; c++) {
         r_Pluto(c+1,1) = res[c]*1e3;
     }
-    r_Pluto.print();
 
     //Nutations
     Matrix Cx_Nutations(40,1), Cy_Nutations(40,1);
@@ -405,7 +401,7 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     for (int c = 0; c < 3; c++) {
         Nutations(c+1,1) = res[c];
     }
-    Nutations.print();
+
 
     //Librations
     Matrix Cx_Librations(40,1), Cy_Librations(40,1), Cz_Librations(40,1);
@@ -449,20 +445,20 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     for (int c = 0; c < 3; c++) {
         Librations(c+1,1) = res[c];
     }
-    Librations.print();
+
 
     Matrix r_MoonAux(3,1);
     for (int c = 0; c < 3; c++) {
         r_MoonAux(c+1,1) = r_Moon(c+1,1)*EMRAT1;
     }
-    r_MoonAux.print();
+
     Matrix r_EarthAux (3,1);
+
+    r_Earth = r_Earth-r_MoonAux;
     for (int c = 0; c < 3; c++) {
         r_EarthAux(c+1,1)=r_Earth(c+1,1)*-1;
     }
-    r_EarthAux.print();
 
-    r_Earth = r_Earth-r_MoonAux;
     r_Mercury = r_EarthAux+r_Mercury;
     r_Venus = r_EarthAux+r_Venus;
     r_Mars = r_EarthAux+r_Mars;
@@ -472,6 +468,4 @@ tuple<Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Ma
     r_Neptune = r_EarthAux+r_Neptune;
     r_Pluto = r_EarthAux+r_Pluto;
     r_Sun = r_EarthAux+r_Sun;
-    tuple<Matrix,Matrix,Matrix,Matrix,Matrix,Matrix,Matrix,Matrix,Matrix,Matrix,Matrix> x = make_tuple(r_Mercury,r_Venus, r_Earth, r_Mars, r_Jupiter, r_Saturn, r_Uranus,r_Neptune, r_Pluto, r_Moon, r_Sun);
-    return x;
 }
