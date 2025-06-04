@@ -1,5 +1,9 @@
 <map id="INCLUDE/R_x.h" name="INCLUDE/R_x.h">
-<area shape="rect" id="Node000001" title="Función R_x usada en el proyecto, genera matrices de rotacion al rededor del eje x." alt="" coords="5,5,126,32"/>
-<area shape="rect" id="Node000002" href="$_matrix_8h.html" title="Clase matriz usada en el proyecto." alt="" coords="31,80,100,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,33,68,64,63,64,63,33"/>
+<area shape="rect" id="Node000001" title="Función R_x usada en el proyecto, genera matrices de rotacion al rededor del eje x." alt="" coords="22,5,142,32"/>
+<area shape="rect" id="Node000002" href="$_matrix_8h.html" title="Clase matriz usada en el proyecto." alt="" coords="5,80,74,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,34,57,68,52,65,72,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="98,80,155,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,31,113,65,108,68,88,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="13,155,66,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="42,107,42,139,37,139,37,107"/>
 </map>

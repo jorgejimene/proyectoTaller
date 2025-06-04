@@ -4,9 +4,7 @@
 
 /**
  * @file  Matrix.h
- * @author Jorge
  * @brief Clase matriz usada en el proyecto
- * @date 26-03-2025
  **********************/
 
 #ifndef C___MATRIX_H
@@ -16,98 +14,149 @@
 
 class Matrix {
 public:
+    /**
+     * @brief Obtiene el número de filas de la matriz.
+     * @return Número de filas.
+     */
     int getFil() const;
+
+    /**
+     * @brief Obtiene el número de columnas de la matriz.
+     * @return Número de columnas.
+     */
     int getCol() const;
 
-
-
     /**
-     * @details Constructor básico de la clase Matriz, crea una matriz rellenada con ceros
-     * @param fil Número de filas de la matriz
-     * @param col Número de columnas de la matriz
-     * @return Objeto matriz con fil filas y col columnas
+     * @brief Constructor por defecto. Inicializa una matriz de ceros.
+     * @param fil Número de filas.
+     * @param col Número de columnas.
      */
+    Matrix(int fil, int col);
 
-    Matrix(int fil, int col); //reserva memoria
     /**
-     * @details Constructor de la clase matriz que construye una matriz con los valores de v
-     * fil numero de filas y col numero de columnas
-     * @param fil Numero de filas de la matriz
-     * @param col Numero de columnas de la matriz
-     * @param v Vector con los valores a introducir en la matriz
-     * @param n Tamaño del vector v
-     * @return Objeto matriz con fil filas, col columnas y los valores de v
+     * @brief Constructor con datos.
+     * @param fil Número de filas.
+     * @param col Número de columnas.
+     * @param v Vector de datos.
+     * @param n Tamaño del vector.
      */
-    Matrix(int fil, int col, double v[], int n); //reserva memoria y permite introducir datos almacenados en un vector, siendo n la dimensión del vector
+    Matrix(int fil, int col, double v[], int n);
+
     /**
-     * @details Función que hace que *this apunte a la matriz m
-     * @param m Matriz a la que queremos apuntar
+     * @brief Constructor de copia.
+     * @param m Matriz a copiar.
      */
     Matrix(const Matrix& m);
-    /**
-     * @brief Destructor de la clase matriz
-     */
-    ~Matrix(); //destructor
 
-    //sobrecarga de los operadores
-    //el & en este caso significa "referencia", mecanismo de c++ que permite que a una funcion le podamos asignar algo
     /**
-     * @details Sobrecarga del operador =
-     * @param matrix2  Matriz a la que queremos igualar
-     * @return Objeto matriz igualada a los valores de matrix2
+     * @brief Destructor.
+     */
+    ~Matrix();
+
+    /**
+     * @brief Sobrecarga del operador de asignación.
+     * @param matrix2 Matriz a asignar.
+     * @return Referencia a esta matriz.
      */
     Matrix& operator=(const Matrix& matrix2);
+
     /**
-     * @details Sobrecarga del operador +
-     * @param matrix2 Matriz con la que queremos sumar
-     * @return Matriz resultante de la suma
+     * @brief Sobrecarga del operador suma.
+     * @param matrix2 Matriz a sumar.
+     * @return Matriz resultante.
      */
     Matrix operator+(const Matrix& matrix2);
+
     /**
-     * @details Sobrecarga del operador -
-     * @param matrix2 Matriz con la que queremos restar
-     * @return Matriz resultante de la resta
+     * @brief Sobrecarga del operador resta.
+     * @param matrix2 Matriz a restar.
+     * @return Matriz resultante.
      */
     Matrix operator-(const Matrix& matrix2);
+
     /**
-     * @details Sobrecarga del operador *
-     * @param matrix2 Matriz con la que queremos multiplicar
-     * @return Matriz resultante del producto
+     * @brief Sobrecarga del operador multiplicación.
+     * @param matrix2 Matriz a multiplicar.
+     * @return Matriz resultante.
      */
     Matrix operator*(const Matrix& matrix2);
+
     /**
-     * @details Sobrecarga del operador ()
-     * @param i Valor de la fila donde queremos buscar
-     * @param j Valor de la columna donde queremos buscar
-     * @return Devuelve el valor en la posición (i,j) de la matiz
+     * @brief Accede al valor de una posición de la matriz.
+     * @param i Fila.
+     * @param j Columna.
+     * @return Referencia al valor (i,j).
      */
-    //para acceder a los valores de la matriz, por ejemplo a(i,j)
-    double& operator()(const int i, const int j) const; //este const se ha puesto para "proteger" y que i y j no se cambien
+    double& operator()(const int i, const int j) const;
+
     /**
-     * @details Muestra por pantalla la matriz
+     * @brief Imprime la matriz por pantalla.
      */
     void print();
+
+    /**
+     * @brief Devuelve la matriz transpuesta.
+     * @return Matriz transpuesta.
+     */
     Matrix transpose() const;
+
+    /**
+     * @brief Devuelve una matriz identidad del mismo tamaño.
+     * @return Matriz identidad.
+     */
     Matrix identity();
+
+    /**
+     * @brief Devuelve la matriz inversa.
+     * @return Matriz inversa.
+     */
     Matrix inverse() const;
+
+    /**
+     * @brief Carga una matriz desde archivo.
+     * @param filename Nombre del archivo.
+     * @return Matriz cargada.
+     */
     static Matrix LoadFromFile(std::string filename);
+
+    /**
+     * @brief Calcula la norma (matricial) de la matriz.
+     * @return Norma.
+     */
     double norm() const;
 
-private:
-    int fil;
-    int col;
     /**
-     * @details Función de inicialización de la matriz
+     * @brief Calcula la norma del vector (si aplica).
+     * @return Norma del vector.
      */
-    void initMatrix(); //funcion miembro que solo voy a poder usar yo como programador, ahí se reservará la memoria
+    double normVec() const;
 
-    double **matrix;
+private:
+    int fil;  ///< Número de filas.
+    int col;  ///< Número de columnas.
 
+    /**
+     * @brief Inicializa la matriz con memoria dinámica.
+     */
+    void initMatrix();
 
+    double **matrix;  ///< Puntero doble para la matriz.
+
+    /**
+     * @brief Imprime los valores de una matriz tipo float.
+     * @param arr Puntero a la matriz.
+     * @param n Filas.
+     * @param m Columnas.
+     */
     void printMatrixValues(float **arr, int n, int m);
+
+    /**
+     * @brief Imprime la matriz inversa desde una matriz aumentada.
+     * @param arr Matriz aumentada.
+     * @param n Número de filas.
+     * @param m Número de columnas.
+     */
     void printInverseMatrix(float ** arr, int n, int m);
-
 };
-
 
 #endif //C___MATRIX_H

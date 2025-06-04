@@ -1,4 +1,3 @@
-#include "../INCLUDE/SAT_Const.h"
 #include "../INCLUDE/MeanObliquity.h"
 
 /*

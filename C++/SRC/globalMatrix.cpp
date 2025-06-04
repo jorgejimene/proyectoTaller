@@ -1,8 +1,5 @@
 #include "../INCLUDE/globalMatrix.h"
 
-#include <../INCLUDE/Mjday.h>
-#include <../INCLUDE/SAT_Const.h>
-#include <string.h>
 
 Matrix Cnm(181,181);
 Matrix Snm(181,181);

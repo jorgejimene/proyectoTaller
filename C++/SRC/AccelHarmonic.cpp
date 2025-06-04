@@ -2,9 +2,6 @@
 
 #include <cmath>
 #include <iostream>
-#include <../INCLUDE/Legendre.h>
-
-#include "../INCLUDE/globalMatrix.h"
 
 /*--------------------------------------------------------------------------
 %

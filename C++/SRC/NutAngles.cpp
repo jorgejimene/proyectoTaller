@@ -15,11 +15,9 @@
 %
 %--------------------------------------------------------------------------
 */
-#include <valarray>
-#include "../INCLUDE/SAT_Const.h"
-#include "../INCLUDE/Matrix.h"
+
 #include "../INCLUDE/NutAngles.h"
-#include <cmath>
+
 
 
 void NutAngles (double Mjd_TT, double &dpsi, double &deps) {

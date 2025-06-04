@@ -1,6 +1,6 @@
-#include "../INCLUDE/gmst.h"
-#include "../INCLUDE/EqnEquinox.h"
-#include "cmath"
+
+#include "../INCLUDE/gast.h"
+
 /*
 %--------------------------------------------------------------------------
 %

@@ -1,6 +1,5 @@
-#include "../INCLUDE/Matrix.h"
 #include "../INCLUDE/R_z.h"
-#include <cmath>
+
 /*%--------------------------------------------------------------------------
 %  input:
 %    angle       - angle of rotation [rad]

@@ -1,6 +1,5 @@
-#include <../INCLUDE/R_z.h>
 
-#include "../INCLUDE/gast.h"
+#include "../INCLUDE/GHAMatrix.h"
 /*
 %--------------------------------------------------------------------------
 %

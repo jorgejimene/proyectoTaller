@@ -1,0 +1,5 @@
+<map id="Matrix::transpose" name="Matrix::transpose">
+<area shape="rect" id="Node000001" title="Devuelve la matriz transpuesta." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="Node000002" href="$class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="176,5,277,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
+</map>

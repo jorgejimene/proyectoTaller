@@ -1,5 +1,5 @@
 <map id="Matrix::operator&#45;" name="Matrix::operator&#45;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,122,32"/>
-<area shape="rect" id="Node000002" href="$class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title=" " alt="" coords="170,5,271,32"/>
+<area shape="rect" id="Node000001" title="Sobrecarga del operador resta." alt="" coords="5,5,122,32"/>
+<area shape="rect" id="Node000002" href="$class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="170,5,271,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
 </map>

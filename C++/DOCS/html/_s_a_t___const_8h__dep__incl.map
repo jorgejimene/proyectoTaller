@@ -1,0 +1,45 @@
+<map id="INCLUDE/SAT_Const.h" name="INCLUDE/SAT_Const.h">
+<area shape="rect" id="Node000001" title="Constantes físicas y astronómicas usadas en el proyecto." alt="" coords="453,5,616,32"/>
+<area shape="rect" id="Node000002" href="$_accel_8h.html" title=" " alt="" coords="201,379,330,405"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,30,306,45,165,71,103,90,53,112,20,138,11,152,8,167,8,244,13,274,27,300,48,321,75,339,138,365,201,380,199,385,136,370,73,344,45,325,23,303,8,276,3,244,3,166,6,150,16,134,50,107,101,85,163,66,305,40,437,24"/>
+<area shape="rect" id="Node000003" href="$_i_e_r_s_8h.html" title=" " alt="" coords="462,304,591,331"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="557,43,576,79,589,128,594,168,590,208,576,257,561,284,542,305,538,302,556,281,571,255,585,207,588,168,584,129,571,81,553,46"/>
+<area shape="rect" id="Node000005" href="$_mean_obliquity_8h.html" title="Cálculo de la oblicuidad media de la eclíptica." alt="" coords="383,80,561,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="516,46,485,81,481,78,512,42"/>
+<area shape="rect" id="Node000010" href="$_nut_angles_8h.html" title="Cálculo de los ángulos de nutación en longitud y oblicuidad." alt="" coords="201,80,359,107"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="477,39,325,82,324,77,475,34"/>
+<area shape="rect" id="Node000011" href="$_position_8h.html" title="Convierte coordenadas geodésicas (longitud, latitud, altura) a vector de posición en metros." alt="" coords="687,80,830,107"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="589,35,720,77,719,82,587,40"/>
+<area shape="rect" id="Node000012" href="$_prec_matrix_8h.html" title="Matriz de transformación de precesión para coordenadas ecuatoriales." alt="" coords="94,304,253,331"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="437,27,365,33,292,43,230,59,207,70,191,82,174,108,163,138,157,169,156,202,162,261,172,303,167,304,157,262,151,202,152,169,157,136,169,105,187,78,204,65,228,54,291,38,365,27,437,21"/>
+<area shape="rect" id="Node000013" href="$elements_8h.html" title="Cálculo de los elementos keplerianos osculantes a partir del vector de estado." alt="" coords="855,80,1004,107"/>
+<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="619,33,861,77,860,82,618,38"/>
+<area shape="rect" id="Node000014" href="$global_matrix_8h.html" title=" " alt="" coords="641,155,807,181"/>
+<area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="566,39,619,78,711,152,707,156,616,82,563,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="467,338,312,381,311,375,466,333"/>
+<area shape="rect" id="Node000004" href="$_var_eqn_8h.html" title="Cálculo de las ecuaciones variacionales para derivadas del vector estado y la matriz de transición de..." alt="" coords="508,379,646,405"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="546,342,571,377,566,380,542,345"/>
+<area shape="rect" id="Node000006" href="$_eqn_equinox_8h.html" title="Cálculo de la ecuación de los equinoccios." alt="" coords="281,155,447,181"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="442,118,384,156,381,152,439,113"/>
+<area shape="rect" id="Node000009" href="$_nut_matrix_8h.html" title=" " alt="" coords="407,229,561,256"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="477,122,486,229,480,229,472,122"/>
+<area shape="rect" id="Node000007" href="$gast_8h.html" title=" " alt="" coords="262,229,383,256"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="352,196,332,230,327,228,347,194"/>
+<area shape="rect" id="Node000008" href="$_g_h_a_matrix_8h.html" title=" " alt="" coords="277,304,438,331"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="338,269,354,302,349,305,333,271"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="331,343,283,380,280,376,328,338"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="411,333,540,375,538,381,409,338"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="392,260,83,306,75,320,77,333,86,344,102,354,148,370,201,380,200,385,147,375,100,358,83,348,72,335,70,319,80,302,392,254"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="551,260,581,277,605,303,611,323,607,344,589,379,585,377,602,342,605,323,600,305,578,281,549,265"/>
+<area shape="poly" id="edge15_Node000010_Node000006" title=" " alt="" coords="308,115,351,152,348,156,305,119"/>
+<area shape="poly" id="edge16_Node000010_Node000009" title=" " alt="" coords="270,122,264,152,265,167,271,180,292,195,325,208,408,227,406,232,323,213,289,199,267,183,260,168,258,152,265,121"/>
+<area shape="poly" id="edge19_Node000012_Node000002" title=" " alt="" coords="203,338,251,376,248,380,199,343"/>
+<area shape="poly" id="edge20_Node000012_Node000004" title=" " alt="" coords="259,331,508,376,507,381,259,337"/>
+<area shape="rect" id="Node000015" href="$_accel_harmonic_8h.html" title="Cálculo de la aceleración debida al campo gravitatorio armónico de un cuerpo central." alt="" coords="637,229,822,256"/>
+<area shape="poly" id="edge23_Node000014_Node000015" title=" " alt="" coords="729,197,731,229,726,229,723,197"/>
+<area shape="poly" id="edge24_Node000015_Node000002" title=" " alt="" coords="706,268,660,302,604,333,533,357,459,373,331,390,330,385,458,368,531,352,602,328,657,298,702,264"/>
+<area shape="poly" id="edge27_Node000015_Node000004" title=" " alt="" coords="727,271,718,302,699,332,682,349,662,362,621,381,619,376,659,357,679,344,695,329,713,300,722,270"/>
+<area shape="rect" id="Node000016" href="$_g___accel_harmonic_8h.html" title=" " alt="" coords="767,304,969,331"/>
+<area shape="poly" id="edge25_Node000015_Node000016" title=" " alt="" coords="768,261,845,301,842,306,766,266"/>
+<area shape="poly" id="edge26_Node000016_Node000004" title=" " alt="" coords="803,338,629,381,628,375,802,332"/>
+</map>

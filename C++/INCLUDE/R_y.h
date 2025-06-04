@@ -11,7 +11,7 @@
 #define C___R_Y_H
 
 #include "Matrix.h"
-
+#include <cmath>
 /**
  * @details Función que genera una matriz de rotación 3x3 alrededor del eje y, para
  * un ángulo dado en radianes

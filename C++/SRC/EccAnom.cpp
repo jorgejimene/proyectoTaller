@@ -18,8 +18,8 @@
 %
 %--------------------------------------------------------------------------
 */
-#include <stdexcept>
-#include "cmath"
+#include "../INCLUDE/EccAnom.h"
+
 double EccAnom (double M,double e) {
 
     int maxit = 15;

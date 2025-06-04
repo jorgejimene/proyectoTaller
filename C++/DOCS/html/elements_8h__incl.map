@@ -1,0 +1,12 @@
+<map id="INCLUDE/elements.h" name="INCLUDE/elements.h">
+<area shape="rect" id="Node000001" title="Cálculo de los elementos keplerianos osculantes a partir del vector de estado." alt="" coords="73,5,222,32"/>
+<area shape="rect" id="Node000002" href="$vector_8h.html" title="Funciones para operaciones vectoriales: norma, producto punto y producto cruz." alt="" coords="5,80,74,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,35,73,73,70,69,127,30"/>
+<area shape="rect" id="Node000004" href="$_s_a_t___const_8h.html" title="Constantes físicas y astronómicas usadas en el proyecto." alt="" coords="98,80,197,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,33,150,64,145,64,145,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="221,80,282,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="167,30,223,69,220,73,164,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="64,155,122,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="51,106,77,141,72,144,47,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="140,109,114,144,109,140,136,106"/>
+</map>

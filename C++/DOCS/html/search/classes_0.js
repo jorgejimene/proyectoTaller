@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matrix_0',['Matrix',['../class_matrix.html',1,'']]]
+  ['auxparam_0',['AuxParam',['../struct_aux_param.html',1,'']]]
 ];

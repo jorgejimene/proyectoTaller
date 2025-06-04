@@ -1,0 +1,7 @@
+<map id="INCLUDE/PrecMatrix.h" name="INCLUDE/PrecMatrix.h">
+<area shape="rect" id="Node000001" title="Matriz de transformación de precesión para coordenadas ecuatoriales." alt="" coords="69,5,228,32"/>
+<area shape="rect" id="Node000002" href="$_accel_8h.html" title=" " alt="" coords="5,80,135,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,45,85,82,82,78,122,41"/>
+<area shape="rect" id="Node000003" href="$_var_eqn_8h.html" title="Cálculo de las ecuaciones variacionales para derivadas del vector estado y la matriz de transición de..." alt="" coords="158,80,296,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,41,216,78,212,82,172,45"/>
+</map>

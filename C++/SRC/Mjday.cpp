@@ -2,7 +2,7 @@
 // Created by jojimene on 03/04/2025.
 //
 #include "../INCLUDE/Mjday.h"
-#include <cmath>
+
 
 /*
 %--------------------------------------------------------------------------

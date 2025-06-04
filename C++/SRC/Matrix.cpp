@@ -253,6 +253,16 @@ double Matrix::norm() const {
     }
     return sqrt(suma);
 }
+double Matrix::normVec() const {
+    double suma = 0;
+    for (int i = 1; i <= fil; i++) {
+        for (int j = 1; j <= col; j++) {
+            suma += (*this)(i, j) * (*this)(i, j);
+        }
+    }
+    return sqrt(suma);
+}
+
 
 
 

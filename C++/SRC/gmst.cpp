@@ -14,8 +14,10 @@
 %
 %--------------------------------------------------------------------------
 */
-#import "cmath"
-#include "../INCLUDE/Frac.h"
+
+#include "../INCLUDE/gmst.h"
+
+
 
 double gmst(double Mjd_UT1) {
 

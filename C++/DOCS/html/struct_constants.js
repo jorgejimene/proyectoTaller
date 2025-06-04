@@ -1,0 +1,28 @@
+var struct_constants =
+[
+    [ "Arcs", "struct_constants.html#a4a41e9762e740508b39b32a83c6f71d0", null ],
+    [ "AU", "struct_constants.html#a9a68482b5b42fb92e59eec3bf8980728", null ],
+    [ "c_light", "struct_constants.html#ac7e4e60f0d977427c3a121133a085520", null ],
+    [ "Deg", "struct_constants.html#ab73a8d5cb9b9d4f13a3d20d7da561e6d", null ],
+    [ "f_Earth", "struct_constants.html#acafac0e08803e4a4a7213696c851a9e0", null ],
+    [ "GM_Earth", "struct_constants.html#a564fab6fa4ea6df2e3ffce2a3f337dc4", null ],
+    [ "GM_Jupiter", "struct_constants.html#af7814a49cb37e6ce76f6a8b2c60f3600", null ],
+    [ "GM_Mars", "struct_constants.html#ab67df5280cc7cd5676a734af5c790553", null ],
+    [ "GM_Mercury", "struct_constants.html#adbe5954193b488dbcff177a208d761f0", null ],
+    [ "GM_Moon", "struct_constants.html#a97cbb575d1f7458ab3f15af1f94df04c", null ],
+    [ "GM_Neptune", "struct_constants.html#a002c4f95bc7d480f4181f97640b60962", null ],
+    [ "GM_Pluto", "struct_constants.html#a0f9beab3248e3f135073d42835aa716b", null ],
+    [ "GM_Saturn", "struct_constants.html#a2ab48607aa11b07b95dc173dad773b01", null ],
+    [ "GM_Sun", "struct_constants.html#a3fa55686cc922a5825a5807405e2c402", null ],
+    [ "GM_Uranus", "struct_constants.html#af4527aeabfa478d0fd7910a4a3786ab6", null ],
+    [ "GM_Venus", "struct_constants.html#af507b4fbd62bb3a02fd72c13d54736ff", null ],
+    [ "MJD_J2000", "struct_constants.html#a8bf1141accb89c96954d7ae2cdde43b8", null ],
+    [ "omega_Earth", "struct_constants.html#a8b2a04067ddf018ba513773609670210", null ],
+    [ "P_Sol", "struct_constants.html#a5387015d9c33598ac4c8c8ecdb3206c9", null ],
+    [ "pi2", "struct_constants.html#ae8a5e5573f55a715acf283209aa37f53", null ],
+    [ "R_Earth", "struct_constants.html#a4e3b27eca286027e0b4da8d024f21eca", null ],
+    [ "R_Moon", "struct_constants.html#aba8a8492bf128e6ffe2cc8848822d896", null ],
+    [ "R_Sun", "struct_constants.html#a7a557ae6036dca417a4051d6ae8bbdf0", null ],
+    [ "Rad", "struct_constants.html#a2979890837ec44d46abb75bef3f7b3a7", null ],
+    [ "T_B1950", "struct_constants.html#ae81622df64b91be42abe10050399f477", null ]
+];

@@ -3,16 +3,14 @@
 //
 /**
  * @file  Legendre.h
- * @author Jorge
  * @brief Función Legendre utilizada en el proyecto, genera una tabla completa de
  * polinomios asociados a Legendre y sus derivadas
- * @date 9-4-2025
  **********************/
 #ifndef C___LEGENDRE_H
 #define C___LEGENDRE_H
-#include <cmath>
 #include "Matrix.h"
-
+#include <cmath>
+#include "../INCLUDE/Matrix.h"
 /**
  * @details Función que calcula los polinomios asociados de Legendre y sus derivadas
  * con respecto al ángulo fi, hasta el grado n y el orden m, guarda los resultados en pnm y dpnm

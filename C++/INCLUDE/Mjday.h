@@ -3,13 +3,12 @@
 //
 /**
  * @file  Mjday.h
- * @author Jorge
  * @brief Función Mjday usada en el proyecto, transforma fechas a juliano
- * @date 9-4-2025
  **********************/
 
 #ifndef C___MJDAY_H
 #define C___MJDAY_H
+#include <cmath>
 /**
  * @details Convierte una fecha y hora en formato calendario (año, mes, día, hora, minuto, segundo)
  * a su equivalente en MJD

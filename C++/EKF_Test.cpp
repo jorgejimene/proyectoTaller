@@ -8,13 +8,13 @@
 #include <iomanip>
 #include <cmath>
 
-#include "Accel.h"
-#include "AccelHarmonic.h"
-#include "AuxParam.h"
-#include "Cheb3D.h"
-#include "globalMatrix.h"
-#include "G_AccelHarmonic.h"
-#include "VarEqn.h"
+#include "./INCLUDE/Accel.h"
+#include "./INCLUDE/AccelHarmonic.h"
+#include "./INCLUDE/AuxParam.h"
+#include "./INCLUDE/Cheb3D.h"
+#include "./INCLUDE/globalMatrix.h"
+#include "./INCLUDE/G_AccelHarmonic.h"
+#include "./INCLUDE/VarEqn.h"
 #include "./INCLUDE/Matrix.h"
 #include "./INCLUDE/Mjday.h"
 #include "./INCLUDE/R_x.h"
@@ -45,24 +45,6 @@
 #include "./INCLUDE/GHAMatrix.h"
 #include "./INCLUDE/JPL_Eph_DE430.h"
 #include "./INCLUDE/LTC.h"
-
-
-/*
-#include "./SRC/Matrix.cpp"
-#include "./SRC/Legendre.cpp"
-#include "./SRC/SAT_Const.cpp"
-#include "./SRC/NutAngles.cpp"
-#include "./SRC/Unit.cpp"
-#include "./SRC/AzElPa.cpp"
-#include "./SRC/Frac.cpp"
-#include "./SRC/Mjday.cpp"
-#include "./SRC/R_x.cpp"
-#include "./SRC/R_y.cpp"
-#include "./SRC/R_z.cpp"
-#include "./SRC/AccelPointMass.cpp"
-#include "./SRC/IERS.cpp"
- #include "./SRC/MeanObliquity.cpp"
-*/
 
 int tests_run = 0;
 
@@ -589,7 +571,7 @@ int gmst01(){
     return 0;
 }
 int gast01(){
-    _assert(fabs(gast(1234567890)-2.51082166885744));
+    _assert(fabs(gast(1234567890)-2.51082166885744)<TOL2_);
     return 0;
 }
 int readFromFile01(){
@@ -794,7 +776,7 @@ int Accel01() {
 
     Matrix B = Accel(0,A);
     B.print();
-    
+
     _assert(fabs(B(1,1)-9)<TOL2_);
     _assert(fabs(B(2,1)-7.5)<TOL2_);
     _assert(fabs(B(3,1)-2.8)<TOL2_);
@@ -805,6 +787,7 @@ int Accel01() {
 
 int all_tests()
 {
+    _verify(AccelPointMass01);
     _verify(testConstructorVacio);
     _verify(testConstructorVector);
     _verify(testSuma);
@@ -843,7 +826,7 @@ int all_tests()
     _verify(gast01);
     _verify(readFromFile01);
     _verify(AuxParam01);
-    //_verify(JPL_EphDE43001);
+    _verify(JPL_EphDE43001);
     _verify(GHAMatrix01);
     _verify(LTC01);
     _verify(Cnm01);
@@ -852,7 +835,6 @@ int all_tests()
     _verify(accelHarmonic01);
     _verify(GaccelHarmonic01);
     _verify(VarEqn01);
-    //_verify(AccelPointMass01);
     _verify(Accel01);
 
     return 0;

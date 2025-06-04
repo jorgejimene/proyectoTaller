@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['matrix_0',['Matrix',['../class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a',1,'Matrix::Matrix(int fil, int col)'],['../class_matrix.html#a667a2068daaf0f64d7f6b88ffdbc6ff5',1,'Matrix::Matrix(int fil, int col, double v[], int n)'],['../class_matrix.html#a765f4dcb51b6829311cc3e7576388423',1,'Matrix::Matrix(const Matrix &amp;m)']]],
-  ['mjday_1',['Mjday',['../_mjday_8h.html#aca258c745c27696e023d8dd3fc362652',1,'Mjday.cpp']]]
+  ['cheb3d_0',['Cheb3D',['../_cheb3_d_8h.html#a8435af91a54156d37803e70e9a122a40',1,'Cheb3D.h']]],
+  ['cross_1',['cross',['../vector_8h.html#ab659e4d87a01e166f85928502f06cbc3',1,'vector.h']]]
 ];

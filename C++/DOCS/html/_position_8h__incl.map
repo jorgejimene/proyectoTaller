@@ -1,0 +1,8 @@
+<map id="INCLUDE/Position.h" name="INCLUDE/Position.h">
+<area shape="rect" id="Node000001" title="Convierte coordenadas geodésicas (longitud, latitud, altura) a vector de posición en metros." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="48,155,106,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,33,62,80,63,111,70,139,64,141,58,112,57,80,70,32"/>
+<area shape="rect" id="Node000003" href="$_s_a_t___const_8h.html" title="Constantes físicas y astronómicas usadas en el proyecto." alt="" coords="71,80,171,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,31,108,65,103,68,82,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="116,109,95,143,90,140,111,106"/>
+</map>

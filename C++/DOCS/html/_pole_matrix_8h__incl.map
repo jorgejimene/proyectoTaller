@@ -1,0 +1,16 @@
+<map id="INCLUDE/PoleMatrix.h" name="INCLUDE/PoleMatrix.h">
+<area shape="rect" id="Node000001" title="Calcula la matriz de transformación de coordenadas de pseudo Earth&#45;fixed a Earth&#45;fixed para una fecha..." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="Node000002" href="$_matrix_8h.html" title="Clase matriz usada en el proyecto." alt="" coords="44,155,112,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,34,59,55,47,81,45,96,48,112,62,141,57,143,43,114,40,96,42,79,55,52,71,31"/>
+<area shape="rect" id="Node000004" href="$_r__y_8h.html" title="Función R_y usada en el proyecto, genera matrices de rotacion al rededor del eje y." alt="" coords="137,80,192,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,31,141,68,138,72,97,35"/>
+<area shape="rect" id="Node000006" href="$_r__x_8h.html" title="Función R_x usada en el proyecto, genera matrices de rotacion al rededor del eje x." alt="" coords="56,80,113,107"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="87,33,87,64,82,64,82,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,229,104,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,182,80,214,75,214,75,182"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="151,109,106,147,103,143,148,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="136,155,193,181"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="167,107,167,139,162,139,162,107"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="86,107,83,139,78,139,81,107"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="100,105,141,142,138,146,97,109"/>
+</map>

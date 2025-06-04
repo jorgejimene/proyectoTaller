@@ -1,5 +1,19 @@
 <map id="INCLUDE/R_z.h" name="INCLUDE/R_z.h">
-<area shape="rect" id="Node000001" title="Función R_z usada en el proyecto, genera matrices de rotacion al rededor del eje z." alt="" coords="5,5,126,32"/>
-<area shape="rect" id="Node000002" href="$_r__z_8cpp_source.html" title=" " alt="" coords="14,80,117,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,48,68,80,63,80,63,48"/>
+<area shape="rect" id="Node000001" title="Función R_z usada en el proyecto, genera matrices de rotacion al rededor del eje z." alt="" coords="296,5,417,32"/>
+<area shape="rect" id="Node000002" href="$_g_h_a_matrix_8h.html" title=" " alt="" coords="5,80,167,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,39,134,82,133,77,294,34"/>
+<area shape="rect" id="Node000005" href="$_l_t_c_8h.html" title="Transformación del sistema del meridiano de Greenwich a coordenadas tangentes locales." alt="" coords="551,80,672,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="416,34,567,77,566,82,415,39"/>
+<area shape="rect" id="Node000006" href="$_nut_matrix_8h.html" title=" " alt="" coords="191,80,344,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="331,44,284,82,281,78,328,40"/>
+<area shape="rect" id="Node000007" href="$_prec_matrix_8h.html" title="Matriz de transformación de precesión para coordenadas ecuatoriales." alt="" coords="368,80,527,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="386,40,433,78,430,82,382,44"/>
+<area shape="rect" id="Node000003" href="$_accel_8h.html" title=" " alt="" coords="124,155,253,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,114,172,152,169,156,115,118"/>
+<area shape="rect" id="Node000004" href="$_var_eqn_8h.html" title="Cálculo de las ecuaciones variacionales para derivadas del vector estado y la matriz de transición de..." alt="" coords="277,155,415,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,109,301,151,300,157,145,114"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="244,120,204,156,200,152,241,116"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="294,116,334,152,331,156,291,120"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="388,114,235,157,233,151,387,109"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="419,118,365,156,362,152,416,114"/>
 </map>

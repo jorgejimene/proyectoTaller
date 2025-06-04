@@ -1,9 +1,21 @@
-//
-// Created by jojimene on 30/04/2025.
-//
+/**
+* @file MeanObliquity.h
+ * @brief Cálculo de la oblicuidad media de la eclíptica.
+ *
+ */
 
-#ifndef C___MEANOBLIQUITY_H
-#define C___MEANOBLIQUITY_H
-double MeanObliquity (double Mjd_TT);
+#ifndef MEANOBLIQUITY_H
+#define MEANOBLIQUITY_H
+#include "SAT_Const.h"
 
-#endif //C___MEANOBLIQUITY_H
+/**
+ * @brief Calcula la oblicuidad media de la eclíptica.
+ *
+ * @param Mjd_TT Fecha Juliana Modificada en Tiempo Terrestre (TT).
+ * @return double Oblicuidad media de la eclíptica en radianes.
+ *
+ * @note Utiliza la constante MJD_J2000 para referencia al 1 de enero de 2000 TT.
+ */
+double MeanObliquity(double Mjd_TT);
+
+#endif // MEANOBLIQUITY_H

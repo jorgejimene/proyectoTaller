@@ -1,9 +1,8 @@
 //
 // Created by jojimene on 07/05/2025.
 //
-#include "../INCLUDE/Matrix.h"
-#include "../INCLUDE/R_y.h"
-#include "../INCLUDE/R_x.h"
+
+#include "../INCLUDE/PoleMatrix.h"
 
 /*
 %--------------------------------------------------------------------------

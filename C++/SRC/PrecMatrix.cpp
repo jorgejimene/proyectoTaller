@@ -1,9 +1,8 @@
 //
 // Created by jojimene on 07/05/2025.
 //
-#include "../INCLUDE/SAT_Const.h"
-#include "../INCLUDE/R_z.h"
-#include "../INCLUDE/R_y.h"
+
+#include "../INCLUDE/PrecMatrix.h"
 
 /*
 %--------------------------------------------------------------------------

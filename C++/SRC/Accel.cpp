@@ -1,16 +1,4 @@
-#include <iostream>
-#include <../INCLUDE/SAT_Const.h>
-#include "../INCLUDE/AccelHarmonic.h"
-#include "../INCLUDE/AccelPointMass.h"
-#include "../INCLUDE/AuxParam.h"
-#include "../INCLUDE/GHAMatrix.h"
-#include "../INCLUDE/IERS.h"
-#include "../INCLUDE/JPL_Eph_DE430.h"
-#include "../INCLUDE/Mjday_TBD.h"
-#include "../INCLUDE/NutMatrix.h"
-#include "../INCLUDE/PoleMatrix.h"
-#include "../INCLUDE/PrecMatrix.h"
-#include "../INCLUDE/timediff.h"
+
 /*
 %--------------------------------------------------------------------------
 %
@@ -34,6 +22,8 @@
 %
 %---------------------------------------------------------------------------
 */
+
+#include <../INCLUDE/Accel.h>
 using namespace std;
 Matrix Accel(double x, const Matrix& Y) {
     Matrix eopdata = Matrix::LoadFromFile("eop19620101.txt");

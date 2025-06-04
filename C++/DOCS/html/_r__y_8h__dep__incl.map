@@ -1,5 +1,15 @@
 <map id="INCLUDE/R_y.h" name="INCLUDE/R_y.h">
-<area shape="rect" id="Node000001" title="Función R_y usada en el proyecto, genera matrices de rotacion al rededor del eje y." alt="" coords="5,5,125,32"/>
-<area shape="rect" id="Node000002" href="$_r__y_8cpp_source.html" title=" " alt="" coords="14,80,116,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,48,68,80,62,80,62,48"/>
+<area shape="rect" id="Node000001" title="Función R_y usada en el proyecto, genera matrices de rotacion al rededor del eje y." alt="" coords="170,5,289,32"/>
+<area shape="rect" id="Node000002" href="$_l_t_c_8h.html" title="Transformación del sistema del meridiano de Greenwich a coordenadas tangentes locales." alt="" coords="5,80,126,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,41,95,82,93,77,186,36"/>
+<area shape="rect" id="Node000003" href="$_pole_matrix_8h.html" title="Calcula la matriz de transformación de coordenadas de pseudo Earth&#45;fixed a Earth&#45;fixed para una fecha..." alt="" coords="333,80,491,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,36,381,77,379,82,275,41"/>
+<area shape="rect" id="Node000006" href="$_prec_matrix_8h.html" title="Matriz de transformación de precesión para coordenadas ecuatoriales." alt="" coords="150,80,309,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="232,48,232,80,227,80,227,48"/>
+<area shape="rect" id="Node000004" href="$_accel_8h.html" title=" " alt="" coords="177,155,306,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,116,272,156,270,152,367,111"/>
+<area shape="rect" id="Node000005" href="$_var_eqn_8h.html" title="Cálculo de las ecuaciones variacionales para derivadas del vector estado y la matriz de transición de..." alt="" coords="336,155,475,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="412,123,409,155,404,154,407,122"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="237,122,242,154,237,155,231,123"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="275,111,376,152,374,156,273,115"/>
 </map>

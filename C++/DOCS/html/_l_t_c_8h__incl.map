@@ -1,0 +1,16 @@
+<map id="INCLUDE/LTC.h" name="INCLUDE/LTC.h">
+<area shape="rect" id="Node000001" title="Transformación del sistema del meridiano de Greenwich a coordenadas tangentes locales." alt="" coords="5,5,126,32"/>
+<area shape="rect" id="Node000002" href="$_matrix_8h.html" title="Clase matriz usada en el proyecto." alt="" coords="25,155,93,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,34,40,55,28,81,26,96,29,112,43,141,38,143,24,114,21,96,23,79,36,52,52,31"/>
+<area shape="rect" id="Node000004" href="$_r__y_8h.html" title="Función R_y usada en el proyecto, genera matrices de rotacion al rededor del eje y." alt="" coords="118,80,173,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="81,31,122,68,119,72,78,35"/>
+<area shape="rect" id="Node000006" href="$_r__z_8h.html" title="Función R_z usada en el proyecto, genera matrices de rotacion al rededor del eje z." alt="" coords="37,80,94,107"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="68,33,68,64,63,64,63,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="32,229,86,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="62,182,62,214,56,214,56,182"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="132,109,87,147,84,143,129,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="117,155,174,181"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="148,107,148,139,143,139,143,107"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="67,107,64,139,59,139,62,107"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="81,105,122,142,119,146,78,109"/>
+</map>

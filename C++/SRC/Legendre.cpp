@@ -1,6 +1,5 @@
-#include <cmath>
-#include "../INCLUDE/Matrix.h"
 
+#include "../INCLUDE/Legendre.h"
 using namespace std;
 
 void Legendre(int n, int m, double fi, Matrix &pnm, Matrix &dpnm) {

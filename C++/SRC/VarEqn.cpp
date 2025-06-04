@@ -4,17 +4,8 @@
 #include "../INCLUDE/VarEqn.h"
 
 #include <iostream>
-#include <ostream>
 
-#include "AccelHarmonic.h"
-#include "GHAMatrix.h"
-#include "G_AccelHarmonic.h"
-#include "NutMatrix.h"
-#include "PoleMatrix.h"
-#include "../INCLUDE/PrecMatrix.h"
-#include "../INCLUDE/timediff.h"
-#include "../INCLUDE/IERS.h"
-#include "../INCLUDE/AuxParam.h"
+
 /*
 %------------------------------------------------------------------------------
 %

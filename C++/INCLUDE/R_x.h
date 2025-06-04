@@ -12,7 +12,7 @@
 #define C___ROOTMAT_H
 
 #include "Matrix.h"
-
+#include <cmath>
 /**
  * @details Función que genera una matriz de rotación 3x3 alrededor del eje x, para
  * un ángulo dado en radianes

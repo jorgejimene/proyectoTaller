@@ -79,4 +79,6 @@ add_executable(C__
         SRC/G_AccelHarmonic.cpp
         INCLUDE/globalMatrix.h
         SRC/globalMatrix.cpp
+        SRC/DEInteg.cpp
+        INCLUDE/DEInteg.h
 )

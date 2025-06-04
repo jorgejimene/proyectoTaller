@@ -1,4 +1,4 @@
-#include <cmath>
+
 #include "../INCLUDE/SAT_Const.h"
 
 const Constants consts = {

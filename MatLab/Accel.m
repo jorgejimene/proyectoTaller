@@ -32,14 +32,10 @@ P = PrecMatrix(const.MJD_J2000,Mjd_TT);
 N = NutMatrix(Mjd_TT);
 T = N * P;
 E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
-disp(Mjd_TT);
 MJD_TDB = Mjday_TDB(Mjd_TT);
 [r_Mercury,r_Venus,r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus, ...
  r_Neptune,r_Pluto,r_Moon,r_Sun] = JPL_Eph_DE430(MJD_TDB);
-disp("r_Mercury")
-disp(r_Mercury)
-disp("ven")
-disp(r_Venus)
+
 
 % Acceleration due to harmonic gravity field
 a = AccelHarmonic(Y(1:3), E, AuxParam.n, AuxParam.m);
@@ -64,7 +60,6 @@ if (AuxParam.planets)
     a = a + AccelPointMass(Y(1:3),r_Neptune,const.GM_Neptune);
     a = a + AccelPointMass(Y(1:3),r_Pluto,const.GM_Pluto);
 end
-disp("A")
-disp(a)
+
 dY = [Y(4:6);a];
 

@@ -10,7 +10,7 @@
 #ifndef C___R_Z_H
 #define C___R_Z_H
 #include "Matrix.h"
-
+#include <cmath>
 /**
  * @details Función que genera una matriz de rotación 3x3 alrededor del eje z, para
  * un ángulo dado en radianes

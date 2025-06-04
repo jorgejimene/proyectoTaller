@@ -20,10 +20,6 @@
 */
 #include "../INCLUDE/G_AccelHarmonic.h"
 
-#include <iostream>
-
-#include "../INCLUDE/AccelHarmonic.h"
-
 Matrix G_AccelHarmonic(Matrix &r, Matrix &U, int n_max, int m_max) {
     double d = 1.0;   // Position increment [m]
 

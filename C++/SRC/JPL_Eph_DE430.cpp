@@ -1,8 +1,5 @@
 #include "../INCLUDE/JPL_Eph_DE430.h"
 
-#include <iostream>
-
-#include "../INCLUDE/Cheb3D.h"
 
 
 /*
