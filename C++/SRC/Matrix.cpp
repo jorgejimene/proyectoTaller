@@ -10,7 +10,7 @@ using namespace std;
 Matrix::Matrix(int fil, int col): fil(fil),col(col) { //fil(fil) da valores a la funcion miembro fil, equivalente a decir this->fil=fil
     initMatrix();
 }
-Matrix::Matrix(int fil, int col, double *v, int n): fil(fil),col(col) {
+Matrix::Matrix(int fil, int col, const double *v, int n): fil(fil),col(col) {
     initMatrix();
 
     int k = 0;

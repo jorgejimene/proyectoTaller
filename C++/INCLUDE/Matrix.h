@@ -43,7 +43,7 @@ public:
      * @param v Vector de datos.
      * @param n Tamaño del vector.
      */
-    Matrix(int fil, int col, double v[], int n);
+    Matrix(int fil, int col, const double v[], int n);
 
     /**
      * @brief Constructor de copia.

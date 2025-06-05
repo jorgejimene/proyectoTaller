@@ -22,7 +22,7 @@ double norm(const double v[3]);
  * @param x Segundo vector (3 elementos)
  * @return Producto punto (escalar)
  */
-double dot(double r[], double x[]);
+double dot(const double r[], const double x[]);
 
 /**
  * @brief Calcula el producto cruz de dos vectores de 3 componentes.
@@ -30,6 +30,6 @@ double dot(double r[], double x[]);
  * @param v2 Segundo vector (3 elementos)
  * @param v Vector resultado (3 elementos)
  */
-void cross(double v1[], double v2[], double v[]);
+void cross(const double v1[], const double v2[], double v[]);
 
 #endif //C___VECTOR_H

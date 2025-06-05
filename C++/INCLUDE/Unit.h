@@ -15,6 +15,6 @@
  * @param vec Vector de entrada (arreglo de 3 elementos)
  * @param outvec Vector de salida (arreglo de 3 elementos) donde se almacena el vector unitario
  */
-void unit(double vec[], double *outvec);
+void unit(const double vec[], double *outvec);
 
 #endif //C___UNIT_H
