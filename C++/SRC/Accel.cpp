@@ -70,16 +70,16 @@ Matrix Accel(double x, const Matrix& Y) {
 
     Matrix a = AccelHarmonic(r, E, auxParam.n, auxParam.m);
     // Luni-solar perturbations
-    if (auxParam.sun) {
+    if (auxParam.sun != 0) {
         a = a + AccelPointMass(r, r_Sun,consts.GM_Sun);
     }
-    if (auxParam.moon) {
+    if (auxParam.moon != 0) {
         a = a + AccelPointMass(r,r_Moon,consts.GM_Moon);
     }
 
     cout << "accel" << endl;
     // Planetary perturbations
-    if (auxParam.planets){
+    if (auxParam.planets != 0){
         a = a + AccelPointMass(r,r_Mercury,consts.GM_Mercury);
         a = a + AccelPointMass(r,r_Venus,consts.GM_Venus);
         a = a + AccelPointMass(r,r_Mars,consts.GM_Mars);
