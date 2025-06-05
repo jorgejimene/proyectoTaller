@@ -31,6 +31,7 @@ Matrix Accel(double x, const Matrix& Y) {
     double x_pole, y_pole,UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
     IERS(eopTrans, auxParam.Mjd_UTC + x/86400,x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole,TAI_UTC,'l');
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC, GPS_UTC;
+    cout << "accel" << endl;
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI, UTC_GPS, UT1_GPS, TT_UTC, GPS_UTC);
     double Mjd_UT1 = auxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
@@ -41,6 +42,7 @@ Matrix Accel(double x, const Matrix& Y) {
     Matrix E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
     double MJD_TDB = Mjday_TDB(Mjd_TT);
+    cout << "accel" << endl;
 
     Matrix r_Earth(3,1);
     Matrix r_Mars(3,1);
@@ -56,11 +58,16 @@ Matrix Accel(double x, const Matrix& Y) {
 
     JPL_Eph_DE430(MJD_TDB, r_Earth,r_Mars,r_Mercury,r_Venus,r_Jupiter,r_Saturn,r_Uranus,r_Neptune,r_Pluto,r_Moon,r_Sun);
     // Acceleration due to harmonic gravity field
+    cout << "accel" << endl;
+    cout << "dimensiones Y" << endl;
+    cout << Y.getFil() << Y.getCol() << endl;
     Matrix r(3,1);
     for (int i = 1; i <= 3; ++i) {
         r(i,1) = Y(i,1);
     }
     r.print();
+    cout << "accel" << endl;
+
     Matrix a = AccelHarmonic(r, E, auxParam.n, auxParam.m);
     // Luni-solar perturbations
     if (auxParam.sun) {
@@ -70,6 +77,7 @@ Matrix Accel(double x, const Matrix& Y) {
         a = a + AccelPointMass(r,r_Moon,consts.GM_Moon);
     }
 
+    cout << "accel" << endl;
     // Planetary perturbations
     if (auxParam.planets){
         a = a + AccelPointMass(r,r_Mercury,consts.GM_Mercury);

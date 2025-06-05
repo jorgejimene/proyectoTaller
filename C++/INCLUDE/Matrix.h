@@ -26,6 +26,9 @@ public:
      */
     int getCol() const;
 
+    static Matrix & transposeDif(Matrix &m);
+
+
     /**
      * @brief Constructor por defecto. Inicializa una matriz de ceros.
      * @param fil Número de filas.
@@ -80,6 +83,12 @@ public:
      * @return Matriz resultante.
      */
     Matrix operator*(const Matrix& matrix2);
+    /**
+     * @brief Sobrecarga del operador multiplicación con double.
+     * @param hi Double a mutliplicar.
+     * @return Matriz resultante.
+     */
+    Matrix operator*(double hi) const;
 
     /**
      * @brief Accede al valor de una posición de la matriz.
@@ -157,6 +166,8 @@ private:
      * @param m Número de columnas.
      */
     void printInverseMatrix(float ** arr, int n, int m);
+
+
 };
 
 #endif //C___MATRIX_H

@@ -8,6 +8,7 @@
 #include <iomanip>
 #include <cmath>
 
+#include "DEInteg.h"
 #include "./INCLUDE/Accel.h"
 #include "./INCLUDE/AccelHarmonic.h"
 #include "./INCLUDE/AuxParam.h"
@@ -784,6 +785,47 @@ int Accel01() {
 
     return 0;
 }
+int doubleMatrix01() {
+    double valores[] = {1,2,3,4,5,6,7,8,9};
+    Matrix A(3,3, valores, 9);
+
+    Matrix res = A*3;
+    res.print();
+    _assert(fabs(res(1,1)-3)==0);
+    _assert(fabs(res(1,2)-6)==0);
+    _assert(fabs(res(1,3)-9)==0);
+    _assert(fabs(res(2,1)-12)==0);
+    _assert(fabs(res(3,1)-21)==0);
+    _assert(fabs(res(2,2)-15)==0);
+    _assert(fabs(res(2,3)-18)==0);
+    _assert(fabs(res(3,2)-24)==0);
+    _assert(fabs(res(3,3)-27)==0);
+
+    return 0;
+}
+int deinteg01() {
+
+    Matrix expected(6, 1);
+    expected(1, 1) = 5542555.89427452;
+    expected(2, 1) = 3213514.83814162;
+    expected(3, 1) = 3990892.92789074;
+    expected(4, 1) = 5394.06894044389;
+    expected(5, 1) = -2365.2129057402;
+    expected(6, 1) = -7061.8448137347;
+
+    Matrix A(6, 1);
+    A(1, 1) = 6221397.62857869;
+    A(2, 1) = 2867713.77965738;
+    A(3, 1) = 3006155.98509949;
+    A(4, 1) = 4645.04725161806;
+    A(5, 1) = -2752.21591588204;
+    A(6, 1) = -7507.99940987031;
+
+    Matrix result = DEInteg(Accel, 0, -134.999991953373, 1e-13, 1e-6, 6, A);
+
+    return 0;
+
+}
 
 int all_tests()
 {
@@ -836,6 +878,8 @@ int all_tests()
     _verify(GaccelHarmonic01);
     _verify(VarEqn01);
     _verify(Accel01);
+    _verify(doubleMatrix01);
+    //_verify(deinteg01);
 
     return 0;
 }

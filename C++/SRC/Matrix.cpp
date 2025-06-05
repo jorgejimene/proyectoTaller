@@ -51,6 +51,7 @@ Matrix::~Matrix() {
 }
 Matrix &Matrix::operator=(const Matrix &matrix2) {
     if (this == &matrix2) return *this;
+
     for(int i=0; i< fil; i++){
         for(int j=0; j<col;j++){
             this->matrix[i][j] = matrix2.matrix[i][j];
@@ -91,6 +92,17 @@ Matrix Matrix::operator*(const Matrix &matrix2) {
     }
     return result;
 }
+
+Matrix Matrix::operator*(double hi) const {
+    Matrix result(fil, col);
+    for (int i = 0; i < fil; i++) {
+        for (int j = 0; j < col; j++) {
+            result.matrix[i][j] = matrix[i][j] * hi;
+        }
+    }
+    return result;
+}
+
 double &Matrix::operator()(const int i, const int j) const {
     return matrix[i-1][j-1];
 }
@@ -122,14 +134,15 @@ void Matrix::printInverseMatrix(float** arr, int n, int m){
     return;
 }
 Matrix Matrix::transpose() const{
-    Matrix resultado(col, fil);
-    for (int i=1; i<=fil;i++) {
-        for (int j=1; j<=col;j++) {
+    Matrix resultado(this->col, this->fil);
+    for (int i=1; i<=this->fil;i++) {
+        for (int j=1; j<=this->col;j++) {
             resultado(j,i)=(*this)(i,j);
         }
     }
     return resultado;
 }
+
 Matrix Matrix::identity() {
     Matrix resultado(fil, col);
     for (int i=1; i<=fil; i++) {
@@ -193,6 +206,9 @@ int Matrix::getFil() const {
 int Matrix::getCol() const {
     return col;
 }
+
+
+
 Matrix Matrix::LoadFromFile(string filename){
     string path = "../DATA/" + filename;
     ifstream file(path);
@@ -262,6 +278,7 @@ double Matrix::normVec() const {
     }
     return sqrt(suma);
 }
+
 
 
 
