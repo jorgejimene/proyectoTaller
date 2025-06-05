@@ -32,7 +32,7 @@
 */
 
 
-void elements (double y[],double &p, double &a, double &e, double &i, double &Omega, double &omega,double &M){
+void elements (const double y[],double &p, double &a, double &e, double &i, double &Omega, double &omega,double &M){
 
         double pi2 = 2*M_PI;
         double r[3]; // Position

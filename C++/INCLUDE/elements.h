@@ -22,7 +22,7 @@
  * @param M       [out] Anomalía media (rad).
  *
  */
-void elements(double y[], double &p, double &a, double &e, double &i,
+void elements(const double y[], double &p, double &a, double &e, double &i,
               double &Omega, double &omega, double &M);
 
 #endif // ELEMENTS_H

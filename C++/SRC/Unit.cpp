@@ -19,7 +19,7 @@
 %
 %--------------------------------------------------------------------------
 */
-void unit (double vec[], double *outvec) {
+void unit (const double vec[], double *outvec) {
 
     double small = 0.000001;
     double magv = sqrt(vec[0]*vec[0] + vec[1]*vec[1] + vec[2]*vec[2]);
