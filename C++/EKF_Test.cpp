@@ -8,7 +8,7 @@
 #include <iomanip>
 #include <cmath>
 
-#include "DEInteg.h"
+#include "./INCLUDE/DEInteg.h"
 #include "./INCLUDE/Accel.h"
 #include "./INCLUDE/AccelHarmonic.h"
 #include "./INCLUDE/AuxParam.h"
@@ -206,10 +206,11 @@ int Legendre_01(){
     return 0;
 }
 int SAT_Const(){
-    _assert(fabs(consts.pi2 - 2 * M_PI) < TOL_);
-    _assert(fabs(consts.Rad - M_PI / 180) < TOL_);
-    _assert(fabs(consts.Deg - 180 / M_PI) < TOL_);
-    _assert(fabs(consts.Arcs - 3600 * 180 / M_PI) < TOL_);
+    double m_pi = 3.14159265358979323846;
+    _assert(fabs(consts.pi2 - 2 * m_pi) < TOL_);
+    _assert(fabs(consts.Rad - m_pi / 180) < TOL_);
+    _assert(fabs(consts.Deg - 180 / m_pi) < TOL_);
+    _assert(fabs(consts.Arcs - 3600 * 180 / m_pi) < TOL_);
 
     _assert(fabs(consts.MJD_J2000 - 51544.5) < TOL_);
     _assert(fabs(consts.T_B1950 + 0.500002108) < TOL_);
@@ -221,7 +222,7 @@ int SAT_Const(){
     _assert(fabs(consts.R_Sun - 696000e3) < TOL_);
     _assert(fabs(consts.R_Moon - 1738e3) < TOL_);
 
-    _assert(fabs(consts.omega_Earth - (15.04106717866910 / 3600 * (M_PI / 180))) < TOL_);
+    _assert(fabs(consts.omega_Earth - (15.04106717866910 / 3600 * (m_pi / 180))) < TOL_);
 
     _assert(fabs(consts.GM_Earth - 398600.435436e9) < TOL_);
     _assert(fabs(consts.GM_Sun - 132712440041.939400e9) < TOL_);
