@@ -1,0 +1,5 @@
+<map id="Matrix::operator*" name="Matrix::operator*">
+<area shape="rect" id="Node000001" title="Sobrecarga del operador multiplicación con double." alt="" coords="5,5,123,32"/>
+<area shape="rect" id="Node000002" href="$class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="171,5,272,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,16,155,16,155,21,123,21"/>
+</map>

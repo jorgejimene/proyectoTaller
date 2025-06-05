@@ -1,35 +1,36 @@
 <map id="INCLUDE/GHAMatrix.h" name="INCLUDE/GHAMatrix.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="12,5,173,32"/>
-<area shape="rect" id="Node000002" href="$_matrix_8h.html" title="Clase matriz usada en el proyecto." alt="" coords="5,304,150,331"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,33,51,114,31,171,16,230,14,243,16,255,29,276,47,293,43,296,25,279,11,257,8,243,11,229,26,169,46,112,83,31"/>
-<area shape="rect" id="Node000004" href="$_r__z_8h.html" title="Función R_z usada en el proyecto, genera matrices de rotacion al rededor del eje z." alt="" coords="26,229,158,256"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="95,33,95,214,90,214,90,33"/>
-<area shape="rect" id="Node000006" href="$gast_8h.html" title=" " alt="" coords="383,80,516,107"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="155,30,373,74,372,79,154,35"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="51,379,104,405"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,331,80,363,75,363,75,331"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="92,257,86,289,80,288,87,256"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="296,379,353,405"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="113,254,293,368,290,373,111,259"/>
-<area shape="poly" id="edge20_Node000006_Node000005" title=" " alt="" coords="483,105,532,129,582,163,602,184,616,207,620,231,613,257,592,289,564,315,533,336,499,353,429,377,369,389,368,383,428,371,497,348,530,331,561,311,588,285,608,255,615,231,611,209,598,187,579,168,529,134,480,110"/>
-<area shape="rect" id="Node000007" href="$gmst_8h.html" title=" " alt="" coords="472,155,534,181"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="461,106,487,141,482,144,457,109"/>
-<area shape="rect" id="Node000009" href="$_eqn_equinox_8h.html" title="Cálculo de la ecuación de los equinoccios." alt="" coords="326,155,429,181"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="439,109,402,145,399,142,435,105"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="507,182,510,211,509,251,500,294,491,314,480,332,456,354,427,370,397,381,369,388,367,383,395,376,425,366,453,350,475,329,487,311,495,292,503,250,504,211,502,182"/>
-<area shape="rect" id="Node000008" href="$_frac_8h.html" title=" " alt="" coords="540,229,599,256"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="516,180,550,216,546,220,512,184"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="398,304,466,331"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="394,180,413,201,429,228,436,259,437,289,432,289,431,260,424,230,409,204,390,184"/>
-<area shape="rect" id="Node000011" href="$_nut_angles_8h.html" title="Cálculo de los ángulos de nutación en longitud y oblicuidad." alt="" coords="183,229,276,256"/>
-<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="353,184,270,224,268,220,351,179"/>
-<area shape="rect" id="Node000013" href="$_mean_obliquity_8h.html" title="Cálculo de la oblicuidad media de la eclíptica." alt="" coords="300,229,415,256"/>
-<area shape="poly" id="edge18_Node000009_Node000013" title=" " alt="" coords="377,183,368,215,362,214,371,181"/>
-<area shape="poly" id="edge16_Node000011_Node000002" title=" " alt="" coords="204,259,119,299,117,294,202,254"/>
-<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="235,256,246,290,265,329,299,367,295,370,261,332,241,292,230,257"/>
-<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="266,254,385,296,383,301,264,259"/>
-<area shape="rect" id="Node000012" href="$_s_a_t___const_8h.html" title="Constantes físicas y astronómicas usadas en el proyecto." alt="" coords="274,304,374,331"/>
-<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="248,254,297,292,294,297,244,259"/>
-<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="327,331,327,363,322,363,322,331"/>
-<area shape="poly" id="edge19_Node000013_Node000012" title=" " alt="" coords="354,258,339,291,334,289,349,255"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="15,5,176,32"/>
+<area shape="rect" id="Node000002" href="$_matrix_8h.html" title="Clase matriz usada en el proyecto." alt="" coords="23,304,168,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,34,58,72,27,128,16,160,9,192,10,224,19,255,36,277,57,294,54,298,32,280,15,257,4,225,4,192,10,158,22,126,54,69,83,31"/>
+<area shape="rect" id="Node000004" href="$_r__z_8h.html" title="Función R_z usada en el proyecto, genera matrices de rotacion al rededor del eje z." alt="" coords="29,229,162,256"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,33,98,214,93,214,93,33"/>
+<area shape="rect" id="Node000006" href="$gast_8h.html" title=" " alt="" coords="348,80,481,107"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="152,30,344,73,343,79,151,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="69,379,122,405"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,331,98,363,93,363,93,331"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="98,257,98,288,93,288,93,257"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="415,379,472,405"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="126,254,402,370,400,375,124,259"/>
+<area shape="poly" id="edge20_Node000006_Node000005" title=" " alt="" coords="446,105,489,126,536,152,585,185,603,202,623,228,641,264,648,303,651,318,647,332,632,349,613,363,572,381,528,391,488,394,488,389,527,386,570,376,611,358,628,345,643,329,646,318,642,305,636,265,619,231,600,206,581,189,533,157,487,130,443,110"/>
+<area shape="rect" id="Node000007" href="$gmst_8h.html" title=" " alt="" coords="270,155,332,181"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="396,109,335,148,332,144,393,105"/>
+<area shape="rect" id="Node000010" href="$_eqn_equinox_8h.html" title="Cálculo de la ecuación de los equinoccios." alt="" coords="420,155,523,181"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="426,106,454,141,450,144,422,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="186,229,248,256"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="288,184,245,221,241,217,285,180"/>
+<area shape="rect" id="Node000009" href="$_frac_8h.html" title=" " alt="" coords="272,229,330,256"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="304,182,304,214,298,214,298,182"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="566,304,633,331"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="524,177,566,196,585,210,601,228,607,243,610,259,609,289,604,289,605,259,602,244,596,231,581,214,563,200,522,182"/>
+<area shape="rect" id="Node000012" href="$_nut_angles_8h.html" title="Cálculo de los ángulos de nutación en longitud y oblicuidad." alt="" coords="354,229,448,256"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="461,184,425,220,422,216,457,180"/>
+<area shape="rect" id="Node000014" href="$_mean_obliquity_8h.html" title="Cálculo de la oblicuidad media de la eclíptica." alt="" coords="472,229,586,256"/>
+<area shape="poly" id="edge18_Node000010_Node000014" title=" " alt="" coords="484,180,512,215,508,219,479,184"/>
+<area shape="poly" id="edge16_Node000012_Node000002" title=" " alt="" coords="354,258,164,303,163,297,353,252"/>
+<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="407,256,438,363,433,364,402,257"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="436,254,552,296,550,301,435,259"/>
+<area shape="rect" id="Node000013" href="$_s_a_t___const_8h.html" title="Constantes físicas y astronómicas usadas en el proyecto." alt="" coords="438,304,537,331"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="418,254,463,292,459,296,414,259"/>
+<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="482,333,461,367,457,364,478,330"/>
+<area shape="poly" id="edge19_Node000014_Node000013" title=" " alt="" coords="524,258,504,292,500,289,519,255"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="INCLUDE/EccAnom.h" name="INCLUDE/EccAnom.h">
+<area shape="rect" id="Node000001" title="Cálculo de la anomalía excéntrica para órbitas elípticas." alt="" coords="13,5,166,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,84,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,34,63,68,58,65,80,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="108,80,165,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,31,123,66,118,68,96,34"/>
+</map>

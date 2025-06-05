@@ -1,7 +1,7 @@
 var class_matrix =
 [
     [ "Matrix", "class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a", null ],
-    [ "Matrix", "class_matrix.html#a667a2068daaf0f64d7f6b88ffdbc6ff5", null ],
+    [ "Matrix", "class_matrix.html#aa5a5a208fd2625addba3d8d2ae6a6a92", null ],
     [ "Matrix", "class_matrix.html#a765f4dcb51b6829311cc3e7576388423", null ],
     [ "~Matrix", "class_matrix.html#a9b1c3627f573d78a2f08623fdfef990f", null ],
     [ "getCol", "class_matrix.html#a571b16897d52577117c09fc8859361ae", null ],
@@ -12,6 +12,7 @@ var class_matrix =
     [ "normVec", "class_matrix.html#aba3b6cd41e09503b4ce49f5c9d29e4ba", null ],
     [ "operator()", "class_matrix.html#ac18f44f6e2da73617432cb98c9b21fa5", null ],
     [ "operator*", "class_matrix.html#a129e38b283c55a3f65ed9606a5d5f425", null ],
+    [ "operator*", "class_matrix.html#a15be0577e9c857e21c71a600830e4fc1", null ],
     [ "operator+", "class_matrix.html#ae1e8a3d02bfe61fa1f49d0d208ceab62", null ],
     [ "operator-", "class_matrix.html#aba839542259d70f36378edd31bed408d", null ],
     [ "operator=", "class_matrix.html#a63ca8aef2b91a956af8d30c725e595eb", null ],

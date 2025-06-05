@@ -139,18 +139,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ab82b1df3afd7106f8b0f4dfe0d74221d" id="r_ab82b1df3afd7106f8b0f4dfe0d74221d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab82b1df3afd7106f8b0f4dfe0d74221d">norm</a> (const double v[3])</td></tr>
 <tr class="memdesc:ab82b1df3afd7106f8b0f4dfe0d74221d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la norma (módulo) de un vector de 3 componentes.  <br /></td></tr>
 <tr class="separator:ab82b1df3afd7106f8b0f4dfe0d74221d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99d059352455ad08aa7e6f7ef25b4304" id="r_a99d059352455ad08aa7e6f7ef25b4304"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d059352455ad08aa7e6f7ef25b4304">dot</a> (double r[], double x[])</td></tr>
-<tr class="memdesc:a99d059352455ad08aa7e6f7ef25b4304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el producto punto de dos vectores de 3 componentes.  <br /></td></tr>
-<tr class="separator:a99d059352455ad08aa7e6f7ef25b4304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab659e4d87a01e166f85928502f06cbc3" id="r_ab659e4d87a01e166f85928502f06cbc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab659e4d87a01e166f85928502f06cbc3">cross</a> (double v1[], double v2[], double v[])</td></tr>
-<tr class="memdesc:ab659e4d87a01e166f85928502f06cbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el producto cruz de dos vectores de 3 componentes.  <br /></td></tr>
-<tr class="separator:ab659e4d87a01e166f85928502f06cbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838863be387088d1eb4beb909648d98d" id="r_a838863be387088d1eb4beb909648d98d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a838863be387088d1eb4beb909648d98d">dot</a> (const double r[], const double x[])</td></tr>
+<tr class="memdesc:a838863be387088d1eb4beb909648d98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el producto punto de dos vectores de 3 componentes.  <br /></td></tr>
+<tr class="separator:a838863be387088d1eb4beb909648d98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4807b4b436d58c7f679c32d9be4298c5" id="r_a4807b4b436d58c7f679c32d9be4298c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4807b4b436d58c7f679c32d9be4298c5">cross</a> (const double v1[], const double v2[], double v[])</td></tr>
+<tr class="memdesc:a4807b4b436d58c7f679c32d9be4298c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el producto cruz de dos vectores de 3 componentes.  <br /></td></tr>
+<tr class="separator:a4807b4b436d58c7f679c32d9be4298c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Funciones para operaciones vectoriales: norma, producto punto y producto cruz. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ab659e4d87a01e166f85928502f06cbc3" name="ab659e4d87a01e166f85928502f06cbc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab659e4d87a01e166f85928502f06cbc3">&#9670;&#160;</a></span>cross()</h2>
+<a id="a4807b4b436d58c7f679c32d9be4298c5" name="a4807b4b436d58c7f679c32d9be4298c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4807b4b436d58c7f679c32d9be4298c5">&#9670;&#160;</a></span>cross()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,12 +158,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cross </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>[], </td>
+          <td class="paramtype">const double</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>[], </td>
+          <td class="paramtype">const double</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,8 +185,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a99d059352455ad08aa7e6f7ef25b4304" name="a99d059352455ad08aa7e6f7ef25b4304"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99d059352455ad08aa7e6f7ef25b4304">&#9670;&#160;</a></span>dot()</h2>
+<a id="a838863be387088d1eb4beb909648d98d" name="a838863be387088d1eb4beb909648d98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838863be387088d1eb4beb909648d98d">&#9670;&#160;</a></span>dot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,12 +194,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">double dot </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>r</em></span>[], </td>
+          <td class="paramtype">const double</td>          <td class="paramname"><span class="paramname"><em>r</em></span>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>[]&#160;)</td>
+          <td class="paramtype">const double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>[]&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

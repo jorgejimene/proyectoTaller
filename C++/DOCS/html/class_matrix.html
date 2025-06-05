@@ -123,9 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e6b719fac98b8ad79ec11564ec3a84a" id="r_a0e6b719fac98b8ad79ec11564ec3a84a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e6b719fac98b8ad79ec11564ec3a84a">Matrix</a> (int fil, int col)</td></tr>
 <tr class="memdesc:a0e6b719fac98b8ad79ec11564ec3a84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor por defecto. Inicializa una matriz de ceros.  <br /></td></tr>
 <tr class="separator:a0e6b719fac98b8ad79ec11564ec3a84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a667a2068daaf0f64d7f6b88ffdbc6ff5" id="r_a667a2068daaf0f64d7f6b88ffdbc6ff5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a667a2068daaf0f64d7f6b88ffdbc6ff5">Matrix</a> (int fil, int col, double v[], int n)</td></tr>
-<tr class="memdesc:a667a2068daaf0f64d7f6b88ffdbc6ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor con datos.  <br /></td></tr>
-<tr class="separator:a667a2068daaf0f64d7f6b88ffdbc6ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a5a208fd2625addba3d8d2ae6a6a92" id="r_aa5a5a208fd2625addba3d8d2ae6a6a92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5a5a208fd2625addba3d8d2ae6a6a92">Matrix</a> (int fil, int col, const double v[], int n)</td></tr>
+<tr class="memdesc:aa5a5a208fd2625addba3d8d2ae6a6a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor con datos.  <br /></td></tr>
+<tr class="separator:aa5a5a208fd2625addba3d8d2ae6a6a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a765f4dcb51b6829311cc3e7576388423" id="r_a765f4dcb51b6829311cc3e7576388423"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a765f4dcb51b6829311cc3e7576388423">Matrix</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="memdesc:a765f4dcb51b6829311cc3e7576388423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de copia.  <br /></td></tr>
 <tr class="separator:a765f4dcb51b6829311cc3e7576388423"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a129e38b283c55a3f65ed9606a5d5f425" id="r_a129e38b283c55a3f65ed9606a5d5f425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a129e38b283c55a3f65ed9606a5d5f425">operator*</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;matrix2)</td></tr>
 <tr class="memdesc:a129e38b283c55a3f65ed9606a5d5f425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador multiplicación.  <br /></td></tr>
 <tr class="separator:a129e38b283c55a3f65ed9606a5d5f425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15be0577e9c857e21c71a600830e4fc1" id="r_a15be0577e9c857e21c71a600830e4fc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15be0577e9c857e21c71a600830e4fc1">operator*</a> (double hi) const</td></tr>
+<tr class="memdesc:a15be0577e9c857e21c71a600830e4fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador multiplicación con double.  <br /></td></tr>
+<tr class="separator:a15be0577e9c857e21c71a600830e4fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18f44f6e2da73617432cb98c9b21fa5" id="r_ac18f44f6e2da73617432cb98c9b21fa5"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac18f44f6e2da73617432cb98c9b21fa5">operator()</a> (const int i, const int j) const</td></tr>
 <tr class="memdesc:ac18f44f6e2da73617432cb98c9b21fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accede al valor de una posición de la matriz.  <br /></td></tr>
 <tr class="separator:ac18f44f6e2da73617432cb98c9b21fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +171,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af5a80890daa8212f389128616ea2f459" id="r_af5a80890daa8212f389128616ea2f459"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5a80890daa8212f389128616ea2f459">transposeDif</a> (<a class="el" href="class_matrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:af5a80890daa8212f389128616ea2f459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af01af9c081e9120132258b8ab198fbcd" id="r_af01af9c081e9120132258b8ab198fbcd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af01af9c081e9120132258b8ab198fbcd">LoadFromFile</a> (std::string filename)</td></tr>
 <tr class="memdesc:af01af9c081e9120132258b8ab198fbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga una matriz desde archivo.  <br /></td></tr>
 <tr class="separator:af01af9c081e9120132258b8ab198fbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,8 +208,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a667a2068daaf0f64d7f6b88ffdbc6ff5" name="a667a2068daaf0f64d7f6b88ffdbc6ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a667a2068daaf0f64d7f6b88ffdbc6ff5">&#9670;&#160;</a></span>Matrix() <span class="overload">[2/3]</span></h2>
+<a id="aa5a5a208fd2625addba3d8d2ae6a6a92" name="aa5a5a208fd2625addba3d8d2ae6a6a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a5a208fd2625addba3d8d2ae6a6a92">&#9670;&#160;</a></span>Matrix() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +227,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v</em></span>[], </td>
+          <td class="paramtype">const double</td>          <td class="paramname"><span class="paramname"><em>v</em></span>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -516,7 +521,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a129e38b283c55a3f65ed9606a5d5f425" name="a129e38b283c55a3f65ed9606a5d5f425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a129e38b283c55a3f65ed9606a5d5f425">&#9670;&#160;</a></span>operator*()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a129e38b283c55a3f65ed9606a5d5f425">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,6 +549,42 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_matrix_a129e38b283c55a3f65ed9606a5d5f425_cgraph.png" border="0" usemap="#aclass_matrix_a129e38b283c55a3f65ed9606a5d5f425_cgraph" alt=""/></div>
 <map name="aclass_matrix_a129e38b283c55a3f65ed9606a5d5f425_cgraph" id="aclass_matrix_a129e38b283c55a3f65ed9606a5d5f425_cgraph">
 <area shape="rect" title="Sobrecarga del operador multiplicación." alt="" coords="5,5,123,32"/>
+<area shape="rect" href="class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="171,5,272,32"/>
+<area shape="poly" title=" " alt="" coords="123,16,155,16,155,21,123,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15be0577e9c857e21c71a600830e4fc1" name="a15be0577e9c857e21c71a600830e4fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15be0577e9c857e21c71a600830e4fc1">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a> Matrix::operator* </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>hi</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador multiplicación con double. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hi</td><td>Double a mutliplicar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Matriz resultante. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_matrix_a15be0577e9c857e21c71a600830e4fc1_cgraph.png" border="0" usemap="#aclass_matrix_a15be0577e9c857e21c71a600830e4fc1_cgraph" alt=""/></div>
+<map name="aclass_matrix_a15be0577e9c857e21c71a600830e4fc1_cgraph" id="aclass_matrix_a15be0577e9c857e21c71a600830e4fc1_cgraph">
+<area shape="rect" title="Sobrecarga del operador multiplicación con double." alt="" coords="5,5,123,32"/>
 <area shape="rect" href="class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="171,5,272,32"/>
 <area shape="poly" title=" " alt="" coords="123,16,155,16,155,21,123,21"/>
 </map>
@@ -703,6 +744,41 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Devuelve la matriz transpuesta." alt="" coords="5,5,128,32"/>
 <area shape="rect" href="class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="176,5,277,32"/>
 <area shape="poly" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5a80890daa8212f389128616ea2f459" name="af5a80890daa8212f389128616ea2f459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a80890daa8212f389128616ea2f459">&#9670;&#160;</a></span>transposeDif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_matrix.html">Matrix</a> &amp; Matrix::transposeDif </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_matrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_matrix_af5a80890daa8212f389128616ea2f459_cgraph.png" border="0" usemap="#aclass_matrix_af5a80890daa8212f389128616ea2f459_cgraph" alt=""/></div>
+<map name="aclass_matrix_af5a80890daa8212f389128616ea2f459_cgraph" id="aclass_matrix_af5a80890daa8212f389128616ea2f459_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" href="class_matrix.html#a0e6b719fac98b8ad79ec11564ec3a84a" title="Constructor por defecto. Inicializa una matriz de ceros." alt="" coords="193,5,294,32"/>
+<area shape="poly" title=" " alt="" coords="145,16,177,16,177,21,145,21"/>
 </map>
 </div>
 

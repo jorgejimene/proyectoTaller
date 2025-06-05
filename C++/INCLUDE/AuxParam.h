@@ -5,13 +5,13 @@
 #ifndef AUXPARAM_H
 #define AUXPARAM_H
 struct AuxParam {
-   double Mjd_UTC;
-   int n;
-   int m;
-   int sun;
-   int moon;
-   int planets;
-   double Mjd_TT;
+   mutable double Mjd_UTC;
+   mutable int n;
+   mutable int m;
+   mutable int sun;
+   mutable int moon;
+   mutable int planets;
+   mutable double Mjd_TT;
 };
 extern const AuxParam auxParam;
 #endif //AUXPARAM_H
