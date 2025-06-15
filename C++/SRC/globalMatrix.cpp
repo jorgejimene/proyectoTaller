@@ -4,6 +4,7 @@
 Matrix Cnm(181,181);
 Matrix Snm(181,181);
 Matrix obs(46,4);
+Matrix eopdata(13, 21413);
 
 void GGM03S() {
     FILE *fid = fopen("../DATA/GGM03S.txt", "r");
@@ -72,5 +73,20 @@ void GEOS3() {
         obs(i,3) = consts.Rad*EL;
         obs(i,4) = 1e3*DIST;
     }
+    fclose(fid);
+}
+
+void EOPDATA() {
+    FILE *fid = fopen("../DATA/eop19620101.txt", "r");
+    if (fid==NULL) {
+        printf("Error opening file\n");
+        exit(-1);
+    }
+    for (int j = 1; j <= 21413; j++) {
+        fscanf(fid,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf", &eopdata(1, j),
+        &eopdata(2, j),&eopdata(3, j),&eopdata(4, j),&eopdata(5, j),&eopdata(6, j),&eopdata(7, j),
+        &eopdata(8, j),&eopdata(9, j),&eopdata(10, j),&eopdata(11, j),&eopdata(12, j),&eopdata(13, j));
+    }
+
     fclose(fid);
 }

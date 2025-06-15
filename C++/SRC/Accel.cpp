@@ -26,10 +26,8 @@
 #include <../INCLUDE/Accel.h>
 using namespace std;
 Matrix Accel(double x, const Matrix& Y) {
-    Matrix eopdata = Matrix::LoadFromFile("eop19620101.txt");
-    Matrix eopTrans = eopdata.transpose();
     double x_pole, y_pole,UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
-    IERS(eopTrans, auxParam.Mjd_UTC + x/86400,x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole,TAI_UTC,'l');
+    IERS(eopdata, auxParam.Mjd_UTC + x/86400,x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole,TAI_UTC,'l');
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC, GPS_UTC;
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI, UTC_GPS, UT1_GPS, TT_UTC, GPS_UTC);
@@ -60,7 +58,6 @@ Matrix Accel(double x, const Matrix& Y) {
     for (int i = 1; i <= 3; ++i) {
         r(i,1) = Y(i,1);
     }
-    r.print();
 
     Matrix a = AccelHarmonic(r, E, auxParam.n, auxParam.m);
     // Luni-solar perturbations
@@ -82,7 +79,6 @@ Matrix Accel(double x, const Matrix& Y) {
         a = a + AccelPointMass(r,r_Neptune,consts.GM_Neptune);
         a = a + AccelPointMass(r,r_Pluto,consts.GM_Pluto);
     }
-    a.print();
     Matrix dY(6,1);
     for (int i=1;i<=3;++i) {
         dY(i,1) = Y(i+3,1);

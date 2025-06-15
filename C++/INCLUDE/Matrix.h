@@ -139,6 +139,8 @@ public:
      * @return Norma del vector.
      */
     double normVec() const;
+    bool equals(const Matrix& matrix2, const double TOL) const;
+
 
 private:
     int fil;  ///< Número de filas.

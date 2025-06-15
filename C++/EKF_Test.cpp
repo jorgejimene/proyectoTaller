@@ -576,26 +576,7 @@ int gast01(){
     _assert(fabs(gast(1234567890)-2.51082166885744)<TOL2_);
     return 0;
 }
-int readFromFile01(){
-    Matrix mat = Matrix::LoadFromFile("eop19620101.txt");
 
-    Matrix matTras = Matrix(mat.getCol(), mat.getFil());
-    matTras = mat.transpose();
-    double x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
-    IERS(matTras, 37668, x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC, 'l');
-
-    _assert(fabs(x_pole+1.06654161707287e-07)<TOL_);
-    _assert(fabs(y_pole-1.04865684037674e-06)<TOL_);
-    _assert(fabs(UT1_UTC-0.0311435)<TOL_);
-    _assert(fabs(LOD-0.001496)<TOL_);
-    _assert(fabs(dpsi-3.09762005271316e-07)<TOL_);
-    _assert(fabs(deps-3.18716513961409e-08)<TOL_);
-    _assert(fabs(TAI_UTC-2)<TOL_);
-    _assert(fabs(dx_pole-0)<TOL_);
-    _assert(fabs(dy_pole-0)<TOL_);
-
-    return 0;
-}
 int GHAMatrix01() {
     Matrix mat = GHAMatrix(1234567890);
     _assert(fabs(mat(1,1)+0.807573046590817)<TOL2_);
@@ -773,19 +754,31 @@ int VarEqn01() {
 }
 int Accel01() {
     cout << "Accel" << endl;
-    double valores[] = {4.6,3.8,0,9.0,7.5,2.8};
-    Matrix A(6,1, valores, 6);
+    double vY[] = {5720694.22605799,
+                    2687728.41425145,
+                    3483000.08675447,
+                    4371.83136151856,
+                   -1905.47309295878,
+                   -5698.58341611591};
+    Matrix Y(6,1,vY,6);
 
-    Matrix B = Accel(0,A);
-    B.print();
+    Matrix sol(6,1);
 
-    _assert(fabs(B(1,1)-9)<TOL2_);
-    _assert(fabs(B(2,1)-7.5)<TOL2_);
-    _assert(fabs(B(3,1)-2.8)<TOL2_);
+    sol = Accel(-543.476874884521,Y);
 
+    double vecRes [] = {4371.83136151856,
+                       -1905.47309295878,
+                       -5698.58341611591,
+                       -6.06544204261725,
+                       -2.84977703178303,
+                       -3.70232534578413};
+    Matrix res = Matrix(6,1,vecRes,6);
+
+    _assert(sol.equals(res,TOL_));
 
     return 0;
 }
+
 int doubleMatrix01() {
     double valores[] = {1,2,3,4,5,6,7,8,9};
     Matrix A(3,3, valores, 9);
@@ -827,6 +820,24 @@ int deinteg01() {
     return 0;
 
 }
+int eopdata01() {
+    Matrix matTras = Matrix(eopdata.getCol(), eopdata.getFil());
+    matTras = eopdata.transpose();
+    double x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
+    IERS(eopdata, 37668, x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC, 'l');
+    cout << x_pole << endl;
+    _assert(fabs(x_pole+1.06654161707287e-07)<TOL_);
+    _assert(fabs(y_pole-1.04865684037674e-06)<TOL_);
+    _assert(fabs(UT1_UTC-0.0311435)<TOL_);
+    _assert(fabs(LOD-0.001496)<TOL_);
+    _assert(fabs(dpsi-3.09762005271316e-07)<TOL_);
+    _assert(fabs(deps-3.18716513961409e-08)<TOL_);
+    _assert(fabs(TAI_UTC-2)<TOL_);
+    _assert(fabs(dx_pole-0)<TOL_);
+    _assert(fabs(dy_pole-0)<TOL_);
+
+    return 0;
+}
 
 int all_tests()
 {
@@ -867,7 +878,6 @@ int all_tests()
     _verify(EqnEquinox01);
     _verify(gmst01);
     _verify(gast01);
-    _verify(readFromFile01);
     _verify(AuxParam01);
     _verify(JPL_EphDE43001);
     _verify(GHAMatrix01);
@@ -875,12 +885,14 @@ int all_tests()
     _verify(Cnm01);
     _verify(Snm01);
     _verify(obs01);
+    _verify(eopdata01);
     _verify(accelHarmonic01);
     _verify(GaccelHarmonic01);
     _verify(VarEqn01);
-    _verify(Accel01);
     _verify(doubleMatrix01);
-    //_verify(deinteg01);
+    _verify(Accel01);
+    _verify(deinteg01);
+
 
     return 0;
 }
@@ -890,6 +902,7 @@ int main()
 {
     GGM03S();
     GEOS3();
+    EOPDATA();
     int result = all_tests();
 
     if (result == 0)

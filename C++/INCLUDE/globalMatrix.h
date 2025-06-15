@@ -33,6 +33,9 @@ extern Matrix Snm;
  */
 extern Matrix obs;
 
+extern Matrix eopdata;
+
+
 /**
  * @brief Carga el modelo gravitacional GGM03S desde un archivo de datos.
  *
@@ -53,5 +56,7 @@ void GGM03S();
  * @throws Sale del programa si el archivo no puede abrirse.
  */
 void GEOS3();
+
+void EOPDATA();
 
 #endif // GLOBALMATRIX_H

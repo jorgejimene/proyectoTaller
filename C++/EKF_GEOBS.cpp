@@ -14,7 +14,7 @@
 #include "VarEqn.h"
 /*
  * Archivo main
- */
+
 int main() {
 	Matrix eop = Matrix::LoadFromFile("eop19620101.txt");
     Matrix eopdata = eop.transpose();
@@ -252,3 +252,4 @@ int main() {
 
     return 0;
 }
+*/

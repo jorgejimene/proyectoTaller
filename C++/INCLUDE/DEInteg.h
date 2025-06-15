@@ -11,5 +11,5 @@
 #include <Sign_.h>
 #include <stdexcept>
 #include <limits>
-Matrix DEInteg(std::function<Matrix(double, Matrix)> f, double t, double tout, double relerr, double abserr, int n_eqn, Matrix &y);
+Matrix DEInteg(Matrix (*func)(double x, const Matrix &Y), double t, double tout, double relerr, double abserr, int n_eqn, Matrix &y);
 #endif //DEINTEG_H

@@ -60,6 +60,8 @@ psi_  = zeros(13,1);
 % Return, if output time equals input time
 
 if (t==tout)    % No integration
+            disp("hola estoy en la linea 61")
+
     return;
 end
 
@@ -74,6 +76,8 @@ if ( ( relerr <  0.0         ) || ...            % Negative relative error bound
      ( (State_ ~= DE_STATE.DE_INIT) &&       ...
      (t ~= told)           ) )
      State_ = DE_STATE.DE_INVPARAM;              % Set error code
+             disp("hola estoy en la linea 79")
+
      return;                                     % Exit
 end
 
@@ -148,6 +152,8 @@ while (true)   % Start step loop
       t         = tout;             % Set independent variable
       told      = t;                % Store independent variable
       OldPermit = PermitTOUT;
+              disp("hola estoy en la linea 155")
+
       return;                       % Normal exit
   end                         
   
@@ -161,6 +167,8 @@ while (true)   % Start step loop
       t         = tout;             % Set independent variable
       told      = t;                % Store independent variable
       OldPermit = PermitTOUT;
+              disp("hola estoy en la linea 170")
+
       return;                       % Normal exit
   end
   
@@ -196,6 +204,8 @@ while (true)   % Start step loop
 if (abs(h) < fouru*abs(x))
     h = sign_(fouru*abs(x),h);
     crash = true;
+            disp("hola estoy en la linea 207")
+
     return;           % Exit 
 end
 
@@ -218,6 +228,8 @@ round = twou*sqrt(round);
 if (p5eps<round)
     epsilon = 2.0*round*(1.0+fouru);
     crash = true;
+            disp("hola estoy en la linea 230")
+
     return;
 end
 
@@ -501,6 +513,7 @@ while(true)
         crash = true;
         h = sign_(fouru*abs(x), h);
         epsilon = epsilon*2.0;
+        disp("hola estoy en la linea 504")
         return;                 % Exit 
     end
     
@@ -629,6 +642,8 @@ h = hnew;
       t         = x;
       told      = t;
       OldPermit = true;
+              disp("hola estoy en la linea 646")
+
       return;                       % Weak failure exit
   end
   
